@@ -2,7 +2,6 @@
   {
     "id": "Q1",
     "pillar": "Consciousness",
-    "reverse": false,
     "stem": "Someone says the thing that gets under your skin. Before you react, what happens?",
     "options": [
       "It's out of my mouth before I've even clocked that I'm angry.",
@@ -13,48 +12,8 @@
     ]
   },
   {
-    "id": "Q3",
-    "pillar": "Action",
-    "reverse": false,
-    "stem": "Something's sitting in your cart. What usually happens next?",
-    "options": [
-      "Once it's in the cart it's basically mine, the buying's already done in my head.",
-      "I realize I didn't need it by the time it reaches my door.",
-      "A flight I'll think about; a ₹300 impulse thing just happens.",
-      "I usually let it sit a night before I actually check out.",
-      "If I still want it a few days later, that's the only time it gets bought."
-    ]
-  },
-  {
-    "id": "R1",
-    "pillar": "Consciousness",
-    "reverse": true,
-    "stem": "I react first and think later.",
-    "options": [
-      "I almost always pause before I react.",
-      "It slips out on me only once in a while.",
-      "Depends on the day.",
-      "I usually react first and think after.",
-      "It's out before I've thought about it, pretty much always."
-    ]
-  },
-  {
-    "id": "Q5",
-    "pillar": "Responsibility",
-    "reverse": false,
-    "stem": "Picture the last few people you dealt with today. How did they leave the interaction?",
-    "options": [
-      "A bit more discouraged than they came, if I'm honest.",
-      "I don't really track the effect I have on people.",
-      "Depends what kind of day I'm having.",
-      "Usually a little lighter than they showed up.",
-      "Leaving people better than I found them is just the thing I aim at."
-    ]
-  },
-  {
     "id": "Q2",
     "pillar": "Consciousness",
-    "reverse": false,
     "stem": "When you give your time or your money, what's usually going on underneath?",
     "options": [
       "I give when I'm asked and don't really think past it.",
@@ -65,48 +24,20 @@
     ]
   },
   {
-    "id": "Q7",
-    "pillar": "Responsibility",
-    "reverse": false,
-    "stem": "Someone reaches out for a favour, you both know they can't really return it. What actually happens?",
-    "options": [
-      "If there's nothing in it for me, I usually pass.",
-      "I'll help if it's convenient, not if it costs me.",
-      "Depends on my mood and who it is.",
-      "I usually help anyway, even knowing nothing comes back.",
-      "Whether they can return it never even enters my head, I just help."
-    ]
-  },
-  {
-    "id": "Q9",
-    "pillar": "Self-Growth",
-    "reverse": false,
-    "stem": "You find out you were wrong about something you were sure of. What's your first move?",
-    "options": [
-      "Being wrong makes me dig in harder.",
-      "I go defensive first and come round later.",
-      "Depends on the topic, and who's telling me.",
-      "I can usually stay open even when it stings.",
-      "Getting proved wrong is kind of the interesting part for me."
-    ]
-  },
-  {
-    "id": "R2",
+    "id": "Q3",
     "pillar": "Action",
-    "reverse": true,
-    "stem": "I buy on impulse without asking whether I need it.",
+    "stem": "Something's sitting in your cart. What usually happens next?",
     "options": [
-      "I almost never buy on impulse.",
-      "It happens only occasionally.",
-      "Depends on the mood and the sale.",
-      "I impulse-buy fairly regularly.",
-      "If I like it, it's in the bag, no questions asked."
+      "Once it's in the cart it's basically mine, the buying's already done in my head.",
+      "I realize I didn't need it by the time it reaches my door.",
+      "A flight I'll think about; a ₹300 impulse thing just happens.",
+      "I usually let it sit a night before I actually check out.",
+      "If I still want it a few days later, that's the only time it gets bought."
     ]
   },
   {
     "id": "Q4",
     "pillar": "Action",
-    "reverse": false,
     "stem": "Where a thing came from, and where it ends up after you're done with it. How many times you think about this when you choose?",
     "options": [
       "Honestly, it doesn't cross my mind.",
@@ -117,22 +48,20 @@
     ]
   },
   {
-    "id": "Q11",
-    "pillar": "Consciousness",
-    "reverse": false,
-    "stem": "It's one of those heavy days, the kind you're mostly getting through alone. In that moment, how connected do you feel to something beyond yourself?",
+    "id": "Q5",
+    "pillar": "Responsibility",
+    "stem": "Picture the last few people you dealt with today. How did they leave the interaction?",
     "options": [
-      "On days like that it's just me, handling it on my own.",
-      "That sense of being part of something shows up only once in a while.",
-      "Some days I feel connected, some days completely on my own.",
-      "Most of the time I feel held by something bigger than just me.",
-      "Even on the worst days, I know I'm part of something larger."
+      "A bit more discouraged than they came, if I'm honest.",
+      "I don't really track the effect I have on people.",
+      "Depends what kind of day I'm having.",
+      "Usually a little lighter than they showed up.",
+      "Leaving people better than I found them is just the thing I aim at."
     ]
   },
   {
     "id": "Q6",
     "pillar": "Engagement",
-    "reverse": false,
     "stem": "Someone shadows your ordinary day, your sleep, your food, your screen time. Would they see the person you're actually trying to become?",
     "options": [
       "They'd see someone run by their phone and their sleep, and not by choice.",
@@ -143,48 +72,44 @@
     ]
   },
   {
-    "id": "Q13",
-    "pillar": "Engagement",
-    "reverse": false,
-    "stem": "You finally crack something, figure out the thing that was bothering you. What do you do with it?",
+    "id": "Q7",
+    "pillar": "Responsibility",
+    "stem": "Someone reaches out for a favour, you both know they can't really return it. What actually happens?",
     "options": [
-      "What I work out, I keep to myself.",
-      "It doesn't really occur to me to share it.",
-      "I'll pass it on if it happens to come up.",
-      "I usually share what worked for me.",
-      "When I crack something, teaching it forward is automatic."
+      "If there's nothing in it for me, I usually pass.",
+      "I'll help if it's convenient, not if it costs me.",
+      "Depends on my mood and who it is.",
+      "I usually help anyway, even knowing nothing comes back.",
+      "Whether they can return it never even enters my head, I just help."
     ]
   },
   {
     "id": "Q8",
     "pillar": "Self-Growth",
-    "reverse": false,
     "stem": "Think of the last reel or quote that genuinely affected you. What happened after?",
     "options": [
       "I felt something for ten seconds and was already onto the next one.",
       "I screenshot it into a saved folder I'll never open again.",
       "Now and then one sticks; mostly it was just good content.",
       "Something I saw recently actually changed one thing I do.",
-      "If it didn't change something I do, I don't really count it as learning at all."
+      "If it didn't change something I do, I don't really count it as learning."
     ]
   },
   {
-    "id": "R3",
+    "id": "Q9",
     "pillar": "Self-Growth",
-    "reverse": true,
-    "stem": "I stick with what I believe even when I am shown I am wrong.",
+    "stem": "You find out you were wrong about something you were sure of. What's your first move?",
     "options": [
-      "I update pretty easily when I'm shown I'm wrong.",
-      "I dig in only occasionally.",
-      "Depends how attached I am to the belief.",
-      "I usually hold my ground even when challenged.",
-      "Being shown I'm wrong mostly makes me hold on tighter."
+      "Being wrong makes me dig in harder.",
+      "I go defensive first and come round later.",
+      "Depends on the topic, and who's telling me.",
+      "I can usually stay open even when it stings.",
+      "Getting proved wrong is kind of the interesting part for me."
     ]
   },
   {
     "id": "Q10",
     "pillar": "Responsibility",
-    "reverse": false,
     "stem": "You're making a call that affects someone else, not just you. What actually drives it?",
     "options": [
       "What works best for me, honestly.",
@@ -195,23 +120,45 @@
     ]
   },
   {
+    "id": "Q11",
+    "pillar": "Consciousness",
+    "stem": "It's one of those heavy days, the kind you're mostly getting through alone. In that moment, how connected do you feel to something beyond yourself?",
+    "options": [
+      "On days like that it's just me, handling it on my own.",
+      "That sense of being part of something shows up only once in a while.",
+      "Some days I feel connected, some days completely on my own.",
+      "Most of the time I feel held by something bigger than just me.",
+      "Even on the worst days, I know I'm part of something larger."
+    ]
+  },
+  {
     "id": "Q12",
     "pillar": "Engagement",
-    "reverse": false,
     "stem": "There's a thing you're genuinely good at. When you picture using it, who's it usually for?",
     "options": [
       "Mostly for me, it's my edge and I use it like one.",
       "Using it for someone else barely crosses my mind.",
       "If someone asks me directly, I'll help out sometimes.",
-      "I often point what I'm good at at other people's problems too.",
+      "I often point out what I'm good at at other people's problems too.",
       "What I'm good at isn't just for my CV, using it for others is kind of the point."
+    ]
+  },
+  {
+    "id": "Q13",
+    "pillar": "Engagement",
+    "stem": "You finally crack something, figure out the thing that was bothering you. What do you do with it?",
+    "options": [
+      "What I work out, I keep to myself.",
+      "It doesn't really occur to me to share it.",
+      "I'll pass it on if it happens to come up.",
+      "I usually share what worked for me.",
+      "When I crack something, teaching it forward is automatic."
     ]
   },
   {
     "id": "Q14",
     "pillar": "Action",
-    "reverse": false,
-    "stem": "You've already had enough, but there's still food on the plate or one more episode ready to autoplay. What usually happens?",
+    "stem": "You've already had enough, but there's still one more episode ready to autoplay. What usually happens?",
     "options": [
       "I finish it anyway, out of habit more than hunger.",
       "I only notice I've had enough once it's all gone.",
@@ -223,7 +170,6 @@
   {
     "id": "Q15",
     "pillar": "Self-Growth",
-    "reverse": false,
     "stem": "Something's genuinely hard and you could just quietly avoid it. What do you usually do?",
     "options": [
       "I avoid it and find something easier to do instead.",

@@ -29,7 +29,7 @@ const PILLAR_TO_ARCHETYPE = {
 
 /**
  * answers: { [questionId]: 1-5 } raw tap-target values, one per item in
- * questions.json (18 items: 15 scored + R1/R2/R3 reverse-scored).
+ * questions.json (15 scored items, 3 per pillar).
  */
 export function scoreQuiz(answers) {
   const pillarScores = {};
@@ -39,11 +39,7 @@ export function scoreQuiz(answers) {
     const minPossible = items.length * 1;
     const maxPossible = items.length * 5;
 
-    const raw = items.reduce((sum, q) => {
-      const value = answers[q.id];
-      const scored = q.reverse ? 6 - value : value;
-      return sum + scored;
-    }, 0);
+    const raw = items.reduce((sum, q) => sum + (answers[q.id] ?? 0), 0);
 
     const normalized =
       ((raw - minPossible) / (maxPossible - minPossible)) * 100;

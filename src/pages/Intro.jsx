@@ -79,7 +79,7 @@ export default function Intro() {
                 <span className="text-amber-soft">This just gives it a name.</span>
               </h1>
               <p className="mb-2 max-w-[36ch] font-body text-[clamp(1rem,1.3vw,1.15rem)] font-medium leading-[1.6] text-pale-tint opacity-90">
-                18 questions, 4 to 5 minutes, one honest reading of who you are right now.
+                15 questions, 4 to 5 minutes, one honest reading of who you are right now.
               </p>
 
               <CTAButton onClick={start} className="mt-2.5">
@@ -181,7 +181,7 @@ export default function Intro() {
           </p>
 
           <TrustMarkers
-            items={["18 questions", "4–5 minutes", "A reflection, not a diagnosis"]}
+            items={["15 questions", "4–5 minutes", "A reflection, not a diagnosis"]}
             className="mb-[34px] justify-center"
           />
 

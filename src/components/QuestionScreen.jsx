@@ -1,8 +1,7 @@
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 
 /**
- * One question, five tap-target options. No pillar labels, no scores,
- * no visual difference between scored and reverse-scored items.
+ * One question, five tap-target options. No pillar labels, no scores.
  */
 export default function QuestionScreen({ question, onAnswer, onBack, canGoBack }) {
   const reduceMotion = useReducedMotion();
