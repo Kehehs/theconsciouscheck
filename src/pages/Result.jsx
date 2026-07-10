@@ -64,7 +64,7 @@ export default function Result() {
           disabled={downloading}
           className="mt-3 min-h-[48px] rounded-full border border-tint-blue/30 bg-transparent px-6 py-3 font-body text-sm font-bold text-tint-blue disabled:opacity-60"
         >
-          {downloading ? "Preparing image..." : "Save / share your card"}
+          {downloading ? "Preparing image..." : "Save your card"}
         </button>
 
         {/* 3. Archetype name + identity */}

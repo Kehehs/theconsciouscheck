@@ -10,7 +10,7 @@ const ResultCard = forwardRef(function ResultCard({ archetype }, ref) {
   return (
     <div
       ref={ref}
-      className="mx-auto w-[80%] max-w-[460px] overflow-hidden rounded-2xl sm:w-[85%]"
+      className="mx-auto w-[94%] max-w-[640px] overflow-hidden rounded-2xl sm:w-full"
       style={{ boxShadow: "0 30px 70px -20px rgba(0,0,0,0.6)" }}
     >
       <img
