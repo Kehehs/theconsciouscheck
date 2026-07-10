@@ -1,17 +1,17 @@
 import { forwardRef } from "react";
-import RadarChart from "./RadarChart";
 
 /**
- * The shareable visual: archetype card art + radar + watermark.
- * Deliberately NOT in the navy/bubble theme — this is the mythic-tarot
- * handoff, a clean cut from the rest of the result page's chrome.
+ * The shareable visual: the archetype's full mythic-tarot-deck card art,
+ * nothing else. This is the exact node html-to-image captures, so no
+ * radar/data-viz or extra panel lives inside or beneath it — v2 result
+ * page design spec removed those entirely.
  */
-const ResultCard = forwardRef(function ResultCard({ archetype, pillarScores }, ref) {
+const ResultCard = forwardRef(function ResultCard({ archetype }, ref) {
   return (
     <div
       ref={ref}
-      className="mx-auto w-full max-w-[420px] overflow-hidden rounded-[20px]"
-      style={{ background: "#0d0704", boxShadow: "0 30px 70px -20px rgba(0,0,0,0.6)" }}
+      className="mx-auto w-[80%] max-w-[460px] overflow-hidden rounded-2xl sm:w-[85%]"
+      style={{ boxShadow: "0 30px 70px -20px rgba(0,0,0,0.6)" }}
     >
       <img
         src={archetype.cardImage}
@@ -19,17 +19,6 @@ const ResultCard = forwardRef(function ResultCard({ archetype, pillarScores }, r
         className="block w-full"
         crossOrigin="anonymous"
       />
-      <div className="bg-[#f6ecd9] px-5 pb-5 pt-4">
-        <RadarChart pillarScores={pillarScores} />
-      </div>
-      <div className="flex items-center justify-between bg-[#f6ecd9] px-5 pb-4">
-        <span className="font-body text-[11px] font-bold uppercase tracking-[0.08em] text-[#6b4a2b]">
-          The Conscious Check
-        </span>
-        <span className="font-body text-[11px] font-bold text-[#6b4a2b]">
-          imalcares.org/check
-        </span>
-      </div>
     </div>
   );
 });

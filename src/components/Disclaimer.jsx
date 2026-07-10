@@ -1,19 +1,24 @@
 import shared from "../data/shared.json";
 
 /**
- * Full disclaimer text, positioned next to the score (not a footer),
- * per the result-page content spec.
+ * Highlighted callout, distinct from the page's navy — warm amber tint
+ * with a solid amber border and dark text, so it reads as a distinct box
+ * at a glance, before the body copy is even read. Sits directly after
+ * the composite band ("near the score"), never in a footer.
  */
 export default function Disclaimer() {
   return (
     <div
-      className="mx-auto max-w-[600px] rounded-2xl border px-6 py-5 text-center"
+      className="mx-auto max-w-[600px] rounded-2xl border-2 px-6 py-5 text-center"
       style={{
-        background: "rgba(169, 198, 232, 0.05)",
-        borderColor: "rgba(169, 198, 232, 0.15)",
+        background: "#f3ddc4",
+        borderColor: "#e97f3f",
       }}
     >
-      <p className="font-body text-sm leading-[1.7] text-pale-tint opacity-85">
+      <p className="font-display mb-2 text-xs font-semibold uppercase tracking-[0.08em]" style={{ color: "#b35a1f" }}>
+        A reflection, not a diagnosis
+      </p>
+      <p className="font-body text-sm leading-[1.7]" style={{ color: "#3a2a1a" }}>
         {shared.disclaimer}
       </p>
     </div>
