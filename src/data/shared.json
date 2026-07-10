@@ -1,0 +1,37 @@
+{
+  "compositeBands": [
+    {
+      "id": "nascent",
+      "label": "Nascent",
+      "min": 0,
+      "max": 44,
+      "text": "You're at the start of noticing. That's not a low score, it's an honest one. Most of what shapes a conscious life hasn't become habit yet, it's still a choice you're making on and off. The archetype below is your lean, not your ceiling."
+    },
+    {
+      "id": "developing",
+      "label": "Developing",
+      "min": 45,
+      "max": 64,
+      "text": "You're catching yourself more often than you used to. Some of this has become instinct, some of it still needs a reminder. That's exactly where growth actually happens, in the middle, not at the finish line."
+    },
+    {
+      "id": "practising",
+      "label": "Practising",
+      "min": 65,
+      "max": 79,
+      "text": "This is showing up in how you actually live, not just how you think. It's becoming who you are on an ordinary Tuesday, not just on your best days."
+    },
+    {
+      "id": "integrated",
+      "label": "Integrated",
+      "min": 80,
+      "max": 100,
+      "text": "This isn't something you're working on anymore, it's something you already live by. That doesn't mean the work is over. It means it's stopped feeling like work."
+    }
+  ],
+  "disclaimer": "The Conscious Check is a reflection tool, not a diagnosis. It's designed to help you notice patterns in how you already live, not to measure, rank, or clinically assess you. Your result is a mirror, not a verdict. Take what's useful, leave what isn't, and know that you can retake this as you change.",
+  "cta": {
+    "supportingLine": "Others got this result too. Come meet them.",
+    "buttonLabel": "Join your archetype's community"
+  }
+}
