@@ -3,7 +3,7 @@ import { useParams, useLocation, Link } from "react-router-dom";
 import { toPng } from "html-to-image";
 import archetypes from "../data/archetypes.json";
 import shared from "../data/shared.json";
-import { getCompositeBand, submitToWhatsAppRouting } from "../lib/scoring";
+import { submitToWhatsAppRouting } from "../lib/scoring";
 import ResultCard from "../components/ResultCard";
 import CompositeBand from "../components/CompositeBand";
 import Disclaimer from "../components/Disclaimer";
@@ -17,18 +17,20 @@ export default function Result() {
 
   const archetype = archetypes[archetypeId];
   const result = location.state?.result;
-  const composite = result?.composite ?? 60;
-  const bandId = result?.band ?? getCompositeBand(composite);
 
-  if (!archetype) {
+  if (!archetype || !result) {
     return (
       <div className="flex min-h-screen items-center justify-center bg-navy-primary px-6 text-center text-white">
         <p className="font-body">
-          We couldn't find that result. <Link to="/" className="text-amber-soft underline">Start over</Link>
+          Your session's expired, or you haven't completed the check yet.{" "}
+          <Link to="/quiz" className="text-amber-soft underline">Take the check</Link>
         </p>
       </div>
     );
   }
+
+  const composite = result.composite;
+  const bandId = result.band;
 
   const handleShare = async () => {
     if (!cardRef.current) return;
