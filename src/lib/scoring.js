@@ -90,12 +90,21 @@ export function getCompositeBand(composite) {
   return "nascent";
 }
 
+// Two mathematically-equal normalized scores can land on different floats
+// depending on which arithmetic path produced them (e.g. 66.66666666666666
+// vs 66.66666666666667). Round to 2 decimal places — plenty of precision
+// for a 0-100 scale — before any tie/threshold comparison so a rounding
+// artifact never masks (or fakes) a tie.
+function round2(value) {
+  return Math.round(value * 100) / 100;
+}
+
 /**
  * Pure function: pillarScores -> archetype id.
  * Isolated from scoreQuiz so it's directly unit-testable.
  */
 export function resolveArchetype(pillarScores) {
-  const values = PILLARS.map((p) => pillarScores[p].normalized);
+  const values = PILLARS.map((p) => round2(pillarScores[p].normalized));
   const allEqual = values.every((v) => v === values[0]);
 
   if (allEqual) return "confluence";
@@ -105,7 +114,7 @@ export function resolveArchetype(pillarScores) {
 
   const highest = Math.max(...values);
   const winner = TIEBREAK_ORDER.find(
-    (pillar) => pillarScores[pillar].normalized === highest
+    (pillar) => round2(pillarScores[pillar].normalized) === highest
   );
 
   return PILLAR_TO_ARCHETYPE[winner];
