@@ -12,6 +12,7 @@ export default function Quiz() {
   const reduceMotion = useReducedMotion();
   const { answers, currentIndex, answerQuestion, goBack, reset } = useQuizStore();
   const [calculating, setCalculating] = useState(false);
+  const [incomplete, setIncomplete] = useState(false);
 
   const total = questions.length;
   const current = questions[currentIndex];
@@ -23,12 +24,42 @@ export default function Quiz() {
       setCalculating(true);
       const finalAnswers = { ...answers, [current.id]: value };
       setTimeout(() => {
-        const result = scoreQuiz(finalAnswers);
-        reset();
-        navigate(`/result/${result.archetypeId}`, { state: { result } });
+        try {
+          const result = scoreQuiz(finalAnswers);
+          reset();
+          navigate(`/result/${result.archetypeId}`, { state: { result } });
+        } catch (err) {
+          // Should be unreachable — Quiz's own flow only ever advances one
+          // answer at a time, so the last question can't be reached without
+          // every prior one recorded. If scoreQuiz's guard still fires,
+          // fail safe: restart rather than show a skewed result.
+          console.error("scoreQuiz refused incomplete answers", err);
+          setCalculating(false);
+          setIncomplete(true);
+        }
       }, 2200);
     }
   };
+
+  if (incomplete) {
+    return (
+      <div className="flex min-h-screen flex-col items-center justify-center gap-6 bg-navy-primary px-6 text-center">
+        <p className="font-body text-base text-white">
+          Something went wrong reading your answers. Let's start again.
+        </p>
+        <button
+          type="button"
+          onClick={() => {
+            reset();
+            setIncomplete(false);
+          }}
+          className="min-h-[48px] rounded-full border border-tint-blue/30 bg-transparent px-6 py-3 font-body text-sm font-bold text-tint-blue"
+        >
+          Restart the check
+        </button>
+      </div>
+    );
+  }
 
   if (calculating) {
     return (

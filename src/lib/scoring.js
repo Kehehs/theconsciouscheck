@@ -30,8 +30,22 @@ const PILLAR_TO_ARCHETYPE = {
 /**
  * answers: { [questionId]: 1-5 } raw tap-target values, one per item in
  * questions.json (15 scored items, 3 per pillar).
+ *
+ * scoreQuiz assumes complete answers by design and should never receive
+ * partial data if the caller's own flow is working correctly — the guard
+ * below throws instead of silently scoring on a partial set, so a bug
+ * upstream fails loudly here rather than producing a skewed result.
  */
 export function scoreQuiz(answers) {
+  const missingIds = questions
+    .filter((q) => !(q.id in answers))
+    .map((q) => q.id);
+  if (missingIds.length > 0) {
+    throw new Error(
+      `scoreQuiz requires an answer for every question; missing: ${missingIds.join(", ")}`
+    );
+  }
+
   const pillarScores = {};
 
   for (const pillar of PILLARS) {
@@ -39,7 +53,7 @@ export function scoreQuiz(answers) {
     const minPossible = items.length * 1;
     const maxPossible = items.length * 5;
 
-    const raw = items.reduce((sum, q) => sum + (answers[q.id] ?? 0), 0);
+    const raw = items.reduce((sum, q) => sum + answers[q.id], 0);
 
     const normalized =
       ((raw - minPossible) / (maxPossible - minPossible)) * 100;
