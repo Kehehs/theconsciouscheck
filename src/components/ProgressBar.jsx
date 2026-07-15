@@ -1,17 +1,22 @@
 import { motion } from "framer-motion";
+import { useQuizStore } from "../store/quizStore";
+import uiStrings from "../data/uiStrings.json";
 
 /**
- * `current` / `total` are the numbers shown to the user (see
- * CLAUDE.md "Quiz question count" — presented count intentionally
- * differs from the true 18-item answer sequence).
+ * `current` / `total` are the numbers shown to the user, taken directly
+ * from questions.json's length (15) — no separate hidden item count.
  */
 export default function ProgressBar({ current, total }) {
+  const language = useQuizStore((state) => state.language);
   const pct = Math.min(100, (current / total) * 100);
+  const label = uiStrings.questionProgress[language]
+    .replace("{current}", current)
+    .replace("{total}", total);
 
   return (
     <div className="w-full">
       <p className="mb-2 font-body text-[13px] font-bold text-tint-blue">
-        Question {current} of {total}
+        {label}
       </p>
       <div
         className="h-2 w-full overflow-hidden rounded-full"

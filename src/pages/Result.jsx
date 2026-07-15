@@ -3,17 +3,21 @@ import { useParams, useLocation, Link } from "react-router-dom";
 import { toPng } from "html-to-image";
 import archetypes from "../data/archetypes.json";
 import shared from "../data/shared.json";
+import uiStrings from "../data/uiStrings.json";
 import { submitToWhatsAppRouting } from "../lib/scoring";
+import { useQuizStore } from "../store/quizStore";
 import ResultCard from "../components/ResultCard";
 import CompositeBand from "../components/CompositeBand";
 import Disclaimer from "../components/Disclaimer";
 import CTAButton from "../components/CTAButton";
+import LanguageToggle from "../components/LanguageToggle";
 
 export default function Result() {
   const { archetype: archetypeId } = useParams();
   const location = useLocation();
   const cardRef = useRef(null);
   const [downloading, setDownloading] = useState(false);
+  const language = useQuizStore((state) => state.language);
 
   const archetype = archetypes[archetypeId];
   const result = location.state?.result;
@@ -21,9 +25,10 @@ export default function Result() {
   if (!archetype || !result) {
     return (
       <div className="flex min-h-screen items-center justify-center bg-navy-primary px-6 text-center text-white">
+        <LanguageToggle />
         <p className="font-body">
-          Your session's expired, or you haven't completed the check yet.{" "}
-          <Link to="/quiz" className="text-amber-soft underline">Take the check</Link>
+          {uiStrings.expiredMessage[language]}{" "}
+          <Link to="/quiz" className="text-amber-soft underline">{uiStrings.takeTheCheck[language]}</Link>
         </p>
       </div>
     );
@@ -55,6 +60,7 @@ export default function Result() {
 
   return (
     <div className="min-h-screen bg-navy-primary px-6 py-16">
+      <LanguageToggle />
       <div className="mx-auto flex max-w-[640px] flex-col items-center gap-3">
         {/* 1. Result card (hero) */}
         <ResultCard ref={cardRef} archetype={archetype} />
@@ -66,7 +72,7 @@ export default function Result() {
           disabled={downloading}
           className="mt-3 min-h-[48px] rounded-full border border-tint-blue/30 bg-transparent px-6 py-3 font-body text-sm font-bold text-tint-blue disabled:opacity-60"
         >
-          {downloading ? "Preparing image..." : "Save your card"}
+          {downloading ? uiStrings.preparingImage[language] : uiStrings.saveYourCard[language]}
         </button>
 
         {/* 3. Archetype name + identity */}
@@ -75,7 +81,7 @@ export default function Result() {
             {archetype.name}
           </h1>
           <p className="font-body text-base italic text-pale-tint opacity-80">
-            {archetype.identity}
+            {archetype.identity[language]}
           </p>
         </div>
 
@@ -91,7 +97,7 @@ export default function Result() {
 
         {/* 6. Recognition paragraph */}
         <p className="mt-10 w-full max-w-[600px] font-body text-[1.05rem] leading-[1.7] text-pale-tint">
-          {archetype.recognition}
+          {archetype.recognition[language]}
         </p>
 
         {/* 7. Divider */}
@@ -107,10 +113,10 @@ export default function Result() {
             }}
           >
             <h3 className="font-display mb-1.5 text-sm font-semibold uppercase tracking-[0.06em] text-amber-soft">
-              Light
+              {uiStrings.sectionLight[language]}
             </h3>
             <p className="font-body text-[0.98rem] leading-[1.65] text-pale-tint">
-              {archetype.light}
+              {archetype.light[language]}
             </p>
           </div>
           <div
@@ -121,24 +127,24 @@ export default function Result() {
             }}
           >
             <h3 className="font-display mb-1.5 text-sm font-semibold uppercase tracking-[0.06em] text-tint-blue">
-              Shadow
+              {uiStrings.sectionShadow[language]}
             </h3>
             <p className="font-body text-[0.98rem] leading-[1.65] text-pale-tint">
-              {archetype.shadow}
+              {archetype.shadow[language]}
             </p>
           </div>
         </div>
 
-        {/* 9. Growth Edge, standout callout */}
+        {/* 9. Your Growth Trajectory, standout callout */}
         <div
           className="mt-6 w-full max-w-[600px] rounded-xl px-6 py-5 text-center"
           style={{ background: "rgba(255, 255, 255, 0.06)" }}
         >
           <h3 className="font-display mb-2 text-xs font-semibold uppercase tracking-[0.1em] text-amber-soft">
-            Growth Edge
+            {uiStrings.sectionGrowthTrajectory[language]}
           </h3>
           <p className="font-body text-lg font-semibold leading-snug text-white">
-            {archetype.growthEdge}
+            {archetype.growthTrajectory[language]}
           </p>
         </div>
 
@@ -148,40 +154,40 @@ export default function Result() {
         <div className="grid w-full max-w-[600px] grid-cols-1 gap-6 sm:grid-cols-2">
           <div>
             <h3 className="font-display mb-1.5 text-sm font-semibold uppercase tracking-[0.06em] text-amber-soft">
-              Career
+              {uiStrings.sectionCareer[language]}
             </h3>
             <p className="font-body text-[0.98rem] leading-[1.65] text-pale-tint">
-              {archetype.career}
+              {archetype.career[language]}
             </p>
           </div>
           <div>
             <h3 className="font-display mb-1.5 text-sm font-semibold uppercase tracking-[0.06em] text-amber-soft">
-              Relationships
+              {uiStrings.sectionRelationships[language]}
             </h3>
             <p className="font-body text-[0.98rem] leading-[1.65] text-pale-tint">
-              {archetype.relationships}
+              {archetype.relationships[language]}
             </p>
           </div>
         </div>
 
         {/* 11. Closing line */}
         <p className="my-12 max-w-[520px] text-center font-display text-base italic text-white sm:text-[1.05rem]">
-          {archetype.closingLine}
+          {archetype.closingLine[language]}
         </p>
 
         {/* 12. CTA */}
         <div className="flex w-full flex-col items-center gap-3 text-center">
           <p className="font-body text-sm text-pale-tint opacity-80">
-            {shared.cta.supportingLine}
+            {shared.cta.supportingLine[language]}
           </p>
           <CTAButton onClick={handleJoinCommunity} size="large" className="w-full sm:w-auto">
-            {shared.cta.buttonLabel}
+            {shared.cta.buttonLabel[language]}
           </CTAButton>
           <Link
             to="/"
             className="mt-1 font-body text-xs font-semibold text-tint-blue opacity-60 hover:opacity-90"
           >
-            Retake the check
+            {uiStrings.retakeTheCheck[language]}
           </Link>
         </div>
       </div>

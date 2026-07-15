@@ -1,4 +1,6 @@
 import shared from "../data/shared.json";
+import uiStrings from "../data/uiStrings.json";
+import { useQuizStore } from "../store/quizStore";
 
 /**
  * Highlighted callout, distinct from the page's navy — warm amber tint
@@ -7,6 +9,8 @@ import shared from "../data/shared.json";
  * the composite band ("near the score"), never in a footer.
  */
 export default function Disclaimer() {
+  const language = useQuizStore((state) => state.language);
+
   return (
     <div
       className="mx-auto max-w-[600px] rounded-2xl border-2 px-6 py-5 text-center"
@@ -16,10 +20,10 @@ export default function Disclaimer() {
       }}
     >
       <p className="font-display mb-2 text-xs font-semibold uppercase tracking-[0.08em]" style={{ color: "#b35a1f" }}>
-        A reflection, not a diagnosis
+        {uiStrings.disclaimerEyebrow[language]}
       </p>
       <p className="font-body text-sm leading-[1.7]" style={{ color: "#3a2a1a" }}>
-        {shared.disclaimer}
+        {shared.disclaimer[language]}
       </p>
     </div>
   );

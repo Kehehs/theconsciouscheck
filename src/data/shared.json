@@ -2,36 +2,57 @@
   "compositeBands": [
     {
       "id": "nascent",
-      "label": "Nascent",
+      "label": { "en": "Nascent", "hi": "Nascent" },
       "min": 0,
       "max": 44,
-      "text": "You're at the start of noticing. That's not a low score, it's an honest one. Most of what shapes a conscious life hasn't become habit yet, it's still a choice you're making on and off. The archetype below is your lean, not your ceiling."
+      "text": {
+        "en": "You're at the start of noticing. That's not a low score, it's an honest one. Most of what shapes a conscious life hasn't become habit yet, it's still a choice you're making on and off. The archetype below is your lean, not your ceiling.",
+        "hi": "आप अभी notice करना शुरू कर रहे हैं। ये कम score नहीं है, ये honest score है। Conscious living जिन चीज़ों से बनती है, उनमें से ज़्यादातर अभी habit नहीं बनी, अभी भी आप कभी-कभी choose करते हैं। नीचे जो archetype है, वो आपका lean है, आपकी सीमा नहीं।"
+      }
     },
     {
       "id": "developing",
-      "label": "Developing",
+      "label": { "en": "Developing", "hi": "Developing" },
       "min": 45,
       "max": 64,
-      "text": "You're catching yourself more often than you used to. Some of this has become instinct, some of it still needs a reminder. That's exactly where growth actually happens, in the middle, not at the finish line."
+      "text": {
+        "en": "You're catching yourself more often than you used to. Some of this has become instinct, some of it still needs a reminder. That's exactly where growth actually happens, in the middle, not at the finish line.",
+        "hi": "आप पहले से ज़्यादा बार खुद को पकड़ रहे हैं। कुछ बातें अब instinct बन गई हैं, कुछ को अभी भी reminder चाहिए। growth यहीं होती है, बीच में, finish line पर नहीं।"
+      }
     },
     {
       "id": "practising",
-      "label": "Practising",
+      "label": { "en": "Practising", "hi": "Practising" },
       "min": 65,
       "max": 79,
-      "text": "This is showing up in how you actually live, not just how you think. It's becoming who you are on an ordinary Tuesday, not just on your best days."
+      "text": {
+        "en": "This is showing up in how you actually live, not just how you think. It's becoming who you are on an ordinary Tuesday, not just on your best days.",
+        "hi": "ये अब सिर्फ़ सोच में नहीं, आपके जीने के तरीके में दिख रहा है। ये एक आम मंगलवार का हिस्सा बन रहा है, सिर्फ़ आपके सबसे अच्छे दिनों का नहीं।"
+      }
     },
     {
       "id": "integrated",
-      "label": "Integrated",
+      "label": { "en": "Integrated", "hi": "Integrated" },
       "min": 80,
       "max": 100,
-      "text": "This isn't something you're working on anymore, it's something you already live by. That doesn't mean the work is over. It means it's stopped feeling like work."
+      "text": {
+        "en": "This isn't something you're working on anymore, it's something you already live by. That doesn't mean the work is over. It means it's stopped feeling like work.",
+        "hi": "अब ये कोई ऐसी चीज़ नहीं जिस पर आप काम कर रहे हैं, ये वो है जिससे आप जीते हैं। इसका मतलब ये नहीं कि काम खत्म हो गया। इसका मतलब है कि अब ये काम जैसा नहीं लगता।"
+      }
     }
   ],
-  "disclaimer": "The Conscious Check is a reflection tool, not a diagnosis. It's designed to help you notice patterns in how you already live, not to measure, rank, or clinically assess you. Your result is a mirror, not a verdict. Take what's useful, leave what isn't, and know that you can retake this as you change.",
+  "disclaimer": {
+    "en": "The Conscious Check is a reflection tool, not a diagnosis. It's designed to help you notice patterns in how you already live, not to measure, rank, or clinically assess you. Your result is a mirror, not a verdict. Take what's useful, leave what isn't, and know that you can retake this as you change.",
+    "hi": "The Conscious Check एक reflection tool है, कोई diagnosis नहीं। ये इसलिए बना है ताकि आप अपने जीने के तरीके में patterns notice कर सकें, ना कि आपको measure, rank, या clinically assess किया जाए। आपका result एक mirror है, कोई verdict नहीं। जो काम का लगे वो रखिए, जो नहीं, उसे छोड़ दीजिए, और ये जानिए कि आप बदलते वक़्त इसे फिर से ले सकते हैं।"
+  },
   "cta": {
-    "supportingLine": "Others got this result too. Come meet them.",
-    "buttonLabel": "Join your archetype's community"
+    "supportingLine": {
+      "en": "Others got this result too. Come meet them.",
+      "hi": "और भी लोगों को ये result मिला है। उनसे मिलिए।"
+    },
+    "buttonLabel": {
+      "en": "Join your archetype's community",
+      "hi": "अपने archetype की community join कीजिए"
+    }
   }
 }

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Nunito:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Hind:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -12,8 +12,15 @@
   --color-amber-accent: #e97f3f;
   --color-amber-soft: #f0a874;
 
-  --font-display: "Fredoka", system-ui, sans-serif;
-  --font-body: "Nunito", system-ui, sans-serif;
+  /* Fredoka/Nunito had no Devanagari coverage (Quiz/Result render Hindi
+     via the language toggle); swapped for a Devanagari-compatible pairing
+     with the closest match to the original rounded/friendly weight. This
+     is a global swap (Intro included) since font-family is set via these
+     shared variables, not scoped per page — Baloo 2 / Hind render Latin
+     text fine too, so Intro's English-only content is unaffected in
+     substance, just restyled. */
+  --font-display: "Baloo 2", system-ui, sans-serif;
+  --font-body: "Hind", system-ui, sans-serif;
 }
 
 @layer base {

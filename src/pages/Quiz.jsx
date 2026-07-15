@@ -1,18 +1,29 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion, useReducedMotion } from "framer-motion";
 import questions from "../data/questions.json";
 import { useQuizStore } from "../store/quizStore";
 import { scoreQuiz } from "../lib/scoring";
+import uiStrings from "../data/uiStrings.json";
 import ProgressBar from "../components/ProgressBar";
 import QuestionScreen from "../components/QuestionScreen";
+import LanguageToggle from "../components/LanguageToggle";
 
 export default function Quiz() {
   const navigate = useNavigate();
   const reduceMotion = useReducedMotion();
-  const { answers, currentIndex, answerQuestion, goBack, reset } = useQuizStore();
+  const { answers, currentIndex, language, answerQuestion, goBack, reset, setLanguage } =
+    useQuizStore();
   const [calculating, setCalculating] = useState(false);
   const [incomplete, setIncomplete] = useState(false);
+
+  // Every user starts the quiz in English — this fires on page entry
+  // (mount), not on the internal reset() call right before navigating to
+  // Result, so Result still reflects whatever language was active when
+  // the user finished.
+  useEffect(() => {
+    setLanguage("en");
+  }, [setLanguage]);
 
   const total = questions.length;
   const current = questions[currentIndex];
@@ -44,8 +55,9 @@ export default function Quiz() {
   if (incomplete) {
     return (
       <div className="flex min-h-screen flex-col items-center justify-center gap-6 bg-navy-primary px-6 text-center">
+        <LanguageToggle />
         <p className="font-body text-base text-white">
-          Something went wrong reading your answers. Let's start again.
+          {uiStrings.incompleteMessage[language]}
         </p>
         <button
           type="button"
@@ -55,7 +67,7 @@ export default function Quiz() {
           }}
           className="min-h-[48px] rounded-full border border-tint-blue/30 bg-transparent px-6 py-3 font-body text-sm font-bold text-tint-blue"
         >
-          Restart the check
+          {uiStrings.restartCheck[language]}
         </button>
       </div>
     );
@@ -64,6 +76,7 @@ export default function Quiz() {
   if (calculating) {
     return (
       <div className="flex min-h-screen flex-col items-center justify-center bg-navy-primary px-6 text-center">
+        <LanguageToggle />
         <motion.div
           className="mb-6 h-16 w-16 rounded-full border-4 border-amber-accent/30 border-t-amber-accent"
           animate={reduceMotion ? {} : { rotate: 360 }}
@@ -75,7 +88,7 @@ export default function Quiz() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          Reading what you told us...
+          {uiStrings.calculating[language]}
         </motion.p>
       </div>
     );
@@ -83,6 +96,7 @@ export default function Quiz() {
 
   return (
     <div className="min-h-screen bg-navy-primary px-6 py-12 md:py-20">
+      <LanguageToggle />
       <div className="mx-auto mb-10 w-full max-w-[640px]">
         <ProgressBar current={currentIndex + 1} total={total} />
       </div>

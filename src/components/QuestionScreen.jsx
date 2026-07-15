@@ -1,10 +1,15 @@
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import { useQuizStore } from "../store/quizStore";
+import uiStrings from "../data/uiStrings.json";
 
 /**
  * One question, five tap-target options. No pillar labels, no scores.
+ * Reads displayed text from question.stem[lang]/option[lang] — the
+ * underlying answer value (option index, 1-5) is language-independent.
  */
 export default function QuestionScreen({ question, onAnswer, onBack, canGoBack }) {
   const reduceMotion = useReducedMotion();
+  const language = useQuizStore((state) => state.language);
 
   return (
     <AnimatePresence mode="wait">
@@ -17,7 +22,7 @@ export default function QuestionScreen({ question, onAnswer, onBack, canGoBack }
         className="mx-auto w-full max-w-[640px]"
       >
         <h2 className="font-display mb-8 text-[clamp(1.4rem,3vw,1.9rem)] font-semibold leading-snug text-white">
-          {question.stem}
+          {question.stem[language]}
         </h2>
 
         <div className="flex flex-col gap-3">
@@ -40,7 +45,7 @@ export default function QuestionScreen({ question, onAnswer, onBack, canGoBack }
                 e.currentTarget.style.borderColor = "rgba(169, 198, 232, 0.18)";
               }}
             >
-              {option}
+              {option[language]}
             </button>
           ))}
         </div>
@@ -51,7 +56,7 @@ export default function QuestionScreen({ question, onAnswer, onBack, canGoBack }
             onClick={onBack}
             className="mt-8 min-h-[48px] font-body text-sm font-semibold text-tint-blue opacity-70 transition-opacity hover:opacity-100"
           >
-            ← Back
+            {uiStrings.back[language]}
           </button>
         )}
       </motion.div>

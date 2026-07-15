@@ -1,0 +1,19 @@
+{
+  "_note": "UI chrome strings on Quiz/Result not present in any of the 4 source docs (Conscious_Check_Questions_EN/HI_Final.md, Result Page Content v3/Hindi v1). hi values are TODO_HI placeholders — not translations, flagged for Apeksha/Shubhra review, matching how the source docs flag their own drafts.",
+  "back": { "en": "← Back", "hi": "TODO_HI: ← Back" },
+  "questionProgress": { "en": "Question {current} of {total}", "hi": "TODO_HI: Question {current} of {total}" },
+  "calculating": { "en": "Reading what you told us...", "hi": "TODO_HI: Reading what you told us..." },
+  "incompleteMessage": { "en": "Something went wrong reading your answers. Let's start again.", "hi": "TODO_HI: Something went wrong reading your answers. Let's start again." },
+  "restartCheck": { "en": "Restart the check", "hi": "TODO_HI: Restart the check" },
+  "expiredMessage": { "en": "Your session's expired, or you haven't completed the check yet.", "hi": "TODO_HI: Your session's expired, or you haven't completed the check yet." },
+  "takeTheCheck": { "en": "Take the check", "hi": "TODO_HI: Take the check" },
+  "preparingImage": { "en": "Preparing image...", "hi": "TODO_HI: Preparing image..." },
+  "saveYourCard": { "en": "Save your card", "hi": "TODO_HI: Save your card" },
+  "retakeTheCheck": { "en": "Retake the check", "hi": "TODO_HI: Retake the check" },
+  "disclaimerEyebrow": { "en": "A reflection, not a diagnosis", "hi": "TODO_HI: A reflection, not a diagnosis" },
+  "sectionLight": { "en": "Light", "hi": "TODO_HI: Light" },
+  "sectionShadow": { "en": "Shadow", "hi": "TODO_HI: Shadow" },
+  "sectionGrowthTrajectory": { "en": "Your Growth Trajectory", "hi": "TODO_HI: Your Growth Trajectory" },
+  "sectionCareer": { "en": "Career", "hi": "TODO_HI: Career" },
+  "sectionRelationships": { "en": "Relationships", "hi": "TODO_HI: Relationships" }
+}

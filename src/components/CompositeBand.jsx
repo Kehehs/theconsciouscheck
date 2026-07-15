@@ -1,4 +1,5 @@
 import shared from "../data/shared.json";
+import { useQuizStore } from "../store/quizStore";
 
 /**
  * Small, centred, quiet — context for the archetype below, not a second
@@ -7,15 +8,16 @@ import shared from "../data/shared.json";
  * the recognition paragraph further down.
  */
 export default function CompositeBand({ bandId, composite }) {
+  const language = useQuizStore((state) => state.language);
   const band = shared.compositeBands.find((b) => b.id === bandId);
   if (!band) return null;
 
   return (
     <div className="mx-auto max-w-[440px] text-center">
       <p className="font-display mb-2 text-sm font-semibold uppercase tracking-[0.1em] text-amber-soft">
-        {band.label} · {Math.round(composite)}/100
+        {band.label[language]} · {Math.round(composite)}/100
       </p>
-      <p className="font-body text-sm leading-[1.6] text-pale-tint opacity-75">{band.text}</p>
+      <p className="font-body text-sm leading-[1.6] text-pale-tint opacity-75">{band.text[language]}</p>
     </div>
   );
 }

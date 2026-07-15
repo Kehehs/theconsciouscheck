@@ -2,181 +2,256 @@
   {
     "id": "Q1",
     "pillar": "Consciousness",
-    "stem": "Someone says the thing that gets under your skin. Before you react, what happens?",
+    "type": "Situational",
+    "reverse": true,
+    "stem": {
+      "en": "A family member makes a comment about your choices, something they've said many times before. It stings a little. What do you do next?",
+      "hi": "घर में कोई आपकी choices पर वही बात फिर से कह देता है, जो कई बार कह चुका है। वो बात थोड़ी चुभती है। आप क्या करते हैं?"
+    },
     "options": [
-      "It's out of my mouth before I've even clocked that I'm angry.",
-      "I usually work out what sets me off a few hours later.",
-      "Depends on the day, and honestly on who it is.",
-      "I can mostly stop myself before I say the thing.",
-      "I sit with it first now, understand what's this really about, before I do anything."
+      { "en": "I snap back before I've even registered that I'm annoyed.", "hi": "गुस्सा समझ में आने से पहले ही जवाब मुँह से निकल जाता है।" },
+      { "en": "I let it go in the moment, then chew on it for the rest of the evening.", "hi": "उस वक़्त तो छोड़ देता हूँ, फिर पूरी शाम वही बात दिमाग में चलती रहती है।" },
+      { "en": "Depends on the day, and on who said it.", "hi": "दिन पर depend करता है, और इस पर भी कि कहा किसने है।" },
+      { "en": "I feel it rise, and I can usually stop myself from reacting.", "hi": "अंदर ही अंदर थोड़ा गुस्सा आता है, पर मैं ज़्यादातर खुद को रोक लेता हूँ।" },
+      { "en": "I sit with it, work out why this particular thing still gets to me, and go from there.", "hi": "मैं समझता हूँ कि ये बात आज भी क्यों बुरी लगती है, फिर आगे बढ़ता हूँ।" }
     ]
   },
   {
     "id": "Q2",
-    "pillar": "Engagement",
-    "stem": "When you give your time or your money, what's usually going on underneath?",
+    "pillar": "Action",
+    "type": "Direct",
+    "reverse": false,
+    "stem": {
+      "en": "It's 1 a.m., you've watched four episodes back to back, and the fifth is counting down to autoplay. What usually happens?",
+      "hi": "रात के 1 बज रहे हैं, आप एक TV series के चार episode लगातार देख चुके हैं, और पाँचवाँ autoplay पर चलने वाला है। आमतौर पर क्या होता है?"
+    },
     "options": [
-      "I give when I'm asked and don't really think past it.",
-      "Mostly it's the quick hit of feeling good about myself.",
-      "Sometimes I check where it goes, mostly I don't.",
-      "I usually want to know it's actually doing something.",
-      "I put it where it changes something, not where it feels nicest to give."
+      { "en": "I watch it. The next one always starts before I've decided anything.", "hi": "देख लेता हूँ। अगला शुरू हो जाता है, इससे पहले कि मैं कुछ तय कर पाऊँ।" },
+      { "en": "I only realise I've had too much the next morning.", "hi": "अगली सुबह समझ आता है कि ज़्यादा हो गया।" },
+      { "en": "Sometimes I stop, mostly I don't.", "hi": "कभी रुक जाता हूँ, ज़्यादातर नहीं।" },
+      { "en": "I usually notice I've had enough and shut it off.", "hi": "आमतौर पर समझ जाता हूँ कि बहुत हुआ, और बंद कर देता हूँ।" },
+      { "en": "The moment I've had enough, I stop. It's automatic now.", "hi": "जिस पल लगता है कि बहुत हो गया, वहीं रोक देता हूँ।" }
     ]
   },
   {
     "id": "Q3",
-    "pillar": "Action",
-    "stem": "Something's sitting in your cart. What usually happens next?",
+    "pillar": "Responsibility",
+    "type": "Values-based",
+    "reverse": false,
+    "stem": {
+      "en": "You're making a decision that affects someone else, not just you. What actually decides it?",
+      "hi": "आप ऐसा फैसला ले रहे हैं जिसका असर सिर्फ़ आप पर नहीं, किसी और पर भी पड़ेगा। आपके लिए क्या मायने रखता है?"
+    },
     "options": [
-      "Once it's in the cart it's basically mine, the buying's already done in my head.",
-      "I realize I didn't need it by the time it reaches my door.",
-      "A big purchase I'll think through; a ₹300 impulse buy just happens.",
-      "I usually let it sit a night before I actually check out.",
-      "If I still want it a few days later, that's the only time it gets bought."
+      { "en": "Whatever works out best for me.", "hi": "जो मेरे लिए सबसे अच्छा हो।" },
+      { "en": "Whatever's easiest, and I justify it afterwards.", "hi": "जो सबसे आसान हो, और बाद में उसे सही ठहरा लेता हूँ।" },
+      { "en": "Depends who's watching and what's at stake.", "hi": "इस पर कि कौन देख रहा है और दाँव पर क्या है।" },
+      { "en": "I usually do what's fair, even when it costs me.", "hi": "मैं ज़्यादातर वही करता हूँ जो सही है, चाहे नुकसान हो।" },
+      { "en": "Doing the right thing comes before what benefits me, every time.", "hi": "सही काम मेरे फायदे से पहले आता है।" }
     ]
   },
   {
     "id": "Q4",
-    "pillar": "Action",
-    "stem": "Where a thing came from, and where it ends up after you're done with it. How many times you think about this when you choose?",
+    "pillar": "Engagement",
+    "type": "Situational",
+    "reverse": false,
+    "stem": {
+      "en": "After weeks of struggling, you finally cracked the problem you were stuck on. A junior at work is now stuck on exactly the same thing. What do you do?",
+      "hi": "हफ़्तों की मेहनत के बाद आपने आख़िरकार वो problem solve कर ली। अब office में एक junior उसी जगह अटका हुआ है। आप क्या करते हैं?"
+    },
     "options": [
-      "Honestly, it doesn't cross my mind.",
-      "I think about it only when someone else brings it up.",
-      "Some choices, sure; most of them, no.",
-      "It's usually somewhere in the back of my head when I decide.",
-      "Where it came from and where it goes is just part of how I pick."
+      { "en": "Nothing. What I worked out is mine.", "hi": "कुछ नहीं। जो मैंने निकाला है वो मेरा है।" },
+      { "en": "It genuinely doesn't occur to me to say anything.", "hi": "दिमाग में आता ही नहीं कि उसे बता दूं मेरे लिए क्या काम आया।" },
+      { "en": "If they ask me directly, I'll help.", "hi": "अगर वो खुद पूछेगा, तो बता दूँगा।" },
+      { "en": "I go over and show them what worked for me.", "hi": "मैं जाकर उसे बता देता हूँ कि मेरे लिए क्या काम आया।" },
+      { "en": "I sit with them and make sure they actually understand it, not just fix it for them.", "hi": "मैं उसके साथ बैठता हूँ और ये पक्का करता हूँ कि उसे समझ आया है, सिर्फ़ काम निकाल कर नहीं देता।" }
     ]
   },
   {
     "id": "Q5",
-    "pillar": "Responsibility",
-    "stem": "Picture the last few people you dealt with today. How did they leave the interaction?",
+    "pillar": "Self-Growth",
+    "type": "Direct",
+    "reverse": false,
+    "stem": {
+      "en": "Something is genuinely hard and you could quietly avoid it. What do you usually do?",
+      "hi": "कोई काम सच में मुश्किल है और आप चुपचाप उससे बच भी सकते हैं। आप आमतौर पर क्या करते हैं?"
+    },
     "options": [
-      "A bit more discouraged than they came, if I'm honest.",
-      "I don't really track the effect I have on people.",
-      "Depends what kind of day I'm having.",
-      "Usually a little lighter than they showed up.",
-      "Leaving people better than I found them is just the thing I aim at."
+      { "en": "I avoid it and do something easier instead.", "hi": "बच जाता हूँ और कुछ आसान काम कर लेता हूँ।" },
+      { "en": "I try half-heartedly, then give up.", "hi": "आधे-अधूरे मन से try करता हूँ, फिर छोड़ देता हूँ।" },
+      { "en": "Depends how much patience I have that day.", "hi": "उस दिन कितना सब्र है, इस पर depend करता है।" },
+      { "en": "I usually push through even when it's uncomfortable.", "hi": "मुश्किल लगे तब भी मैं ज़्यादातर करता रहता हूँ।" },
+      { "en": "The harder it is, the more I want to stay with it.", "hi": "जितना मुश्किल हो, उतना ही मन करता है उसमें टिके रहने का।" }
     ]
   },
   {
     "id": "Q6",
     "pillar": "Consciousness",
-    "stem": "Someone shadows your ordinary day, your sleep, your food, your screen time. Would they see the person you're actually trying to become?",
+    "type": "Values-based",
+    "reverse": false,
+    "stem": {
+      "en": "On a hard day, when you're mostly getting through it alone, how connected do you feel to something bigger than yourself?",
+      "hi": "एक मुश्किल दिन, जब आप ज़्यादातर अकेले ही उसे झेल रहे होते हैं। उस वक़्त खुद से बड़ी किसी चीज़ से आप कितना जुड़ा महसूस करते हैं?"
+    },
     "options": [
-      "They'd see someone run by their phone and their sleep, and not by choice.",
-      "They'd catch me trying, and failing, to fix the same routine again.",
-      "Some weeks they'd be impressed, some weeks it's just chaos.",
-      "Most days they'd see someone roughly living how they mean to.",
-      "My most ordinary Tuesday already looks like the life I'm aiming for."
+      { "en": "On days like that, it's just me, on my own.", "hi": "ऐसे दिनों में बस मैं होता हूँ, अकेला।" },
+      { "en": "That feeling only shows up once in a while.", "hi": "वो एहसास कभी-कभी ही आता है।" },
+      { "en": "Some days I feel connected, some days not at all.", "hi": "कुछ दिन जुड़ा लगता हूँ, कुछ दिन बिल्कुल नहीं।" },
+      { "en": "Most of the time I feel held by something bigger than me.", "hi": "ज़्यादातर लगता है कि कुछ बड़ा है जो मुझे थामे हुए है।" },
+      { "en": "Even on the worst days, I know I'm part of something larger.", "hi": "सबसे बुरे दिन भी, मुझे पता होता है कि मैं किसी बड़ी चीज़ का हिस्सा हूँ।" }
     ]
   },
   {
     "id": "Q7",
-    "pillar": "Responsibility",
-    "stem": "Someone reaches out for a favour, you both know they can't really return it. What actually happens?",
+    "pillar": "Action",
+    "type": "Situational",
+    "reverse": true,
+    "stem": {
+      "en": "It's late, and you remember there's something sitting in your Amazon cart that you didn't know existed twenty minutes ago. What usually happens?",
+      "hi": "रात हो चुकी है, और आपको याद आता है कि आपकी Amazon cart में कुछ पड़ा है, जिसके बारे में बीस मिनट पहले तक आपको पता भी नहीं था। आमतौर पर क्या होता है?"
+    },
     "options": [
-      "If there's nothing in it for me, I usually pass.",
-      "I'll help if it's convenient, not if it costs me.",
-      "Depends on my mood and who it is.",
-      "I usually help anyway, even knowing nothing comes back.",
-      "Whether they can return it never even enters my head, I just help."
+      { "en": "It's already mine. The buying happened in my head the moment I added it.", "hi": "वो अब मेरा है। जिस पल cart में डाला, दिमाग में खरीद तो हो ही चुकी थी।" },
+      { "en": "I buy it, and realise I didn't need it when it arrives.", "hi": "खरीद लेता हूँ, और जब आता है तब समझ आता है कि ज़रूरत नहीं थी।" },
+      { "en": "Something expensive I'd think about, but this size of thing just happens.", "hi": "महँगी चीज़ हो तो सोचता हूँ, पर इतनी सी चीज़ तो बस हो जाती है।" },
+      { "en": "I close the app and leave it overnight before deciding.", "hi": "App बंद कर देता हूँ और अगले दिन तक के लिए छोड़ देता हूँ।" },
+      { "en": "I only buy it if I still want it a few days later. Usually I don't.", "hi": "दो-चार दिन बाद भी अगर मन हो, तभी खरीदता हूँ। ज़्यादातर नहीं होता।" }
     ]
   },
   {
     "id": "Q8",
-    "pillar": "Self-Growth",
-    "stem": "Think of the last reel or quote that genuinely affected you. What happened after?",
+    "pillar": "Responsibility",
+    "type": "Direct",
+    "reverse": false,
+    "stem": {
+      "en": "Think about the people you interacted with today. How did they leave the interaction?",
+      "hi": "आज आप जिन लोगों से मिले, उनके बारे में सोचिए। वो आपसे मिलकर कैसे गए?"
+    },
     "options": [
-      "I felt something for ten seconds and was already onto the next one.",
-      "I screenshot it into a saved folder I'll never open again.",
-      "Now and then one sticks; mostly it was just good content.",
-      "Something I saw recently actually changed one thing I do.",
-      "If it didn't change something I do, I don't really count it as learning."
+      { "en": "A bit worse than they arrived, honestly.", "hi": "सच कहूँ तो, आने से थोड़ा बुरा महसूस करके।" },
+      { "en": "I don't really notice the effect I have on people.", "hi": "मैं ध्यान ही नहीं देता कि लोगों पर मेरा क्या असर पड़ता है।" },
+      { "en": "Depends what kind of day I'm having.", "hi": "उस दिन मेरा मूड कैसा है, इस पर depend करता है।" },
+      { "en": "Usually a little better than they arrived.", "hi": "आमतौर पर थोड़ा बेहतर महसूस करके।" },
+      { "en": "Leaving people better than I found them is what I aim for.", "hi": "लोग मुझसे मिलकर बेहतर महसूस करें, यही मेरी कोशिश रहती है।" }
     ]
   },
   {
     "id": "Q9",
     "pillar": "Self-Growth",
-    "stem": "You find out you were wrong about something you were sure of. What's your first move?",
+    "type": "Values-based",
+    "reverse": false,
+    "stem": {
+      "en": "Think of the last reel or quote that genuinely moved you. What happened after?",
+      "hi": "आखिरी बार जब किसी रील या बात ने आपका मन छू लिया था, तो उसके बाद क्या हुआ?"
+    },
     "options": [
-      "Being wrong makes me dig in harder.",
-      "I go defensive first and come round later.",
-      "Depends on the topic, and who's telling me.",
-      "I can usually stay open even when it stings.",
-      "Getting proved wrong is kind of the interesting part for me."
+      { "en": "I felt something for ten seconds, then moved on.", "hi": "दस second कुछ महसूस हुआ, फिर आगे बढ़ गया।" },
+      { "en": "I saved it to a folder I'll never open again.", "hi": "Save कर लिया, उस folder में जो मैं शायद कभी नहीं खोलूंगा।" },
+      { "en": "Now and then one sticks, mostly it was just good content.", "hi": "कभी-कभार कोई बात टिक जाती है, ज़्यादातर बस अच्छा content था।" },
+      { "en": "Something I saw recently actually changed one thing I do.", "hi": "हाल में देखी किसी चीज़ ने सच में मेरी एक आदत बदल दी।" },
+      { "en": "If it doesn't change something I do, I don't count it as learning.", "hi": "अगर उससे मेरे जीवन में कुछ बदला नहीं, तो मैं उसे सीखना मानता ही नहीं।" }
     ]
   },
   {
     "id": "Q10",
     "pillar": "Responsibility",
-    "stem": "You're making a call that affects someone else, not just you. What actually drives it?",
+    "type": "Situational",
+    "reverse": false,
+    "stem": {
+      "en": "You're already late and the lift doors are closing. Someone you don't know is hurrying down the corridor, asking you to hold it. What do you do?",
+      "hi": "आप पहले से late हैं और lift का दरवाज़ा बंद हो रहा है। कोई अनजान इंसान भागता हुआ आ रहा है और कह रहा है कि लिफ़्ट रोक लीजिए। आप क्या करते हैं?"
+    },
     "options": [
-      "What works best for me, honestly.",
-      "I lean toward whatever's easier, then justify it after.",
-      "Depends who's watching and what's at stake.",
-      "I usually go with what's fair, even if it costs me.",
-      "Doing the right thing wins over what benefits me, every time."
+      { "en": "The doors are closing. I've got somewhere to be.", "hi": "मैं जल्दी में हूं, इसलिए नहीं रुकूंगा।" },
+      { "en": "If they're close enough that it costs me nothing, I'll hold it.", "hi": "अगर वो इतने पास है कि मेरा कुछ नहीं जाता, तो रोक लूँगा।" },
+      { "en": "Depends on my mood, and how late I actually am.", "hi": "मूड पर depend करता है, और इस पर कि मैं सच में कितना late हूँ।" },
+      { "en": "I hold it, even though it makes me later.", "hi": "रोक लेता हूँ, चाहे मुझे और देर हो जाए।" },
+      { "en": "I hold it without thinking. It isn't a decision I have to make.", "hi": "बिना सोचे रोक देता हूँ। ये कोई फैसला लेने वाली बात है ही नहीं।" }
     ]
   },
   {
     "id": "Q11",
     "pillar": "Consciousness",
-    "stem": "It's one of those heavy days, the kind you're mostly getting through alone. In that moment, how connected do you feel to something beyond yourself?",
+    "type": "Direct",
+    "reverse": false,
+    "stem": {
+      "en": "If someone followed you through an ordinary day, your sleep, your food, your screen time, would they see a person who is trying to achieve the goals he or she has set in life?",
+      "hi": "अगर कोई आपके एक आम दिन को देखे, आपकी नींद, आपका खाना, आपका screen time, तो क्या उसे वो इंसान दिखेगा जो अपनी ज़िंदगी के तय किए गए लक्ष्यों की तरफ़ बढ़ रहा है?"
+    },
     "options": [
-      "On days like that it's just me, handling it on my own.",
-      "That sense of being part of something shows up only once in a while.",
-      "Some days I feel connected, some days completely on my own.",
-      "Most of the time I feel held by something bigger than just me.",
-      "Even on the worst days, I know I'm part of something larger."
+      { "en": "They'd see someone run by their phone and their sleep, not by choice.", "hi": "उसे वो इंसान दिखेगा जिसे उसका phone और उसकी नींद चला रही है, अपनी मर्ज़ी नहीं।" },
+      { "en": "They'd see me trying and failing to fix the same routine again.", "hi": "उसे मैं दिखूँगा, वही routine ठीक करने की कोशिश करते और नाकाम होते हुए, बार-बार।" },
+      { "en": "Some weeks they'd be impressed, some weeks it's chaos.", "hi": "कुछ हफ़्ते वो impress होगा, कुछ हफ़्ते नहीं।" },
+      { "en": "Most days they'd see someone roughly living how they mean to.", "hi": "ज़्यादातर दिन उसे वो इंसान दिखेगा जो लगभग वैसे ही जी रहा है जैसे चाहता है।" },
+      { "en": "My most ordinary day already looks like the life I'm aiming for.", "hi": "मेरा सबसे आम दिन भी वैसा ही दिखता है जैसी ज़िंदगी मैं चाहता हूँ।" }
     ]
   },
   {
     "id": "Q12",
     "pillar": "Engagement",
-    "stem": "There's a thing you're genuinely good at. When you picture using it, who's it usually for?",
+    "type": "Values-based",
+    "reverse": false,
+    "stem": {
+      "en": "When you give your time or money, what's usually going on underneath?",
+      "hi": "जब आप अपना समय या पैसा किसी को देते हैं, मन में क्या चल रहा होता है?"
+    },
     "options": [
-      "Mostly for me, it's my edge and I use it like one.",
-      "Using it for someone else barely crosses my mind.",
-      "If someone asks me directly, I'll help out sometimes.",
-      "I often point out what I'm good at at other people's problems too.",
-      "What I'm good at isn't just for my CV, using it for others is kind of the point."
+      { "en": "I give when I'm asked, and don't think past it.", "hi": "जब कोई कहता है तब दे देता हूँ, उससे आगे सोचता नहीं।" },
+      { "en": "Mostly it's the quick hit of feeling good about myself.", "hi": "ज़्यादातर तो खुद को अच्छा महसूस कराने वाली बात होती है।" },
+      { "en": "Sometimes I check where it goes, mostly I don't.", "hi": "कभी देख लेता हूँ कि कहाँ जा रहा है, ज़्यादातर नहीं।" },
+      { "en": "I want to know it's actually doing something.", "hi": "मैं जानना चाहता हूँ कि उससे सच में कुछ हो रहा है।" },
+      { "en": "I give where it changes something, not where it feels nicest to give.", "hi": "मैं वहाँ देता हूँ जहाँ कुछ बदलता है, वहाँ नहीं जहाँ देने में अच्छा लगता है।" }
     ]
   },
   {
     "id": "Q13",
-    "pillar": "Engagement",
-    "stem": "You finally crack something, figure out the thing that was bothering you. What do you do with it?",
+    "pillar": "Self-Growth",
+    "type": "Situational",
+    "reverse": true,
+    "stem": {
+      "en": "You're arguing a point you're sure about, and someone puts hard evidence in front of you that you're wrong. What's your first move?",
+      "hi": "आप किसी बात पर बहस कर रहे हैं जिस पर आप पूरी तरह sure हैं, और कोई आपके सामने पक्का सबूत रख देता है कि आप गलत हैं। पहली प्रतिक्रिया क्या होती है?"
+    },
     "options": [
-      "What I work out, I keep to myself.",
-      "It doesn't really occur to me to share it.",
-      "I'll pass it on if it happens to come up.",
-      "I usually share what worked for me.",
-      "When I crack something, teaching it forward is automatic."
+      { "en": "I argue harder. Being wrong makes me dig in.", "hi": "और ज़ोर से बहस करता हूँ। गलत होना मुझे और अड़ा देता है।" },
+      { "en": "I defend myself in the moment, and come round to it later, privately.", "hi": "उस वक़्त तो खुद को सही ठहराता हूँ, बाद में अकेले में मान लेता हूँ।" },
+      { "en": "Depends on the topic, and who's telling me.", "hi": "बात किस बारे में है, और कह कौन रहा है, इस पर depend करता है।" },
+      { "en": "It stings, but I can usually stay open and hear it out.", "hi": "चुभता है, पर मैं ज़्यादातर खुला रहकर सुन लेता हूँ।" },
+      { "en": "I want to know more. Being proved wrong is the interesting part.", "hi": "और जानना चाहता हूँ। गलत साबित होना ही तो असली मज़े की बात है।" }
     ]
   },
   {
     "id": "Q14",
-    "pillar": "Action",
-    "stem": "You've already had enough, but there's still one more episode ready to autoplay. What usually happens?",
+    "pillar": "Engagement",
+    "type": "Direct",
+    "reverse": false,
+    "stem": {
+      "en": "There's something you're genuinely good at. Who is it usually for?",
+      "hi": "कोई एक चीज़ है जिसमें आप सच में अच्छे हैं। वो आमतौर पर किसके लिए है?"
+    },
     "options": [
-      "I finish it anyway, out of habit more than hunger.",
-      "I only notice I've had enough once it's all gone.",
-      "Sometimes I stop, mostly I don't.",
-      "I usually notice and stop once I've had enough.",
-      "I stop the moment I notice I don't need more, it's automatic now."
+      { "en": "Mostly for me. It's my edge and I use it that way.", "hi": "ज़्यादातर मेरे लिए। ये मेरी बढ़त है और मैं इसे ऐसे ही use करता हूँ।" },
+      { "en": "Using it for someone else barely crosses my mind.", "hi": "उसे किसी और के लिए इस्तेमाल करने का ख़याल ही नहीं आता।" },
+      { "en": "If someone asks me directly, I'll help sometimes.", "hi": "कोई सीधे पूछ ले, तो कभी-कभी मदद कर देता हूँ।" },
+      { "en": "I often use what I'm good at on other people's problems too.", "hi": "जिसमें मैं अच्छा हूँ, उसे अक्सर दूसरों की problems पर भी लगा देता हूँ।" },
+      { "en": "What I'm good at isn't just for my CV. Using it for others is the point.", "hi": "जिसमें मैं अच्छा हूँ वो सिर्फ़ मेरे CV के लिए नहीं है। दूसरों के काम आना ही तो बात है।" }
     ]
   },
   {
     "id": "Q15",
-    "pillar": "Self-Growth",
-    "stem": "Something's genuinely hard and you could just quietly avoid it. What do you usually do?",
+    "pillar": "Action",
+    "type": "Values-based",
+    "reverse": false,
+    "stem": {
+      "en": "When you're choosing what to buy, do you think about how it was made and what happens to it once you're done with it?",
+      "hi": "जब आप कुछ खरीदने का फैसला कर रहे होते हैं, क्या आप सोचते हैं कि वो चीज़ बनी कैसे है और इस्तेमाल के बाद उसका क्या होगा?"
+    },
     "options": [
-      "I avoid it and find something easier to do instead.",
-      "I give it a half-hearted attempt, then give up quickly.",
-      "Depends how much patience I've got that day.",
-      "I usually push through even when it's uncomfortable.",
-      "The harder it is, the more I actually want to stick with it."
+      { "en": "It doesn't cross my mind.", "hi": "दिमाग में आता ही नहीं।" },
+      { "en": "Only when someone else brings it up.", "hi": "सिर्फ़ तब, जब कोई और ये बात उठाए।" },
+      { "en": "Some choices yes, most of them no.", "hi": "कुछ चीज़ों में हाँ, ज़्यादातर में नहीं।" },
+      { "en": "It's usually in the back of my mind when I decide.", "hi": "फैसला लेते वक़्त ये बात कहीं दिमाग के पीछे रहती है।" },
+      { "en": "Where it comes from and where it goes is just part of how I choose.", "hi": "वो चीज़ आई कहाँ से और जाएगी कहाँ, ये मेरे चुनने का हिस्सा ही है।" }
     ]
   }
 ]

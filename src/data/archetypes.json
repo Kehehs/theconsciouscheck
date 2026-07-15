@@ -3,84 +3,228 @@
     "id": "seeker",
     "pillar": "Consciousness",
     "name": "The Seeker",
-    "identity": "Grounded and introspective, still while everything else moves.",
     "cardImage": "/cards/seeker.webp",
-    "recognition": "You're the one who processes things twice. Someone says something that lands wrong, and while everyone else has already moved on, you're still sitting with it, working out what it actually touched in you. People sometimes call you overthinking. You call it paying attention. You've never really been able to switch off the part of you that asks why, and most days, that's the whole point.",
-    "light": "You know yourself in a way most people never get around to. You catch your own reactions before they run you. You bring a kind of stillness into rooms that are otherwise moving too fast.",
-    "shadow": "That same inward pull can tip into overthinking, replaying conversations that don't need replaying, or holding back from acting because you're still busy understanding. Awareness without movement can start to feel like standing still on purpose.",
-    "growthEdge": "Notice when reflection has already done its job, and let yourself act before you feel fully ready.",
-    "career": "You're the person a team turns to when a decision needs more thought than instinct. You slow rooms down in a good way, you ask the question no one else thought to ask before moving forward. Where you'll want to watch yourself is decision fatigue, some calls don't need the deep dive, they just need a choice.",
-    "relationships": "You listen in a way people notice. You remember what someone said three weeks ago and bring it back at exactly the right moment. The flip side, you can go quiet processing something instead of saying it out loud, and the people who love you sometimes wish you'd just say the thing while you're still feeling it.",
-    "closingLine": "Maybe the loudest room is the one inside your own head, and maybe that's not a problem to fix."
+    "identity": {
+      "en": "Grounded and introspective, still while everything else moves.",
+      "hi": "Grounded और introspective, हर चीज़ चलती रहे तब भी अपनी जगह टिका हुआ।"
+    },
+    "recognition": {
+      "en": "You're the one who processes things twice. Someone says something that lands wrong, and while everyone else has already moved on, you're still sitting with it, working out what it actually touched in you. People sometimes call you an overthinker. You call it paying attention. You've never really been able to switch off the part of you that asks why, and most days, that's the whole point.",
+      "hi": "आप वो हैं जो हर बात को दो बार process करते हैं। कोई कुछ ऐसा कह देता है जो गलत लगे, और जब बाकी सब आगे बढ़ चुके होते हैं, तब भी आप उसी बात के बारे में सोच रहे होते हैं कि उसने आपके मन में असल में किस चीज़ को छुआ है। लोग कभी-कभी इसे overthinking कहते हैं। आप इसे ध्यान देना कहते हैं। आप अपने अंदर के उस हिस्से को कभी भी पूरी तरह से शांत नहीं कर पाए जो 'क्यों' पूछता है, और ज़्यादातर दिनों में, असल बात यही है।"
+    },
+    "light": {
+      "en": "You know yourself in a way most people never get around to. You catch your own reactions before they run you. You bring a kind of stillness into rooms that are otherwise moving too fast.",
+      "hi": "आप खुद को उस तरह जानते हैं जैसे ज़्यादातर लोग कभी नहीं जान पाते। आप अपने reaction को पकड़ लेते हैं इससे पहले कि वो आप पर हावी हो जाए। आप उन कमरों में एक तरह की शांति ले आते हैं जो वरना बहुत तेज़ चल रहे होते हैं।"
+    },
+    "shadow": {
+      "en": "That same inward pull can tip into overthinking, replaying conversations that don't need replaying, or holding back from acting because you're still busy understanding. Awareness without movement can start to feel like standing still on purpose.",
+      "hi": "वही अंदर की तरफ़ खिंचाव कभी-कभी overthinking बन जाता है, वो बातचीत बार-बार दिमाग में चलाना जिसकी ज़रूरत नहीं, या समझने में इतना busy रहना कि करने का वक़्त निकल जाए। बिना हरकत के awareness कभी-कभी जानबूझकर रुके रहने जैसा लगने लगता है।"
+    },
+    "growthTrajectory": {
+      "en": "Notice when reflection has already done its job, and let yourself act before you feel fully ready.",
+      "hi": "जब समझना अपना काम कर चुका हो, तो notice कीजिए, और पूरी तरह ready महसूस करने से पहले ही action लीजिए।"
+    },
+    "career": {
+      "en": "You're the person a team turns to when a decision needs more thought than instinct. You slow rooms down in a good way, you ask the question no one else thought to ask before moving forward. Where you'll want to watch yourself is decision fatigue, some calls don't need the deep dive, they just need a choice.",
+      "hi": "आप वो इंसान हैं जिसकी तरफ़ team तब देखती है जब किसी फैसले को instinct से ज़्यादा सोच चाहिए होती है। आप कमरे को अच्छे तरीके से धीमा करते हैं, आप वो सवाल पूछते हैं जो किसी और ने आगे बढ़ने से पहले सोचा ही नहीं। जिस चीज़ का ध्यान रखना है वो है - decision fatigue, हर फैसले को deep dive नहीं चाहिए होता, कभी-कभी सिर्फ़ एक choice चाहिए होती है।"
+    },
+    "relationships": {
+      "en": "You listen in a way people notice. You remember what someone said three weeks ago and bring it back at exactly the right moment. The flip side, you can go quiet processing something instead of saying it out loud, and the people who love you sometimes wish you'd just say the thing while you're still feeling it.",
+      "hi": "आप उस तरह सुनते हैं कि लोग ध्यान देते हैं। तीन हफ़्ते पहले किसी ने जो कहा था, वो आपको याद रहता है, और आप उसे बिल्कुल सही वक़्त पर वापस ले आते हैं। दूसरी तरफ़, आप कभी-कभी किसी बात को बोलने की जगह अंदर ही process करते रहते हैं, और जो लोग आपको प्यार करते हैं, वो चाहते हैं कि आप वो बात उसी वक़्त कह दें जब आप उसे महसूस कर रहे हों।"
+    },
+    "closingLine": {
+      "en": "The loudest room is the one inside your own head. That's not a problem to fix.",
+      "hi": "सबसे शोर वाला कमरा वही है जो आपके अपने दिमाग के अंदर है। और ये कोई problem नहीं जिसे ठीक करना है।"
+    }
   },
   "catalyst": {
     "id": "catalyst",
     "pillar": "Action",
     "name": "The Catalyst",
-    "identity": "Intentional and deliberate, the one who actually checks before they buy in.",
     "cardImage": "/cards/catalyst.webp",
-    "recognition": "You're the one who pauses at the cart. Not because you don't want things, but because you've learned that wanting something for ten minutes and wanting it for a week are two different things. While everyone else is already checking out, you're asking the quieter question, do I actually need this, or did I just need the feeling of getting it. It's not restraint for its own sake. It's that you'd rather your choices mean something.",
-    "light": "You consume like it costs something, because you understand that it does. You're hard to manipulate with a sale or a trend, you actually think before you act, on purchases and beyond them.",
-    "shadow": "That same deliberateness can slide into second-guessing everything, even decisions that were never meant to be this heavy. Sometimes the pause becomes the whole activity, and nothing actually gets decided.",
-    "growthEdge": "Let some choices stay small. Not everything needs the full audit.",
-    "career": "You're the one who catches the wasteful spend, the unnecessary step, the thing everyone else missed because they were moving too fast to check. You bring discipline to decisions that need it. Watch for over-deliberating on calls that genuinely don't require it, speed matters sometimes too.",
-    "relationships": "People trust your recommendations because you don't hand them out lightly, when you say something's worth it, you mean it. Where this can bite, you might come across as hard to please, because you take longer to commit, to plans, to things, even to people, while you work out if it's actually right.",
-    "closingLine": "Maybe caring what you let into your life is its own kind of care for yourself."
+    "identity": {
+      "en": "Intentional and deliberate, the one who actually checks before they buy in.",
+      "hi": "Intentional और deliberate, वो जो असल में check करता है खरीदने से पहले।"
+    },
+    "recognition": {
+      "en": "You're the one who pauses at the cart. Not because you don't want things, but because you've learned that wanting something for ten minutes and wanting it for a week are two different things. Everyone else is already checking out. You're asking the quieter question. Do I actually need this, or did I just need the feeling of getting it? It's not restraint for its own sake. It's that you'd rather your choices mean something.",
+      "hi": "आप वो इंसान हैं जो बिना सोचे-समझे चीज़ें नहीं खरीदते। इसलिए नहीं कि आपको चीज़ें नहीं चाहिए, बल्कि इसलिए कि आपने सीख लिया है कि दस मिनट के लिए कुछ चाहना, और एक हफ़्ते तक चाहना, दो अलग बातें हैं। बाकी सब checkout कर चुके होते हैं। आप वो शांत सवाल पूछ रहे होते हैं। क्या मुझे सच में इसकी ज़रूरत है, या मुझे बस इसे पाने का एहसास चाहिए था? ये अपने लिए restraint नहीं है। बात बस इतनी है कि आप चाहते हैं आपके फैसलों का कोई मतलब हो।"
+    },
+    "light": {
+      "en": "You consume like it costs something, because you understand that it does. You're hard to manipulate with a sale or a trend, you actually think before you act, on purchases and beyond them.",
+      "hi": "आप उस तरह consume करते हैं जैसे उसकी कोई कीमत हो, क्योंकि आप जानते हैं कि है। आपको किसी sale या trend से manipulate करना मुश्किल है, आप actually सोचते हैं act करने से पहले, खरीदारी में भी और उससे आगे भी।"
+    },
+    "shadow": {
+      "en": "That same deliberateness can slide into second-guessing everything, even decisions that were never meant to be this heavy. Sometimes the pause becomes the whole activity, and nothing actually gets decided.",
+      "hi": "वही सोच-समझकर लेना कभी-कभी हर चीज़ पर second-guess करने में बदल जाता है, उन फैसलों पर भी जो इतने भारी होने के लिए बने ही नहीं थे। कभी-कभी वो रुकना ही पूरा काम बन जाता है, और असल में कुछ decide ही नहीं होता।"
+    },
+    "growthTrajectory": {
+      "en": "Let some choices stay small. Not everything needs the full audit.",
+      "hi": "कुछ फैसलों को छोटा ही रहने दीजिए। हर चीज़ को पूरे audit की ज़रूरत नहीं होती।"
+    },
+    "career": {
+      "en": "You're the one who catches the wasteful spend, the unnecessary step, the thing everyone else missed because they were moving too fast to check. You bring discipline to decisions that need it. Watch for over-deliberating on calls that genuinely don't require it, speed matters sometimes too.",
+      "hi": "आप वो हैं जो बेकार खर्च पकड़ लेते हैं, वो unnecessary step जो बाकी सबने miss कर दिया क्योंकि वो check करने के लिए बहुत तेज़ चल रहे थे। आप उन फैसलों में discipline लाते हैं जिन्हें उसकी ज़रूरत है। जिस चीज़ का ध्यान रखना है वो है - over-analyzing उन फैसलों पर जिन्हें सच में इतनी सोच नहीं चाहिए, कभी-कभी speed भी मायने रखती है।"
+    },
+    "relationships": {
+      "en": "People trust your recommendations because you don't hand them out lightly, when you say something's worth it, you mean it. Where this can bite, you might come across as hard to please, because you take longer to commit, to plans, to things, even to people, while you work out if it's actually right.",
+      "hi": "लोग आपकी recommendation पर trust करते हैं क्योंकि आप उन्हें हल्के में नहीं देते, जब आप कहते हैं कि कोई चीज़ कि worth है, तो आप सच में ऐसा मानते हैं। जहाँ ये आपके खिलाफ़ जा सकता है, आप शायद hard to please लगें, क्योंकि आपको commit करने में वक़्त लगता है, plans को, चीज़ों को, यहाँ तक कि लोगों को भी, जब तक आप समझ नहीं लेते कि ये सच में सही है।"
+    },
+    "closingLine": {
+      "en": "Caring what you let into your life is its own kind of care for yourself.",
+      "hi": "हर 'हाँ' जो आप किसी चीज़ को कहते हैं, कहीं ना कहीं अपने लिए भी एक फैसला है।"
+    }
   },
   "anchor": {
     "id": "anchor",
     "pillar": "Responsibility",
     "name": "The Anchor",
-    "identity": "Protective and accountable, the one everyone quietly stands near.",
     "cardImage": "/cards/anchor.webp",
-    "recognition": "People end up near you without quite knowing why. You're the one who shows up for the favour that can't be returned, who does the right thing even when the easier thing was sitting right there, unnoticed. You don't perform reliability, you just are it, consistently, on the days nobody's watching as much as the days everyone is.",
-    "light": "People feel steadier around you. You lead through conviction, not convenience, and you don't need credit for doing the right thing, which is exactly why people trust you with real things.",
-    "shadow": "Being the reliable one can quietly become being the only one who's allowed to need something. You might find it hard to ask for help, because you've built an identity around being the person who doesn't need it.",
-    "growthEdge": "Let someone else hold something for you, sometimes. Being needed isn't the same as being okay.",
-    "career": "You're the person whose word actually means something, the one leadership trusts with the thing that can't go wrong. You take ownership without needing to be asked twice. The risk is becoming everyone's default fallback, and ending up holding more than your role actually requires.",
-    "relationships": "You're the friend people call first when something's actually wrong, not when they just want to vent. That steadiness is rare and people know it. But you may need to practise being the one who's held sometimes too, not just the one holding.",
-    "closingLine": "Maybe the people who hold everyone together deserve somewhere to put their own weight down."
+    "identity": {
+      "en": "Protective and accountable, the one everyone quietly stands near.",
+      "hi": "Protective और accountable, वो जिसके पास सब चुपचाप आकर खड़े हो जाते हैं।"
+    },
+    "recognition": {
+      "en": "People end up near you without quite knowing why. You're the one who shows up for the favour that can't be returned, who does the right thing even when the easier thing was sitting right there, unnoticed. You don't perform reliability, you just are it, consistently, on the days nobody's watching as much as the days everyone is.",
+      "hi": "लोगों को बिना वजह आपके आस-पास आ जाने की आदत होती है। आप वो हैं जो उस favour के लिए भी present रहते हैं जो कभी वापस नहीं मिलेगा, जो सही काम तब भी करते हैं जब आसान रास्ता ठीक सामने पड़ा हो, बिना किसी के notice किए। आप reliability perform नहीं करते, आप बस वही हैं, लगातार, उन दिनों में भी जब कोई नहीं देख रहा जितना उन दिनों में जब सब देख रहे हैं।"
+    },
+    "light": {
+      "en": "People feel steadier around you. You lead through conviction, not convenience, and you don't need credit for doing the right thing, which is exactly why people trust you with real things.",
+      "hi": "लोग आपके आस-पास ज़्यादा steady महसूस करते हैं। आप conviction से लीड करते हैं, convenience से नहीं, और आपको सही काम करने का credit नहीं चाहिए, यही वजह है कि लोग आप पर असली चीज़ें भरोसा कर पाते हैं।"
+    },
+    "shadow": {
+      "en": "Being the reliable one can quietly become being the only one who's allowed to need something. You might find it hard to ask for help, because you've built an identity around being the person who doesn't need it.",
+      "hi": "reliable होना धीरे-धीरे ऐसा बन सकता है कि आप ही अकेले इंसान हों जिसे कुछ चाहिए होने की इजाज़त ना हो। आपको help माँगना मुश्किल लग सकता है, क्योंकि आपने खुद को उस इंसान के तौर पर बना लिया है जिसे कुछ चाहिए ही नहीं।"
+    },
+    "growthTrajectory": {
+      "en": "Let someone else hold something for you, sometimes. Being needed isn't the same as being okay.",
+      "hi": "कभी-कभी किसी और को भी कुछ थामने दीजिए आपके लिए। ज़रूरत महसूस होना, और ठीक होना, एक बात नहीं है।"
+    },
+    "career": {
+      "en": "You're the person whose word actually means something, the one leadership trusts with the thing that can't go wrong. You take ownership without needing to be asked twice. The risk is becoming everyone's default fallback, and ending up holding more than your role actually requires.",
+      "hi": "आप वो इंसान हैं जिसकी बात असल में मायने रखती है, वो जिस पर leadership उस काम के लिए trust करती है जिसमें गलती की गुंजाइश नहीं। आप बिना दोबारा पूछे ownership लेते हैं। risk यही है कि आप सबका default fallback बन जाते हैं, और अपने role से ज़्यादा भार उठाने लगते हैं।"
+    },
+    "relationships": {
+      "en": "You're the friend people call first when something's actually wrong, not when they just want to vent. That steadiness is rare and people know it. But you may need to practise being the one who's held sometimes too, not just the one holding.",
+      "hi": "आप वो friend हैं जिसे लोग सबसे पहले call करते हैं जब कुछ सच में गलत हो, ना कि सिर्फ़ vent करने के लिए। ये steadiness rare है और लोग इसे जानते हैं। लेकिन आपको कभी-कभी सिर्फ़ संभालने वाले के बजाय, संभाले जाने वाले की भूमिका निभाने कि भी practice करनी होगी।"
+    },
+    "closingLine": {
+      "en": "The people who hold everyone together deserve somewhere to put their own weight down too.",
+      "hi": "जो लोग सबको साथ थामे रखते हैं, उन्हें भी कहीं अपना बोझ रखने की जगह मिलनी चाहिए।"
+    }
   },
   "builder": {
     "id": "builder",
     "pillar": "Engagement",
     "name": "The Builder",
-    "identity": "Service-oriented and collective, nobody asked, they just built it.",
     "cardImage": "/cards/builder.webp",
-    "recognition": "Something exists because you made it exist. A plan came together, a group actually met, a thing got organised, and it happened because you quietly did it, not because someone assigned it to you. You give in ways that create something, not just ways that feel good in the moment, and you keep showing up for your people even when it's inconvenient, because that's just what showing up means to you.",
-    "light": "You turn intention into something real. People and communities are genuinely better because you were in the room, and you rarely need recognition for it, the outcome is the reward.",
-    "shadow": "You can end up doing the holding-together work nobody assigned you and nobody thanked you for, and over time that adds up to quiet resentment or quiet burnout, because you never asked to be the default organiser, you just became one.",
-    "growthEdge": "It's allowed to not be your job every time. Let something happen without you occasionally.",
-    "career": "You're the one who actually gets things done, the plan that stays on paper for everyone else becomes real because you pushed it forward. Teams lean on you more than they realise. Watch for becoming the unpaid infrastructure of every group you're in, your effort deserves visibility, not just gratitude.",
-    "relationships": "You're the friend who remembers the birthday, organises the trip, holds the group chat together. People feel cared for around you, genuinely. Just notice when you're giving because it matters to you, versus giving because you're not sure who else will.",
-    "closingLine": "Maybe the things still standing are standing because of the person who never needed anyone to notice."
+    "identity": {
+      "en": "Service-oriented and collective, nobody asked, they just built it.",
+      "hi": "Service-oriented और collective, किसी ने नहीं कहा, आपने बस बना दिया।"
+    },
+    "recognition": {
+      "en": "Something exists because you made it exist. A plan came together, a group actually met, a thing got organised, and it happened because you quietly did it, not because someone assigned it to you. You give in ways that create something, not just ways that feel good in the moment. And you keep showing up for your people even when it's inconvenient. That's just what showing up means to you.",
+      "hi": "कोई चीज़ इसलिए exist करती है क्योंकि आपने उसे बनाया। कोई plan साथ आया, कोई group असल में मिला, कोई चीज़ organise हुई, और ये हुआ क्योंकि आपने चुपचाप कर दिया, ना कि किसी ने आपको assign किया। आप ऐसे तरीकों से देते हैं जो कुछ create करते हैं, सिर्फ़ उस पल अच्छा महसूस कराने वाले तरीकों से नहीं। और आप अपने लोगों के लिए तब भी खड़े रहते हैं जब inconvenient हो। आपके लिए showing up का यही मतलब है।"
+    },
+    "light": {
+      "en": "You turn intention into something real. People and communities are genuinely better because you were in the room, and you rarely need recognition for it, the outcome is the reward.",
+      "hi": "आप intention को असल चीज़ में बदल देते हैं। लोग और communities सच में बेहतर होते हैं क्योंकि आप वहाँ थे, और आपको इसके लिए recognition की शायद ही ज़रूरत होती है, outcome ही reward है।"
+    },
+    "shadow": {
+      "en": "You can end up doing the holding-together work nobody assigned you and nobody thanked you for. Over time that adds up, quiet resentment, or quiet burnout. You never asked to be the default organiser. You just became one.",
+      "hi": "आप वो काम करते रह जाते हैं जो किसी ने आपको सौंपा नहीं, जिसके लिए किसी ने शुक्रिया नहीं कहा। और वक़्त के साथ ये जमा होता है, resentment, या burnout। आपने कभी default organiser बनने के लिए नहीं कहा। आप बस बन गए।"
+    },
+    "growthTrajectory": {
+      "en": "It's allowed to not be your job every time. Let something happen without you occasionally.",
+      "hi": "ज़रूरी नहीं कि हर बार काम आपका ही हो। कभी-कभी किसी चीज़ को आपके बिना होने दीजिए।"
+    },
+    "career": {
+      "en": "You're the one who actually gets things done, the plan that stays on paper for everyone else becomes real because you pushed it forward. Teams lean on you more than they realise. Watch for becoming the unpaid infrastructure of every group you're in, your effort deserves visibility, not just gratitude.",
+      "hi": "आप वो हैं जो असल में काम पूरा करते हैं, वो plan जो बाकी सबके लिए बस कागज़ पर रहता है, आपकी वजह से असल बनता है। Teams आप पर उससे ज़्यादा depend करती हैं जितना उन्हें एहसास है। जिस चीज़ का ध्यान रखना है वो है हर group की unpaid infrastructure बन जाना, आपकी मेहनत को सिर्फ़ शुक्रिया नहीं, visibility भी चाहिए।"
+    },
+    "relationships": {
+      "en": "You're the friend who remembers the birthday, organises the trip, holds the group chat together. People feel cared for around you, genuinely. Just notice when you're giving because it matters to you, versus giving because you're not sure who else will.",
+      "hi": "आप वो friend हैं जिसे birthday याद रहता है, जो trip organise करता है, जो group chat को साथ रखता है। लोग आपके पास genuinely cared for feel करते हैं। बस इस बात पर ध्यान दें कि आप कब इसलिए कुछ दे रहे हैं क्योंकि यह आपके लिए matter कर्ता है, और कब इसलिए दे रहे हैं क्योंकि आप ये सोचते हैं कि कोई और ऐसा करेगा या नहीं।"
+    },
+    "closingLine": {
+      "en": "No one saw the work. That's exactly why it held.",
+      "hi": "जो चीज़ आज भी खड़ी है, उसके पीछे कोई है जिसने कभी credit नहीं माँगा।"
+    }
   },
   "sage": {
     "id": "sage",
     "pillar": "Self-Growth",
     "name": "The Sage",
-    "identity": "Curious and evolving, still asking on purpose.",
     "cardImage": "/cards/sage.webp",
-    "recognition": "You're the one who gets proven wrong and finds it interesting instead of annoying. Something you thought was true turns out not to be, and instead of digging in, something in you leans forward. You don't collect information to feel smart, you collect it because you actually want it to change something in how you live, and when it doesn't change anything, you don't really count it as learning at all.",
-    "light": "You stay genuinely open in a world that rewards being certain. You're rarely stuck, because you're always willing to update. Learning, for you, actually moves into action.",
-    "shadow": "That same openness can tip into never quite landing anywhere, always exploring the next thing, the next idea, the next version of yourself, without giving any one thing enough time to actually take root.",
-    "growthEdge": "Let something stay unfinished-looking a little longer before you move on to the next thing.",
-    "career": "You're the one who adapts fastest when everything changes, you don't panic when the plan shifts, you get curious about the new one. Just watch for chasing the next skill or idea before the current one has actually paid off.",
-    "relationships": "People come to you when they want an honest second opinion, because you'll actually consider it instead of just agreeing. The flip side, you may keep evolving faster than the people around you can track, and that can feel, to them, like you're always slightly out of reach.",
-    "closingLine": "Maybe staying curious is the only way of growing up that doesn't quietly stop."
+    "identity": {
+      "en": "Curious and evolving, still asking on purpose.",
+      "hi": "Curious और evolving, अभी भी जानबूझकर सवाल पूछता हुआ।"
+    },
+    "recognition": {
+      "en": "You're the one who gets proven wrong and finds it interesting instead of annoying. Something you thought was true turns out not to be, and instead of digging in, something in you leans forward. You don't collect information to feel smart, you collect it because you actually want it to change something in how you live, and when it doesn't change anything, you don't really count it as learning at all.",
+      "hi": "आप वो हैं जो गलत साबित होते हैं और उसे annoying की जगह interesting पाते हैं। जो चीज़ आप सच मानते थे वो सच नहीं निकलती, और अपनी बात पर अड़े रहने के बजाय, आपके अंदर कुछ ऐसा होता है जो उस नई सच्चाई की ओर झुकता है। आप information इसलिए इकट्ठा नहीं करते कि smart लगें, आप इसलिए करते हैं क्योंकि आप चाहते हैं कि उससे आपके जीने के तरीके में कुछ बदले, और अगर उससे कुछ नहीं बदलता, तो आप उसे सीखना मानते ही नहीं।"
+    },
+    "light": {
+      "en": "You stay genuinely open in a world that rewards being certain. You're rarely stuck, because you're always willing to update. Learning, for you, actually moves into action.",
+      "hi": "आप उस दुनिया में genuinely open रहते हैं जो certain रहने को reward करती है। आप शायद ही कभी stuck होते हैं, क्योंकि आप हमेशा अपने आप को update करने के लिए तैयार रहते हैं। सीखना, आपके लिए, असल में action में बदल जाता है।"
+    },
+    "shadow": {
+      "en": "That same openness can tip into never quite landing anywhere, always exploring the next thing, the next idea, the next version of yourself, without giving any one thing enough time to actually take root.",
+      "hi": "वही openness कभी-कभी कहीं भी ठीक से ना टिकने में बदल जाती है, हमेशा अगली चीज़ explore करना, अगला idea, अपना अगला version, बिना किसी एक चीज़ को जड़ से पकड़ने का पूरा वक़्त दिए।"
+    },
+    "growthTrajectory": {
+      "en": "Let something stay unfinished-looking a little longer before you move on to the next thing.",
+      "hi": "किसी चीज़ को थोड़ी देर और unfinished रहने दीजिए, अगली चीज़ पर जाने से पहले।"
+    },
+    "career": {
+      "en": "You're the one who adapts fastest when everything changes, you don't panic when the plan shifts, you get curious about the new one. Just watch for chasing the next skill or idea before the current one has actually paid off.",
+      "hi": "आप वो हैं जो सबसे तेज़ adapt करते हैं जब सब कुछ बदल जाए, प्लान बदलने पर panic नहीं करते, नए वाले को लेकर curious हो जाते हैं। बस ध्यान रखिए कि अगली skill या idea के पीछे मत भागिए इससे पहले कि मौजूदा वाला असल में काम आया हो।"
+    },
+    "relationships": {
+      "en": "People come to you when they want an honest second opinion, because you'll actually consider it instead of just agreeing. The flip side, you may keep evolving faster than the people around you can track, and that can feel, to them, like you're always slightly out of reach.",
+      "hi": "जब लोगों को चाहिए honest second opinion होता है आपके पास आते हैं, क्योंकि आप उस topic पर actually सोचेंगे, बस हाँ में हाँ नहीं मिलाएँगे। दूसरी तरफ़, आप शायद अपने आस-पास के लोगों से तेज़ evolve करते रहें, और उन्हें ये लग सकता है कि आप हमेशा थोड़े out of reach हैं।"
+    },
+    "closingLine": {
+      "en": "Staying curious is the only way of growing up that doesn't quietly stop.",
+      "hi": "Curious बने रहना ही बड़े होने का एक ऐसा तरीका है जो चुपचाप रुकता नहीं।"
+    }
   },
   "confluence": {
     "id": "confluence",
     "pillar": "All five, rare by design",
     "name": "The Confluence",
-    "identity": "Where different currents meet. Not a superior tier, a different kind of person.",
     "cardImage": "/cards/confluence.webp",
-    "recognition": "You don't lead with one thing, because no single thing quite explains you. You're reflective, but not withdrawn. Deliberate, but not slow to act. Reliable, generous, curious, all at once, in a way that doesn't sit inside one lane. This isn't the result of trying harder than everyone else, it's a temperament, a particular way of meeting the world that shows up rarely, and when it does, people tend to notice something quietly whole about you, even if they can't say exactly what.",
-    "light": "You move through the different demands of a conscious life without one part of you constantly overriding the others. There's a steadiness to you that comes from balance, not from suppression of anything.",
-    "shadow": "Because you don't have one obvious strength people can point to, you can be harder to read, and sometimes harder for you to describe yourself, even to yourself. Being asked \"what are you like\" can feel like an oddly difficult question.",
-    "growthEdge": "You don't need a single lane to prove your depth. Let yourself be described in more than one word, even when people want a shorter answer.",
-    "career": "You're genuinely versatile, the person who can hold strategy and empathy and follow-through in the same conversation. That's rare, and teams often don't have language for how valuable it is. Just make sure your range doesn't get read as a lack of specialisation, know how to name what you bring.",
-    "relationships": "People experience you as whole, someone they don't have to manage around. You're not performing balance, you're just built that way, and it shows. The one thing to watch, don't let your own steadiness become a reason you underplay when something's actually difficult for you too.",
-    "closingLine": "Maybe balance was never about having less of everything, just about none of it needing to fight for the space."
+    "identity": {
+      "en": "Where different currents meet. Not a superior tier, a different kind of person.",
+      "hi": "जहाँ अलग-अलग धाराएँ मिलती हैं। कोई superior tier नहीं, बस एक अलग तरह का इंसान।"
+    },
+    "recognition": {
+      "en": "You're the friend who talks someone down at 2 a.m. and also the one who actually reads the fine print before signing. You'll sit with a hard feeling instead of running from it, and still make the call that needs making by morning. People can't quite put you in a box, one week you're the steady one, the next you're the one pushing everyone forward, and both are true. This isn't the result of trying harder than everyone else. It's just how you're built, a particular way of meeting the world that shows up rarely, and when it does, people tend to notice something quietly whole about you, even if they can't say exactly what.",
+      "hi": "आप वो friend हैं जो रात 2 बजे किसी को समझाते हैं, और वही जो sign करने से पहले असल में fine print पढ़ता है। आप किसी मुश्किल feeling के साथ बैठ सकते हैं भागे बिना, और फिर भी सुबह तक वो फैसला ले लेते हैं जो लेना ज़रूरी है। लोग आपको किसी एक box में नहीं रख पाते, एक हफ़्ता आप steady होते हैं, अगले हफ़्ते आप ही सबको आगे बढ़ाने वाले होते हैं, और दोनों सच हैं। ये किसी और से ज़्यादा मेहनत करने का नतीजा नहीं है। बस आप ऐसे ही बने हैं, दुनिया से मिलने का एक particular तरीका जो कम ही दिखता है, और जब दिखता है, लोगों को आपके अंदर कुछ चुपचाप पूरा सा महसूस होता है, भले ही वो बता ना पाएँ क्या।"
+    },
+    "light": {
+      "en": "You move through very different situations, a hard conversation, a big decision, a moment that needs you to just show up, without one part of you constantly overriding the others. There's a steadiness to you that comes from balance, not from suppression of anything.",
+      "hi": "आप बहुत अलग-अलग situations से गुज़रते हैं, कोई मुश्किल बातचीत, कोई बड़ा फैसला, कोई ऐसा पल जिसमें बस आपका present होना ज़रूरी है, बिना किसी एक हिस्से के बाकी सब पर हावी हुए। आपमें एक steadiness है जो balance से आती है, दबाने से नहीं।"
+    },
+    "shadow": {
+      "en": "Because you don't have one obvious strength people can point to, you can be harder to read. Sometimes you're even hard to describe to yourself. Being asked \"what are you like\" can feel like an oddly difficult question.",
+      "hi": "क्योंकि आपके पास कोई एक obvious strength नहीं जिसे लोग point कर सकें, आपको समझना मुश्किल हो सकता है। कभी-कभी खुद को खुद describe करना भी मुश्किल हो जाता है। 'आप कैसे हैं' पूछे जाने पर ये अजीब तरह से मुश्किल सवाल लग सकता है।"
+    },
+    "growthTrajectory": {
+      "en": "You don't need a single lane to prove your depth. Let yourself be described in more than one word, even when people want a shorter answer.",
+      "hi": "आपको अपनी depth prove करने के लिए किसी एक lane की ज़रूरत नहीं। खुद को एक से ज़्यादा शब्दों में describe होने दीजिए, भले ही लोग छोटा जवाब चाहें।"
+    },
+    "career": {
+      "en": "You're genuinely versatile, the person who can hold strategy and empathy and follow-through in the same conversation. That's rare, and teams often don't have language for how valuable it is. Just make sure your range doesn't get read as a lack of specialisation, know how to name what you bring.",
+      "hi": "आप genuinely versatile हैं, वो इंसान जो एक ही बातचीत में strategy, empathy, और follow-through, तीनों साथ रख सकता है। ये rare है, और teams के पास अक्सर ये बताने के लिए शब्द नहीं होते कि ये कितना valuable है। बस ध्यान रखिए कि आपकी range को specialisation की कमी ना समझा जाए, ये जानिए कि आप क्या लाते हैं उसे कैसे नाम दें।"
+    },
+    "relationships": {
+      "en": "People experience you as whole, someone they don't have to manage around. You're not performing balance, you're just built that way, and it shows. The one thing to watch, don't let your own steadiness become a reason you underplay when something's actually difficult for you too.",
+      "hi": "लोग आपको whole महसूस करते हैं, ऐसा कोई जिसे manage करने की ज़रूरत नहीं। आप balance perform नहीं कर रहे, आप बस वैसे ही बने हैं, और ये दिखता है। एक चीज़ जिसका ध्यान रखना है, अपनी steadiness को ये वजह मत बनने दीजिए कि आप ये underplay करें कि कभी-कभी आपके लिए भी कुछ सच में मुश्किल होता है।"
+    },
+    "closingLine": {
+      "en": "Balance isn't having less of everything. It's everything finally fitting.",
+      "hi": "जो लोग एक चीज़ चुनते हैं, आप वो नहीं चुनते, आप बस दोनों होते हैं।"
+    }
   }
 }
