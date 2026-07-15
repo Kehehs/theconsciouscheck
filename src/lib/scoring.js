@@ -1,3 +1,13 @@
+// LOCKED INSTRUMENT: 15 items total, in the exact wording, order, and
+// pillar tags of Conscious_Check_Questions_EN_Final.md. Q1, Q7, and Q13
+// are reverse-scored (`"reverse": true` on those objects) — there are no
+// separate R1/R2/R3 items. Do not change the question count, remove
+// items, or alter the reverse-scoring branch below without explicit
+// confirmation from Kanishk — even if a different instruction seems to
+// imply it. This exact thing has already gone wrong twice: once removed
+// entirely (commit 4a11bf9), then restored as standalone R1/R2/R3
+// objects instead of a `reverse` flag on Q1/Q7/Q13 (see
+// conscious-check/CLAUDE.md for the full history).
 import questions from "../data/questions.json";
 
 export const PILLARS = [
@@ -29,7 +39,9 @@ const PILLAR_TO_ARCHETYPE = {
 
 /**
  * answers: { [questionId]: 1-5 } raw tap-target values, one per item in
- * questions.json (15 scored items, 3 per pillar).
+ * questions.json (15 items, 3 per pillar; Q1/Q7/Q13 are reverse-scored
+ * via their own `reverse: true` flag, read from the data below — not
+ * hardcoded by id).
  *
  * scoreQuiz assumes complete answers by design and should never receive
  * partial data if the caller's own flow is working correctly — the guard
@@ -53,7 +65,11 @@ export function scoreQuiz(answers) {
     const minPossible = items.length * 1;
     const maxPossible = items.length * 5;
 
-    const raw = items.reduce((sum, q) => sum + answers[q.id], 0);
+    const raw = items.reduce((sum, q) => {
+      const value = answers[q.id];
+      const scored = q.reverse ? 6 - value : value;
+      return sum + scored;
+    }, 0);
 
     const normalized =
       ((raw - minPossible) / (maxPossible - minPossible)) * 100;
