@@ -1,6 +1,7 @@
 /**
- * Always exactly three trust markers, per the theme rule. Do not pass a
- * fourth — it starts reading as a list rather than a set of quick facts.
+ * Up to three trust markers (renders at most 3 even if more are passed).
+ * Don't pass more than 3 — it starts reading as a list rather than a set
+ * of quick facts.
  */
 export default function TrustMarkers({ items, className = "" }) {
   return (

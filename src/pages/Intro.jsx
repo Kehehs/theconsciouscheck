@@ -176,12 +176,16 @@ export default function Intro() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: reduceMotion ? 0 : 0.7 }}
         >
+          <p className="font-display mb-3 text-xs font-semibold uppercase tracking-[0.08em] text-amber-soft">
+            A reflection, not a diagnosis
+          </p>
+
           <p className="font-display mb-[26px] text-[clamp(1.5rem,2.6vw,2rem)] font-semibold text-white">
             Ready when you are.
           </p>
 
           <TrustMarkers
-            items={["15 questions", "4–5 minutes", "A reflection, not a diagnosis"]}
+            items={["15 questions", "4–5 minutes"]}
             className="mb-[34px] justify-center"
           />
 
