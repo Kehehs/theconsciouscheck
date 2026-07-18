@@ -158,7 +158,7 @@
     "type": "Situational",
     "reverse": false,
     "stem": {
-      "en": "You're already late and the lift doors are closing. Someone you don't know is hurrying down the corridor, asking you to hold it. What do you do?",
+      "en": "The elevator doors are closing, someone you don't know is hurrying down the corridor, asking you to hold it. What do you do?",
       "hi": "आप पहले से late हैं और lift का दरवाज़ा बंद हो रहा है। कोई अनजान इंसान भागता हुआ आ रहा है और कह रहा है कि लिफ़्ट रोक लीजिए। आप क्या करते हैं?"
     },
     "options": [
