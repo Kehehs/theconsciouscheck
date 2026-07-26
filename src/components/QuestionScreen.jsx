@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { useQuizStore } from "../store/quizStore";
 import uiStrings from "../data/uiStrings.json";
@@ -10,6 +11,7 @@ import uiStrings from "../data/uiStrings.json";
 export default function QuestionScreen({ question, onAnswer, onBack, canGoBack }) {
   const reduceMotion = useReducedMotion();
   const language = useQuizStore((state) => state.language);
+  const [visualFailed, setVisualFailed] = useState(false);
 
   return (
     <AnimatePresence mode="wait">
@@ -24,6 +26,21 @@ export default function QuestionScreen({ question, onAnswer, onBack, canGoBack }
         <h2 className="font-display mb-8 text-[clamp(1.4rem,3vw,1.9rem)] font-semibold leading-snug text-white">
           {question.stem[language]}
         </h2>
+
+        {!visualFailed && (
+          <div className="mb-8 flex justify-center">
+            <img
+              src={`/question-visuals/${question.id}.svg`}
+              alt={question.visualAlt}
+              width={560}
+              height={420}
+              loading="eager"
+              onError={() => setVisualFailed(true)}
+              className="w-full max-w-[560px] rounded-2xl object-contain"
+              style={{ aspectRatio: "4 / 3", maxHeight: "38vh" }}
+            />
+          </div>
+        )}
 
         <div className="flex flex-col gap-3">
           {question.options.map((option, i) => (
