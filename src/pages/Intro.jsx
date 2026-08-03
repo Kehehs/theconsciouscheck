@@ -4,6 +4,7 @@ import BubbleStage from "../components/BubbleStage";
 import CTAButton from "../components/CTAButton";
 import TrustMarkers from "../components/TrustMarkers";
 import TeaserCard from "../components/TeaserCard";
+import { useStoredResult } from "../hooks/useStoredResult";
 
 const TEASER_CARDS = [
   {
@@ -46,8 +47,11 @@ const TEASER_CARDS = [
 export default function Intro() {
   const navigate = useNavigate();
   const reduceMotion = useReducedMotion();
+  const storedResult = useStoredResult();
+  const hasResult = storedResult.status === "ready";
 
   const start = () => navigate("/quiz");
+  const viewResult = () => navigate(`/check/r/${storedResult.token}`);
   const scrollToTaste = () =>
     document.getElementById("what-you-get")?.scrollIntoView({ behavior: "smooth" });
 
@@ -79,24 +83,45 @@ export default function Intro() {
                 <span className="text-amber-soft">This just gives it a name.</span>
               </h1>
               <p className="mb-2 max-w-[36ch] font-body text-[clamp(1rem,1.3vw,1.15rem)] font-medium leading-[1.6] text-pale-tint opacity-90">
-                15 questions, 4 to 5 minutes, one honest reading of who you are right now.
+                {hasResult
+                  ? `You've already taken the Conscious Check on this device.${
+                      storedResult.archetypeName ? ` You came out as ${storedResult.archetypeName}.` : ""
+                    }`
+                  : "15 questions, 4 to 5 minutes, one honest reading of who you are right now."}
               </p>
 
-              <CTAButton onClick={start} className="mt-2.5">
-                Start
-              </CTAButton>
+              {hasResult ? (
+                <>
+                  <CTAButton onClick={viewResult} className="mt-2.5">
+                    View your result
+                  </CTAButton>
+                  <button
+                    type="button"
+                    onClick={start}
+                    className="mt-5 font-body text-[13px] font-semibold tracking-[0.02em] text-tint-blue opacity-55 hover:opacity-80"
+                  >
+                    Retake the check
+                  </button>
+                </>
+              ) : (
+                <>
+                  <CTAButton onClick={start} className="mt-2.5">
+                    Start
+                  </CTAButton>
 
-              <button
-                type="button"
-                onClick={scrollToTaste}
-                className="mt-7 flex items-center gap-2 text-[13px] font-semibold tracking-[0.02em] text-tint-blue opacity-55 hover:opacity-80"
-                style={{ animation: reduceMotion ? "none" : "bob 2.4s ease-in-out infinite" }}
-              >
-                <span>See what you'll get</span>
-                <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" style={{ stroke: "var(--color-tint-blue)", fill: "none", strokeWidth: 2.4, strokeLinecap: "round", strokeLinejoin: "round" }}>
-                  <path d="M6 9l6 6 6-6" />
-                </svg>
-              </button>
+                  <button
+                    type="button"
+                    onClick={scrollToTaste}
+                    className="mt-7 flex items-center gap-2 text-[13px] font-semibold tracking-[0.02em] text-tint-blue opacity-55 hover:opacity-80"
+                    style={{ animation: reduceMotion ? "none" : "bob 2.4s ease-in-out infinite" }}
+                  >
+                    <span>See what you'll get</span>
+                    <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" style={{ stroke: "var(--color-tint-blue)", fill: "none", strokeWidth: 2.4, strokeLinecap: "round", strokeLinejoin: "round" }}>
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                </>
+              )}
             </motion.div>
 
             <div className="order-1 md:order-2">
@@ -189,9 +214,24 @@ export default function Intro() {
             className="mb-[34px] justify-center"
           />
 
-          <CTAButton onClick={start} size="large">
-            Start
-          </CTAButton>
+          {hasResult ? (
+            <>
+              <CTAButton onClick={viewResult} size="large">
+                View your result
+              </CTAButton>
+              <button
+                type="button"
+                onClick={start}
+                className="mt-4 font-body text-[13px] font-semibold tracking-[0.02em] text-tint-blue opacity-55 hover:opacity-80"
+              >
+                Retake the check
+              </button>
+            </>
+          ) : (
+            <CTAButton onClick={start} size="large">
+              Start
+            </CTAButton>
+          )}
         </motion.div>
       </section>
 

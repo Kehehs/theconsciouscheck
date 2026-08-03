@@ -4,6 +4,8 @@ import { motion, useReducedMotion } from "framer-motion";
 import questions from "../data/questions.json";
 import { useQuizStore } from "../store/quizStore";
 import { scoreQuiz } from "../lib/scoring";
+import { encodeResultToken } from "../lib/resultToken";
+import { setStoredToken } from "../lib/resultStorage";
 import uiStrings from "../data/uiStrings.json";
 import ProgressBar from "../components/ProgressBar";
 import QuestionScreen from "../components/QuestionScreen";
@@ -34,11 +36,17 @@ export default function Quiz() {
     if (currentIndex === total - 1) {
       setCalculating(true);
       const finalAnswers = { ...answers, [current.id]: value };
-      setTimeout(() => {
+      setTimeout(async () => {
         try {
-          const result = scoreQuiz(finalAnswers);
+          // Validates completeness before encoding, throws if a required
+          // answer is somehow missing — same guard scoreQuiz has always
+          // had, kept even though the token no longer carries its return
+          // value (decodeResultToken re-runs scoreQuiz itself later).
+          scoreQuiz(finalAnswers);
+          const token = await encodeResultToken(finalAnswers);
+          setStoredToken(token);
           reset();
-          navigate(`/result/${result.archetypeId}`, { state: { result } });
+          navigate(`/check/r/${token}`);
         } catch (err) {
           // Should be unreachable — Quiz's own flow only ever advances one
           // answer at a time, so the last question can't be reached without

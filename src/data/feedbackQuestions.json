@@ -1,0 +1,71 @@
+{
+  "_note": "6-question feedback flow shown from the result page CTA (feedback-only cohort, see shared.json cta.mode). hi values fall back to English, same convention as uiStrings.json, until real Hindi copy is provided.",
+  "questions": [
+    {
+      "id": "q1",
+      "stem": { "en": "How long did the quiz feel?", "hi": "How long did the quiz feel?" },
+      "options": [
+        { "en": "Too short", "hi": "Too short" },
+        { "en": "Felt about right", "hi": "Felt about right" },
+        { "en": "A little long", "hi": "A little long" },
+        { "en": "Too long", "hi": "Too long" }
+      ]
+    },
+    {
+      "id": "q2",
+      "stem": { "en": "How easy were the questions to understand?", "hi": "How easy were the questions to understand?" },
+      "options": [
+        { "en": "Very easy", "hi": "Very easy" },
+        { "en": "Mostly easy", "hi": "Mostly easy" },
+        { "en": "Some questions felt unclear", "hi": "Some questions felt unclear" },
+        { "en": "Several questions were confusing", "hi": "Several questions were confusing" }
+      ]
+    },
+    {
+      "id": "q3",
+      "stem": { "en": "How relatable did the situations in the questions feel to your actual life?", "hi": "How relatable did the situations in the questions feel to your actual life?" },
+      "options": [
+        { "en": "Very relatable", "hi": "Very relatable" },
+        { "en": "Somewhat relatable", "hi": "Somewhat relatable" },
+        { "en": "A mix, some felt relatable, some didn't", "hi": "A mix, some felt relatable, some didn't" },
+        { "en": "Not relatable", "hi": "Not relatable" }
+      ]
+    },
+    {
+      "id": "q4",
+      "stem": { "en": "How did the result page feel to read?", "hi": "How did the result page feel to read?" },
+      "options": [
+        { "en": "Genuinely interesting", "hi": "Genuinely interesting" },
+        { "en": "Somewhat interesting", "hi": "Somewhat interesting" },
+        { "en": "A bit long", "hi": "A bit long" },
+        { "en": "I didn't read most of it", "hi": "I didn't read most of it" }
+      ]
+    },
+    {
+      "id": "q5",
+      "stem": { "en": "Would you share your result card with a friend?", "hi": "Would you share your result card with a friend?" },
+      "options": [
+        { "en": "Yes", "hi": "Yes" },
+        { "en": "Maybe", "hi": "Maybe" },
+        { "en": "No", "hi": "No" }
+      ]
+    },
+    {
+      "id": "q6",
+      "stem": { "en": "Would you like to join your archetype's community?", "hi": "Would you like to join your archetype's community?" },
+      "options": [
+        { "en": "Yes", "hi": "Yes" },
+        { "en": "Maybe", "hi": "Maybe" },
+        { "en": "No", "hi": "No" }
+      ]
+    }
+  ],
+  "thankYou": {
+    "en": "That's it. Thank you for helping us make this sharper.",
+    "hi": "That's it. Thank you for helping us make this sharper."
+  },
+  "done": { "en": "Done", "hi": "Done" },
+  "closeLabel": { "en": "Close feedback", "hi": "Close feedback" },
+  "backLabel": { "en": "← Back", "hi": "← Back" },
+  "retryLabel": { "en": "Try Again", "hi": "Try Again" }
+}

@@ -8,7 +8,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<Intro />} />
       <Route path="/quiz" element={<Quiz />} />
-      <Route path="/result/:archetype" element={<Result />} />
+      <Route path="/check/r/:token" element={<Result />} />
     </Routes>
   );
 }

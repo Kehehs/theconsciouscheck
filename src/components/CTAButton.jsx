@@ -1,21 +1,21 @@
+import { forwardRef } from "react";
 import { motion } from "framer-motion";
 
 /**
  * Pill CTA. Fredoka 600 label, amber fill, spring hover lift. Reused for
  * every "Start" instance across the intro page (hero + closing).
+ * Forwards ref so callers (e.g. FeedbackModal) can return focus to it on close.
  */
-export default function CTAButton({
-  children,
-  onClick,
-  type = "button",
-  size = "default",
-  className = "",
-}) {
+const CTAButton = forwardRef(function CTAButton(
+  { children, onClick, type = "button", size = "default", className = "" },
+  ref
+) {
   const sizing =
     size === "large" ? "px-[54px] py-[19px] text-[19px]" : "px-12 py-[17px] text-lg";
 
   return (
     <motion.button
+      ref={ref}
       type={type}
       onClick={onClick}
       className={`font-display font-semibold text-white rounded-full bg-amber-accent min-h-[48px] min-w-[48px] cursor-pointer ${sizing} ${className}`}
@@ -32,4 +32,6 @@ export default function CTAButton({
       {children}
     </motion.button>
   );
-}
+});
+
+export default CTAButton;

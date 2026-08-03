@@ -1,41 +1,70 @@
-import { useRef, useState } from "react";
-import { useParams, useLocation, Link } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+import { useParams, Link } from "react-router-dom";
 import { toPng } from "html-to-image";
 import archetypes from "../data/archetypes.json";
 import shared from "../data/shared.json";
 import uiStrings from "../data/uiStrings.json";
 import { submitToWhatsAppRouting } from "../lib/scoring";
+import { decodeResultToken } from "../lib/resultToken";
 import { useQuizStore } from "../store/quizStore";
 import ResultCard from "../components/ResultCard";
 import CompositeBand from "../components/CompositeBand";
 import Disclaimer from "../components/Disclaimer";
 import CTAButton from "../components/CTAButton";
 import LanguageToggle from "../components/LanguageToggle";
+import FeedbackModal from "../components/FeedbackModal";
 
+// One result page component for every archetype (see CLAUDE.md's
+// architecture rule), now sourced from a self-contained, signed permalink
+// token (/check/r/:token) instead of route params + router state, so the
+// page renders identically on reload, on another device, or opened cold
+// from a shared link, no session, no database lookup.
 export default function Result() {
-  const { archetype: archetypeId } = useParams();
-  const location = useLocation();
+  const { token } = useParams();
   const cardRef = useRef(null);
+  const ctaRef = useRef(null);
   const [downloading, setDownloading] = useState(false);
+  const [feedbackOpen, setFeedbackOpen] = useState(false);
+  const [linkCopied, setLinkCopied] = useState(false);
+  const [decoded, setDecoded] = useState(undefined); // undefined = loading, null = invalid, object = ready
   const language = useQuizStore((state) => state.language);
 
-  const archetype = archetypes[archetypeId];
-  const result = location.state?.result;
+  useEffect(() => {
+    let cancelled = false;
+    setDecoded(undefined);
+    decodeResultToken(token).then((value) => {
+      if (!cancelled) setDecoded(value);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [token]);
 
-  if (!archetype || !result) {
+  if (decoded === undefined) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-navy-primary px-6">
+        <LanguageToggle />
+      </div>
+    );
+  }
+
+  if (decoded === null) {
     return (
       <div className="flex min-h-screen items-center justify-center bg-navy-primary px-6 text-center text-white">
         <LanguageToggle />
         <p className="font-body">
-          {uiStrings.expiredMessage[language]}{" "}
+          {uiStrings.invalidLinkMessage[language]}{" "}
           <Link to="/quiz" className="text-amber-soft underline">{uiStrings.takeTheCheck[language]}</Link>
         </p>
       </div>
     );
   }
 
+  const { result } = decoded;
+  const archetype = archetypes[result.archetypeId];
   const composite = result.composite;
   const bandId = result.band;
+  const permalinkUrl = `${window.location.origin}/check/r/${token}`;
 
   const handleShare = async () => {
     if (!cardRef.current) return;
@@ -53,7 +82,28 @@ export default function Result() {
     }
   };
 
-  const handleJoinCommunity = () => {
+  const handleCopyLink = async () => {
+    try {
+      await navigator.clipboard.writeText(permalinkUrl);
+      setLinkCopied(true);
+      setTimeout(() => setLinkCopied(false), 2000);
+    } catch (err) {
+      console.error("Failed to copy result link", err);
+    }
+  };
+
+  // Swappable entry point: WhatsApp community isn't live for this
+  // distribution, so shared.json's cta.mode points the primary CTA at the
+  // feedback flow instead. Flip cta.mode back to "whatsapp" when the
+  // community goes live, this component doesn't need to change.
+  const ctaMode = shared.cta.mode;
+  const ctaCopy = ctaMode === "feedback" ? shared.cta.feedback : shared.cta;
+
+  const handleCtaClick = () => {
+    if (ctaMode === "feedback") {
+      setFeedbackOpen(true);
+      return;
+    }
     submitToWhatsAppRouting(result?.answers, archetype.id);
     // TODO(kanishk): placeholder destination until WhatsApp routing UX is decided.
   };
@@ -66,14 +116,23 @@ export default function Result() {
         <ResultCard ref={cardRef} archetype={archetype} />
 
         {/* 2. Save / share action */}
-        <button
-          type="button"
-          onClick={handleShare}
-          disabled={downloading}
-          className="mt-3 min-h-[48px] rounded-full border border-tint-blue/30 bg-transparent px-6 py-3 font-body text-sm font-bold text-tint-blue disabled:opacity-60"
-        >
-          {downloading ? uiStrings.preparingImage[language] : uiStrings.saveYourCard[language]}
-        </button>
+        <div className="mt-3 flex flex-wrap items-center justify-center gap-3">
+          <button
+            type="button"
+            onClick={handleShare}
+            disabled={downloading}
+            className="min-h-[48px] rounded-full border border-tint-blue/30 bg-transparent px-6 py-3 font-body text-sm font-bold text-tint-blue disabled:opacity-60"
+          >
+            {downloading ? uiStrings.preparingImage[language] : uiStrings.saveYourCard[language]}
+          </button>
+          <button
+            type="button"
+            onClick={handleCopyLink}
+            className="min-h-[48px] rounded-full border border-tint-blue/30 bg-transparent px-6 py-3 font-body text-sm font-bold text-tint-blue"
+          >
+            {linkCopied ? uiStrings.linkCopied[language] : uiStrings.copyLink[language]}
+          </button>
+        </div>
 
         {/* 3. Archetype name + identity */}
         <div className="mt-10 text-center">
@@ -178,10 +237,10 @@ export default function Result() {
         {/* 12. CTA */}
         <div className="flex w-full flex-col items-center gap-3 text-center">
           <p className="font-body text-sm text-pale-tint opacity-80">
-            {shared.cta.supportingLine[language]}
+            {ctaCopy.supportingLine[language]}
           </p>
-          <CTAButton onClick={handleJoinCommunity} size="large" className="w-full sm:w-auto">
-            {shared.cta.buttonLabel[language]}
+          <CTAButton ref={ctaRef} onClick={handleCtaClick} size="large" className="w-full sm:w-auto">
+            {ctaCopy.buttonLabel[language]}
           </CTAButton>
           <Link
             to="/"
@@ -191,6 +250,14 @@ export default function Result() {
           </Link>
         </div>
       </div>
+
+      {ctaMode === "feedback" && (
+        <FeedbackModal
+          isOpen={feedbackOpen}
+          onClose={() => setFeedbackOpen(false)}
+          triggerRef={ctaRef}
+        />
+      )}
     </div>
   );
 }
