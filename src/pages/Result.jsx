@@ -243,7 +243,7 @@ export default function Result() {
             {ctaCopy.buttonLabel[language]}
           </CTAButton>
           <Link
-            to="/"
+            to="/quiz"
             className="mt-1 font-body text-xs font-semibold text-tint-blue opacity-60 hover:opacity-90"
           >
             {uiStrings.retakeTheCheck[language]}

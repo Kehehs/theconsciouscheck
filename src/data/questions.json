@@ -85,7 +85,7 @@
       },
       {
         "en": "Depends who's watching and what's at stake.",
-        "hi": "इस पर कि कौन देख रहा है और दाँव पर क्या है।"
+        "hi": "ये इस पर depend करता है कि कौन देख रहा है और दाँव पर क्या है।"
       },
       {
         "en": "I usually do what's fair, even when it costs me.",
@@ -176,7 +176,7 @@
     "options": [
       {
         "en": "On days like that, it's just me, on my own.",
-        "hi": "ऐसे दिनों में बस मैं होता हूँ, अकेला।"
+        "hi": "ऐसे दिनों में मैं बस अकेला महसूस करता हूँ।"
       },
       {
         "en": "That feeling only shows up once in a while.",
@@ -209,7 +209,7 @@
     "options": [
       {
         "en": "It's already mine. The buying happened in my head the moment I added it.",
-        "hi": "वो अब मेरा है। जिस पल cart में डाला, दिमाग में खरीद तो हो ही चुकी थी।"
+        "hi": "जिस पल मैंने इसे कार्ट में डाला, यह मेरा हो गया।"
       },
       {
         "en": "I buy it, and realise I didn't need it when it arrives.",
@@ -217,7 +217,7 @@
       },
       {
         "en": "Something expensive I'd think about, but this size of thing just happens.",
-        "hi": "महँगी चीज़ हो तो सोचता हूँ, पर इतनी सी चीज़ तो बस हो जाती है।"
+        "hi": "महँगी चीज़ हो तो सोचता हूँ, पर छोटी-मोटी खरीदारी हो जाती है।"
       },
       {
         "en": "I close the app and leave it overnight before deciding.",
@@ -225,7 +225,7 @@
       },
       {
         "en": "I only buy it if I still want it a few days later. Usually I don't.",
-        "hi": "दो-चार दिन बाद भी अगर मन हो, तभी खरीदता हूँ। ज़्यादातर नहीं होता।"
+        "hi": "दो-चार दिन बाद भी अगर मन हो, तभी खरीदता हूँ।"
       }
     ],
     "visualAlt": "Illustration of someone lying in bed looking at a shopping cart on their phone late at night."
@@ -270,7 +270,7 @@
     "reverse": false,
     "stem": {
       "en": "Think of the last reel or quote that genuinely moved you. What happened after?",
-      "hi": "आखिरी बार जब किसी रील या बात ने आपका मन छू लिया था, तो उसके बाद क्या हुआ?"
+      "hi": "आखिरी बार जब किसी रील या किसी विचार ने आपका मन छू लिया था, तो उसके बाद क्या हुआ?"
     },
     "options": [
       {
@@ -291,7 +291,7 @@
       },
       {
         "en": "If it doesn't change something I do, I don't count it as learning.",
-        "hi": "अगर उससे मेरे जीवन में कुछ बदला नहीं, तो मैं उसे सीखना मानता ही नहीं।"
+        "hi": "अगर उससे मेरे जीवन में कुछ बदला नहीं, तो मैं उस विचार में विश्वास नहीं करता।"
       }
     ],
     "visualAlt": "Illustration of someone looking at their phone, moved by a reel or quote they just saw."
@@ -336,7 +336,7 @@
     "reverse": false,
     "stem": {
       "en": "If someone followed you through an ordinary day, your sleep, your food, your screen time, would they see a person who is trying to achieve the goals he or she has set in life?",
-      "hi": "अगर कोई आपके एक आम दिन को देखे, आपकी नींद, आपका खाना, आपका screen time, तो क्या उसे वो इंसान दिखेगा जो अपनी ज़िंदगी के तय किए गए लक्ष्यों की तरफ़ बढ़ रहा है?"
+      "hi": "अगर कोई आपकी नींद, आपका खाना, आपका screen time देखे, तो क्या उसे वो इंसान दिखेगा जो अपनी मर्ज़ी की ज़िंदगी जी रहा है?"
     },
     "options": [
       {
@@ -390,7 +390,7 @@
       },
       {
         "en": "I give where it changes something, not where it feels nicest to give.",
-        "hi": "मैं वहाँ देता हूँ जहाँ कुछ बदलता है, वहाँ नहीं जहाँ देने में अच्छा लगता है।"
+        "hi": "मैं वहाँ देता हूँ जहाँ कुछ बदलता है, वहाँ नहीं जहाँ देने में बस संतुष्टि मिलती है।"
       }
     ],
     "visualAlt": "Illustration of someone giving their time or money to another person."
@@ -407,7 +407,7 @@
     "options": [
       {
         "en": "I argue harder. Being wrong makes me dig in.",
-        "hi": "और ज़ोर से बहस करता हूँ। गलत होना मुझे और अड़ा देता है।"
+        "hi": "और ज़ोर से बहस करता हूँ। ग़लत होना मुझे और गुस्सा दिला देता है।"
       },
       {
         "en": "I defend myself in the moment, and come round to it later, privately.",
@@ -440,7 +440,7 @@
     "options": [
       {
         "en": "Mostly for me. It's my edge and I use it that way.",
-        "hi": "ज़्यादातर मेरे लिए। ये मेरी बढ़त है और मैं इसे ऐसे ही use करता हूँ।"
+        "hi": "ज़्यादातर मेरे लिए। यह मेरा हुनर है और मैं इसे ऐसे ही use करता हूँ।"
       },
       {
         "en": "Using it for someone else barely crosses my mind.",
@@ -456,7 +456,7 @@
       },
       {
         "en": "What I'm good at isn't just for my CV. Using it for others is the point.",
-        "hi": "जिसमें मैं अच्छा हूँ वो सिर्फ़ मेरे CV के लिए नहीं है। दूसरों के काम आना ही तो बात है।"
+        "hi": "जिसमें मैं अच्छा हूँ वो सिर्फ़ मेरे CV के लिए नहीं है। दूसरों के काम आना चाहिए।"
       }
     ],
     "visualAlt": "Illustration of someone using a skill they're good at, deciding whether to share it with someone nearby."
@@ -489,7 +489,7 @@
       },
       {
         "en": "Where it comes from and where it goes is just part of how I choose.",
-        "hi": "वो चीज़ आई कहाँ से और जाएगी कहाँ, ये मेरे चुनने का हिस्सा ही है।"
+        "hi": "वो चीज़ आई कहाँ से और जाएगी कहाँ, ये मेरे चुनने का हिस्सा है।"
       }
     ],
     "visualAlt": "Illustration of someone choosing a product in a store while thinking about how it was made."
