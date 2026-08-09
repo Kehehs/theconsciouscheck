@@ -51,7 +51,7 @@
         "hi": "अगली सुबह समझ आता है कि ज़्यादा हो गया।"
       },
       {
-        "en": "Sometimes I stop, mostly I don't.",
+        "en": "Sometimes I stop, mostly I don't. It depends on the mood.",
         "hi": "कभी रुक जाता हूँ, ज़्यादातर नहीं।"
       },
       {
@@ -158,7 +158,7 @@
         "hi": "मुश्किल लगे तब भी मैं ज़्यादातर करता रहता हूँ।"
       },
       {
-        "en": "The harder it is, the more I want to stay with it.",
+        "en": "The harder it is, the more I want to do it.",
         "hi": "जितना मुश्किल हो, उतना ही मन करता है उसमें टिके रहने का।"
       }
     ],
@@ -216,7 +216,7 @@
         "hi": "खरीद लेता हूँ, और जब आता है तब समझ आता है कि ज़रूरत नहीं थी।"
       },
       {
-        "en": "Something expensive I'd think about, but this size of thing just happens.",
+        "en": "Something expensive I'd think about, but a small purchase just happens.",
         "hi": "महँगी चीज़ हो तो सोचता हूँ, पर छोटी-मोटी खरीदारी हो जाती है।"
       },
       {
@@ -319,7 +319,7 @@
         "hi": "मूड पर depend करता है, और इस पर कि मैं सच में कितना late हूँ।"
       },
       {
-        "en": "I hold it, even though it makes me later.",
+        "en": "I hold it, even though it makes me late.",
         "hi": "रोक लेता हूँ, चाहे मुझे और देर हो जाए।"
       },
       {
@@ -434,7 +434,7 @@
     "type": "Direct",
     "reverse": false,
     "stem": {
-      "en": "There's something you're genuinely good at. Who is it usually for?",
+      "en": "Think about your strongest skill. Does that skill mostly serve your own goals, or does it end up serving other people as well?",
       "hi": "कोई एक चीज़ है जिसमें आप सच में अच्छे हैं। वो आमतौर पर किसके लिए है?"
     },
     "options": [
