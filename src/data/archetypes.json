@@ -29,7 +29,7 @@
       "hi": "आप वो इंसान हैं जिसकी तरफ़ team तब देखती है जब किसी फैसले को instinct से ज़्यादा सोच चाहिए होती है। आप कमरे को अच्छे तरीके से धीमा करते हैं, आप वो सवाल पूछते हैं जो किसी और ने आगे बढ़ने से पहले सोचा ही नहीं। जिस चीज़ का ध्यान रखना है वो है - decision fatigue, हर फैसले को deep dive नहीं चाहिए होता, कभी-कभी सिर्फ़ एक choice चाहिए होती है।"
     },
     "relationships": {
-      "en": "You listen in a way people notice. You remember what someone said three weeks ago and bring it back at exactly the right moment. The flip side, you can go quiet processing something instead of saying it out loud, and the people who love you sometimes wish you'd just say the thing while you're still feeling it.",
+      "en": "You listen in a way people notice. You remember what someone said three weeks ago and bring it back at exactly the right moment. The flip side is you can go quiet processing something instead of saying it out loud, and the people who love you sometimes wish you'd just say the thing while you're still feeling it.",
       "hi": "आप उस तरह सुनते हैं कि लोग ध्यान देते हैं। तीन हफ़्ते पहले किसी ने जो कहा था, वो आपको याद रहता है, और आप उसे बिल्कुल सही वक़्त पर वापस ले आते हैं। दूसरी तरफ़, आप कभी-कभी किसी बात को बोलने की जगह अंदर ही process करते रहते हैं, और जो लोग आपको प्यार करते हैं, वो चाहते हैं कि आप वो बात उसी वक़्त कह दें जब आप उसे महसूस कर रहे हों।"
     },
     "closingLine": {
@@ -47,7 +47,7 @@
       "hi": "Intentional और deliberate, वो जो असल में check करता है खरीदने से पहले।"
     },
     "recognition": {
-      "en": "You're the one who pauses at the cart. Not because you don't want things, but because you've learned that wanting something for ten minutes and wanting it for a week are two different things. Everyone else is already checking out. You're asking the quieter question. Do I actually need this, or did I just need the feeling of getting it? It's not restraint for its own sake. It's that you'd rather your choices mean something.",
+      "en": "You're the one who pauses at the cart. Not because you don't want things, but because you've learned that wanting something for ten minutes and wanting it for a week are two different things. Everyone else is already checking out. You're asking the quieter question. Do I actually need this, or did I just need the feeling of getting it?",
       "hi": "आप वो इंसान हैं जो बिना सोचे-समझे चीज़ें नहीं खरीदते। इसलिए नहीं कि आपको चीज़ें नहीं चाहिए, बल्कि इसलिए कि आपने सीख लिया है कि दस मिनट के लिए कुछ चाहना, और एक हफ़्ते तक चाहना, दो अलग बातें हैं। बाकी सब checkout कर चुके होते हैं। आप वो शांत सवाल पूछ रहे होते हैं। क्या मुझे सच में इसकी ज़रूरत है, या मुझे बस इसे पाने का एहसास चाहिए था? ये अपने लिए restraint नहीं है। बात बस इतनी है कि आप चाहते हैं आपके फैसलों का कोई मतलब हो।"
     },
     "light": {
@@ -85,7 +85,7 @@
       "hi": "Protective और accountable, वो जिसके पास सब चुपचाप आकर खड़े हो जाते हैं।"
     },
     "recognition": {
-      "en": "People end up near you without quite knowing why. You're the one who shows up for the favour that can't be returned, who does the right thing even when the easier thing was sitting right there, unnoticed. You don't try to be reliable. You just are, consistently, on the days nobody's watching as much as on the days everyone is.",
+      "en": "People end up near you without quite knowing why. You're the one who shows up for the favour that can't be returned, who does the right thing even when the easier thing was sitting right there, unnoticed. You don't try to be reliable. You just are, on the days nobody's watching as much as on the days everyone is.",
       "hi": "लोगों को बिना वजह आपके आस-पास आ जाने की आदत होती है। आप वो हैं जो उस favour के लिए भी present रहते हैं जो कभी वापस नहीं मिलेगा, जो सही काम तब भी करते हैं जब आसान रास्ता ठीक सामने पड़ा हो, बिना किसी के notice किए। आप reliability perform नहीं करते, आप बस वही हैं, लगातार, उन दिनों में भी जब कोई नहीं देख रहा जितना उन दिनों में जब सब देख रहे हैं।"
     },
     "light": {
@@ -93,7 +93,7 @@
       "hi": "लोग आपके आस-पास ज़्यादा steady महसूस करते हैं। आप conviction से लीड करते हैं, convenience से नहीं, और आपको सही काम करने का credit नहीं चाहिए, यही वजह है कि लोग आप पर असली चीज़ें भरोसा कर पाते हैं।"
     },
     "shadow": {
-      "en": "Being the reliable one can quietly become being the only one who's allowed to need something. You might find it hard to ask for help, because you've built an identity around being the person who doesn't need it.",
+      "en": "Being the reliable one can quietly become being the only one who's not allowed to need something. You might find it hard to ask for help, because you've built an identity around being the person who doesn't need it.",
       "hi": "reliable होना धीरे-धीरे ऐसा बन सकता है कि आप ही अकेले इंसान हों जिसे कुछ चाहिए होने की इजाज़त ना हो। आपको help माँगना मुश्किल लग सकता है, क्योंकि आपने खुद को उस इंसान के तौर पर बना लिया है जिसे कुछ चाहिए ही नहीं।"
     },
     "growthTrajectory": {
@@ -101,7 +101,7 @@
       "hi": "कभी-कभी किसी और को भी कुछ थामने दीजिए आपके लिए। ज़रूरत महसूस होना, और ठीक होना, एक बात नहीं है।"
     },
     "career": {
-      "en": "You're the person whose word actually means something, the one leadership trusts with the thing that can't go wrong. You take ownership without needing to be asked twice. The risk is in becoming everyone's default fallback, and ending up holding more than your role actually requires.",
+      "en": "You're the person whose word actually means something, the one leadership trusts with the things that are too important. You take ownership without needing to be asked twice. The risk is in becoming everyone's default fallback, and ending up holding more than your role actually requires.",
       "hi": "आप वो इंसान हैं जिसकी बात असल में मायने रखती है, वो जिस पर leadership उस काम के लिए trust करती है जिसमें गलती की गुंजाइश नहीं। आप बिना दोबारा पूछे ownership लेते हैं। risk यही है कि आप सबका default fallback बन जाते हैं, और अपने role से ज़्यादा भार उठाने लगते हैं।"
     },
     "relationships": {
@@ -109,7 +109,7 @@
       "hi": "आप वो friend हैं जिसे लोग सबसे पहले call करते हैं जब कुछ सच में गलत हो, ना कि सिर्फ़ vent करने के लिए। ये steadiness rare है और लोग इसे जानते हैं। लेकिन आपको कभी-कभी सिर्फ़ संभालने वाले के बजाय, संभाले जाने वाले की भूमिका निभाने कि भी practice करनी होगी।"
     },
     "closingLine": {
-      "en": "The people who hold everyone together deserve somewhere to put their own weight down too.",
+      "en": "The people who hold everyone together deserve to be held too.",
       "hi": "जो लोग सबको साथ थामे रखते हैं, उन्हें भी कहीं अपना बोझ रखने की जगह मिलनी चाहिए।"
     }
   },
@@ -123,11 +123,11 @@
       "hi": "Service-oriented और collective, किसी ने नहीं कहा, आपने बस बना दिया।"
     },
     "recognition": {
-      "en": "Something exists because you made it exist. Someone had to make the plan real, get the group in the room, get the thing organised. That someone was you. You give in ways that create something, not just ways that feel good in the moment. And you keep showing up for your people even when it's inconvenient. That's just what showing up means to you.",
+      "en": "Something exists because you made it exist. Someone had to make the plan real, get the group in the room, get the things organised. That someone was you. You give in ways that create something, not just ways that feel good in the moment. And you keep showing up for your people even when it's inconvenient. That's just what showing up means to you.",
       "hi": "कोई चीज़ इसलिए exist करती है क्योंकि आपने उसे बनाया। कोई plan साथ आया, कोई group असल में मिला, कोई चीज़ organise हुई, और ये हुआ क्योंकि आपने चुपचाप कर दिया, ना कि किसी ने आपको assign किया। आप ऐसे तरीकों से देते हैं जो कुछ create करते हैं, सिर्फ़ उस पल अच्छा महसूस कराने वाले तरीकों से नहीं। और आप अपने लोगों के लिए तब भी खड़े रहते हैं जब inconvenient हो। आपके लिए showing up का यही मतलब है।"
     },
     "light": {
-      "en": "You turn intention into something real. People and communities are genuinely better because you were in the room, and you rarely need recognition for it, the outcome is the reward.",
+      "en": "You turn intention into something real. People and communities are genuinely better because you are in the room, and you rarely need recognition for it, the outcome is the reward.",
       "hi": "आप intention को असल चीज़ में बदल देते हैं। लोग और communities सच में बेहतर होते हैं क्योंकि आप वहाँ थे, और आपको इसके लिए recognition की शायद ही ज़रूरत होती है, outcome ही reward है।"
     },
     "shadow": {
@@ -139,11 +139,11 @@
       "hi": "ज़रूरी नहीं कि हर बार काम आपका ही हो। कभी-कभी किसी चीज़ को आपके बिना होने दीजिए।"
     },
     "career": {
-      "en": "You're the one who actually gets things done, the plan that stays on paper for everyone else becomes real because you pushed it forward. Teams lean on you more than they realise. Watch for becoming the unpaid infrastructure of every group you're in, your effort deserves visibility, not just gratitude.",
+      "en": "You're the one who actually gets things done, the plan that stays on paper for everyone else, it becomes real because you pushed it forward. Teams lean on you more than they realise. But you should watch for becoming the unpaid infrastructure of every group you're in, your effort deserves visibility, not just gratitude.",
       "hi": "आप वो हैं जो असल में काम पूरा करते हैं, वो plan जो बाकी सबके लिए बस कागज़ पर रहता है, आपकी वजह से असल बनता है। Teams आप पर उससे ज़्यादा depend करती हैं जितना उन्हें एहसास है। जिस चीज़ का ध्यान रखना है वो है हर group की unpaid infrastructure बन जाना, आपकी मेहनत को सिर्फ़ शुक्रिया नहीं, visibility भी चाहिए।"
     },
     "relationships": {
-      "en": "You're the friend who remembers the birthday, organises the trip, holds the group chat together. People feel cared for around you, genuinely. There's a difference between giving because it matters to you, and giving because no one else stepped up.",
+      "en": "You're the friend who remembers the birthday, organises the trip, holds the group chat together. People feel cared for around you, genuinely. But there's a difference between giving because it matters to you, and giving because no one else stepped up.",
       "hi": "आप वो friend हैं जिसे birthday याद रहता है, जो trip organise करता है, जो group chat को साथ रखता है। लोग आपके पास genuinely cared for feel करते हैं। बस इस बात पर ध्यान दें कि आप कब इसलिए कुछ दे रहे हैं क्योंकि यह आपके लिए matter कर्ता है, और कब इसलिए दे रहे हैं क्योंकि आप ये सोचते हैं कि कोई और ऐसा करेगा या नहीं।"
     },
     "closingLine": {
