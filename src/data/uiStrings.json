@@ -8,7 +8,6 @@
   "expiredMessage": { "en": "Your session's expired, or you haven't completed the check yet.", "hi": "Your session's expired, or you haven't completed the check yet." },
   "invalidLinkMessage": { "en": "This link isn't a valid result, it may be incomplete or altered.", "hi": "This link isn't a valid result, it may be incomplete or altered." },
   "takeTheCheck": { "en": "Take the check", "hi": "Take the check" },
-  "copyLink": { "en": "Copy link", "hi": "Copy link" },
   "linkCopied": { "en": "Link copied", "hi": "Link copied" },
   "preparingImage": { "en": "Preparing image...", "hi": "Preparing image..." },
   "saveYourCard": { "en": "Save your card", "hi": "Save your card" },
@@ -18,5 +17,8 @@
   "sectionShadow": { "en": "Shadow", "hi": "Shadow" },
   "sectionGrowthTrajectory": { "en": "Your Growth Trajectory", "hi": "Your Growth Trajectory" },
   "sectionCareer": { "en": "Career", "hi": "Career" },
-  "sectionRelationships": { "en": "Relationships", "hi": "Relationships" }
+  "sectionRelationships": { "en": "Relationships", "hi": "Relationships" },
+  "share": { "en": "Share", "hi": "Share" },
+  "shareInstagramHint": { "en": "Image downloaded — open Instagram and add it to your Story.", "hi": "Image downloaded — open Instagram and add it to your Story." },
+  "shareDownloadedImage": { "en": "Image downloaded", "hi": "Image downloaded" }
 }

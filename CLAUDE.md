@@ -126,19 +126,15 @@ Pure, testable, and documented inline. Key exports:
   (`sm:grid-cols-2`) directly in `Result.jsx`, matching the design spec.
   No separate component files for these — they're simple enough to inline.
 
-## Known asset issue (not fixed by this build)
+## Known asset issue — fixed 2026-08-16
 
-**`public/cards/seeker.webp` (source: `Results Page/Archetype cards/The
-Seeker.png`) is missing the gold arch frame and "THE SEEKER" caption strip
-that all five other archetype cards have.** The other five source PNGs
-(Anchor, Catalyst, Builder, Sage, Confluence) each bake the full
-mythic-tarot frame and name into the image; the Seeker asset is just the
-inner artwork bleeding to the edges, no frame, no caption. This wasn't
-something this build's instructions authorized fixing (no image editing
-was in scope, and inventing frame art would violate "don't invent content
-not in the source docs"). **Needs a corrected Seeker card asset from
-whoever illustrated the other five**, then a re-export to webp (same
-process as the other five: convert via `sharp`, `.webp({ quality: 88 })`).
+`public/cards/seeker.webp` was missing the gold arch frame and "THE
+SEEKER" caption strip that the other five archetype cards have. Fixed by
+re-exporting all six cards from `Results Page/Shareable Archetype
+Cards/*.png` (the finalized, framed set, including a corrected Seeker)
+via `sharp`, `.webp({ quality: 88 })` — same process as before, just a
+new source folder. `public/cards/*.webp` are the current, correct
+assets; no outstanding frame/caption issue.
 
 ## Open TODOs (flagged, not silently resolved)
 

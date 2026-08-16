@@ -8,6 +8,7 @@ import { submitToWhatsAppRouting } from "../lib/scoring";
 import { decodeResultToken } from "../lib/resultToken";
 import { useQuizStore } from "../store/quizStore";
 import ResultCard from "../components/ResultCard";
+import ShareButton from "../components/ShareButton";
 import CompositeBand from "../components/CompositeBand";
 import Disclaimer from "../components/Disclaimer";
 import CTAButton from "../components/CTAButton";
@@ -25,7 +26,6 @@ export default function Result() {
   const ctaRef = useRef(null);
   const [downloading, setDownloading] = useState(false);
   const [feedbackOpen, setFeedbackOpen] = useState(false);
-  const [linkCopied, setLinkCopied] = useState(false);
   const [decoded, setDecoded] = useState(undefined); // undefined = loading, null = invalid, object = ready
   const language = useQuizStore((state) => state.language);
 
@@ -64,9 +64,8 @@ export default function Result() {
   const archetype = archetypes[result.archetypeId];
   const composite = result.composite;
   const bandId = result.band;
-  const permalinkUrl = `${window.location.origin}/check/r/${token}`;
 
-  const handleShare = async () => {
+  const handleSaveCard = async () => {
     if (!cardRef.current) return;
     setDownloading(true);
     try {
@@ -79,16 +78,6 @@ export default function Result() {
       console.error("Failed to export result card", err);
     } finally {
       setDownloading(false);
-    }
-  };
-
-  const handleCopyLink = async () => {
-    try {
-      await navigator.clipboard.writeText(permalinkUrl);
-      setLinkCopied(true);
-      setTimeout(() => setLinkCopied(false), 2000);
-    } catch (err) {
-      console.error("Failed to copy result link", err);
     }
   };
 
@@ -119,19 +108,13 @@ export default function Result() {
         <div className="mt-3 flex flex-wrap items-center justify-center gap-3">
           <button
             type="button"
-            onClick={handleShare}
+            onClick={handleSaveCard}
             disabled={downloading}
             className="min-h-[48px] rounded-full border border-tint-blue/30 bg-transparent px-6 py-3 font-body text-sm font-bold text-tint-blue disabled:opacity-60"
           >
             {downloading ? uiStrings.preparingImage[language] : uiStrings.saveYourCard[language]}
           </button>
-          <button
-            type="button"
-            onClick={handleCopyLink}
-            className="min-h-[48px] rounded-full border border-tint-blue/30 bg-transparent px-6 py-3 font-body text-sm font-bold text-tint-blue"
-          >
-            {linkCopied ? uiStrings.linkCopied[language] : uiStrings.copyLink[language]}
-          </button>
+          <ShareButton archetype={archetype} language={language} />
         </div>
 
         {/* 3. Archetype name + identity */}
