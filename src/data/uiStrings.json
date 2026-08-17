@@ -19,6 +19,6 @@
   "sectionCareer": { "en": "Career", "hi": "Career" },
   "sectionRelationships": { "en": "Relationships", "hi": "Relationships" },
   "share": { "en": "Share", "hi": "Share" },
-  "shareInstagramHint": { "en": "Image downloaded — open Instagram and add it to your Story.", "hi": "Image downloaded — open Instagram and add it to your Story." },
+  "shareInstagramHint": { "en": "Image downloaded and link copied — Instagram strips captions from shared images, so paste the link yourself as a Story link sticker or in your message.", "hi": "Image downloaded and link copied — Instagram strips captions from shared images, so paste the link yourself as a Story link sticker or in your message." },
   "shareDownloadedImage": { "en": "Image downloaded", "hi": "Image downloaded" }
 }

@@ -80,8 +80,20 @@ export default function ShareButton({ archetype, language }) {
       try {
         await downloadCardImage(archetype);
         if (platformId === "instagram") {
+          // Instagram's own share/DM extension strips any text or link
+          // that comes with a shared image, whether it arrives via the
+          // OS share sheet or a manual attach — there's no way around
+          // that from here. Copying the caption+link to the clipboard
+          // alongside the download is the practical workaround: paste
+          // it in as a Story link sticker or a DM message after adding
+          // the image.
+          try {
+            await navigator.clipboard.writeText(`${text} ${url}`);
+          } catch (err) {
+            console.error("Failed to copy caption for Instagram", err);
+          }
           setInstagramHint(true);
-          setTimeout(() => setInstagramHint(false), 5000);
+          setTimeout(() => setInstagramHint(false), 6000);
         } else {
           setDownloaded(true);
           setTimeout(() => setDownloaded(false), 2000);
