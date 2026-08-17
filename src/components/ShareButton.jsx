@@ -62,7 +62,7 @@ export default function ShareButton({ archetype, language }) {
   };
 
   const handlePlatformClick = async (platformId) => {
-    const url = buildShareUrl(archetype.id, platformId);
+    const url = buildShareUrl(platformId);
     const text = buildShareText(archetype.name);
 
     if (platformId === "copy") {

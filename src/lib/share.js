@@ -7,19 +7,24 @@
 // canShareNatively() already returns false off-HTTPS since the API is
 // simply undefined there — no separate protocol check needed.
 
-// Placeholder tracked-link structure — swap the host once the real
-// redirect service exists, nothing else here needs to change.
-const TRACKED_LINK_BASE = "https://imalcares.org/s";
+// The live site. There's no per-archetype landing route (only "/",
+// "/quiz", and "/check/r/:token" exist — see App.jsx), so shared links
+// point at the homepage with UTM params, not a per-archetype path.
+const SITE_URL = "https://theconsciouscheck.vercel.app/";
 
-export function buildShareUrl(archetypeId, platform) {
-  const url = new URL(`${TRACKED_LINK_BASE}/${archetypeId}`);
+export function buildShareUrl(platform) {
+  const url = new URL(SITE_URL);
   url.searchParams.set("utm_source", platform);
   url.searchParams.set("utm_medium", "share");
   return url.toString();
 }
 
+// Deliberately doesn't embed the raw URL in the sentence — callers pair
+// this with the url as a separate "click here" link (see deepLinkFor's
+// whatsapp case and shareResult's native share.url field) rather than
+// pasting the long UTM-tagged link inline.
 export function buildShareText(archetypeName) {
-  return `I got ${archetypeName} on the Conscious Check. Find out yours.`;
+  return `I got ${archetypeName} on the Conscious Check. Click here to find out yours.`;
 }
 
 export const SHARE_TITLE = "Check Your Consciousness";
@@ -76,7 +81,7 @@ export async function downloadCardImage(archetype) {
 export async function shareResult(archetype) {
   if (!canShareNatively()) return false;
 
-  const url = buildShareUrl(archetype.id, "native");
+  const url = buildShareUrl("native");
   const text = buildShareText(archetype.name);
   const shareData = { title: SHARE_TITLE, text, url };
 
