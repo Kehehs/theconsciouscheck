@@ -10,7 +10,7 @@
     },
     "recognition": {
       "en": "You're the one who processes things twice. Someone says something that lands wrong, and while everyone else has already moved on, you're still sitting with it, working out what it actually touched in you. People sometimes call you an overthinker. You call it paying attention. You've never really been able to switch off the part of you that asks why, and most days, that's the whole point.",
-      "hi": "आप वो हैं जो हर बात को दो बार process करते हैं। कोई कुछ ऐसा कह देता है जो गलत लगे, और जब बाकी सब आगे बढ़ चुके होते हैं, तब भी आप उसी बात के बारे में सोच रहे होते हैं कि उसने आपके मन में असल में किस चीज़ को छुआ है। लोग कभी-कभी इसे overthinking कहते हैं। आप इसे ध्यान देना कहते हैं। आप अपने अंदर के उस हिस्से को कभी भी पूरी तरह से शांत नहीं कर पाए जो 'क्यों' पूछता है, और ज़्यादातर दिनों में, असल बात यही है।"
+      "hi": "आप वो हैं जो हर बात को दो बार process करते हैं। कोई कुछ ऐसा कह देता है जो गलत लगे, और जब बाकी सब आगे बढ़ चुके होते हैं, तब भी आप उसी बात के बारे में सोच रहे होते हैं कि उसने आपके मन में असल में किस चीज़ को छुआ है। लोग कभी-कभी इसे overthinking कहते हैं। आप इसे ध्यान देना कहते हैं। आप अपने अंदर के उस हिस्से को कभी भी पूरी तरह से शांत नहीं कर पाए जो 'क्यों' पूछता है।"
     },
     "light": {
       "en": "You know yourself in a way most people never get around to. You control your reactions instead of being controlled by them. You're the calm in rooms that won't slow down.",
@@ -34,7 +34,7 @@
     },
     "closingLine": {
       "en": "The loudest room is the one inside your own head. That's not a problem to fix.",
-      "hi": "सबसे शोर वाला कमरा वही है जो आपके अपने दिमाग के अंदर है। और ये कोई problem नहीं जिसे ठीक करना है।"
+      "hi": "सबसे शोर वाला कमरा वही है जो आपके अपने दिमाग के अंदर है। और ये कोई problem नहीं है।"
     }
   },
   "catalyst": {
@@ -44,7 +44,7 @@
     "cardImage": "/cards/catalyst.webp",
     "identity": {
       "en": "Intentional and deliberate, the one who actually checks before they buy in.",
-      "hi": "Intentional और deliberate, वो जो असल में check करता है खरीदने से पहले।"
+      "hi": "Intentional और deliberate, वो जो खरीदने से पहले, सच में रुककर सोचता है।"
     },
     "recognition": {
       "en": "You're the one who pauses at the cart. Not because you don't want things, but because you've learned that wanting something for ten minutes and wanting it for a week are two different things. Everyone else is already checking out. You're asking the quieter question. Do I actually need this, or did I just need the feeling of getting it?",
@@ -60,11 +60,11 @@
     },
     "growthTrajectory": {
       "en": "Let some choices stay small. Not every choice needs a full audit.",
-      "hi": "कुछ फैसलों को छोटा ही रहने दीजिए। हर चीज़ को पूरे audit की ज़रूरत नहीं होती।"
+      "hi": "कुछ फैसलों को छोटा ही रहने दीजिए। हर चीज़ को full audit की ज़रूरत नहीं होती।"
     },
     "career": {
       "en": "You're the one who catches the wasteful spend, the unnecessary step, the thing everyone else missed because they were moving too fast to check. You bring discipline to decisions that need it. Watch for over-deliberating on calls that genuinely don't require it, speed matters sometimes too.",
-      "hi": "आप वो हैं जो बेकार खर्च पकड़ लेते हैं, वो unnecessary step जो बाकी सबने miss कर दिया क्योंकि वो check करने के लिए बहुत तेज़ चल रहे थे। आप उन फैसलों में discipline लाते हैं जिन्हें उसकी ज़रूरत है। जिस चीज़ का ध्यान रखना है वो है - over-analyzing उन फैसलों पर जिन्हें सच में इतनी सोच नहीं चाहिए, कभी-कभी speed भी मायने रखती है।"
+      "hi": "आप वो हैं जो बेकार खर्चों पकड़ लेते हैं, वो unnecessary step जो बाकी सबने miss कर दिया क्योंकि वो check करने के लिए बहुत तेज़ चल रहे थे। आप उन फैसलों में discipline लाते हैं जिन्हें उसकी ज़रूरत है। जिस चीज़ का ध्यान रखना है वो है - over-analyzing उन फैसलों पर जिन्हें सच में इतनी सोच नहीं चाहिए, कभी-कभी speed भी मायने रखती है।"
     },
     "relationships": {
       "en": "People trust your recommendations because you don't hand them out lightly, when you say something's worth it, you mean it. Where this can bite, you might come across as hard to please because you take your time committing to anything, until you know it's right.",
@@ -72,7 +72,7 @@
     },
     "closingLine": {
       "en": "Caring what you let into your life is its own kind of care for yourself.",
-      "hi": "हर 'हाँ' जो आप किसी चीज़ को कहते हैं, कहीं ना कहीं अपने लिए भी एक फैसला है।"
+      "hi": "हर बार जब आप रुककर सोचते हैं, आप खुद को थोड़ा और चुनते हैं।"
     }
   },
   "anchor": {
@@ -86,27 +86,27 @@
     },
     "recognition": {
       "en": "People end up near you without quite knowing why. You're the one who shows up for the favour that can't be returned, who does the right thing even when the easier thing was sitting right there, unnoticed. You don't try to be reliable. You just are, on the days nobody's watching as much as on the days everyone is.",
-      "hi": "लोगों को बिना वजह आपके आस-पास आ जाने की आदत होती है। आप वो हैं जो उस favour के लिए भी present रहते हैं जो कभी वापस नहीं मिलेगा, जो सही काम तब भी करते हैं जब आसान रास्ता ठीक सामने पड़ा हो, बिना किसी के notice किए। आप reliability perform नहीं करते, आप बस वही हैं, लगातार, उन दिनों में भी जब कोई नहीं देख रहा जितना उन दिनों में जब सब देख रहे हैं।"
+      "hi": "लोगों को बिना वजह आपके आस-पास आ जाने की आदत है। आप वो हैं जो उस favour के लिए भी present रहते हैं जो कभी वापस नहीं मिलेगा, जो सही काम तब भी करते हैं जब आसान रास्ता ठीक सामने पड़ा हो, बिना किसी के notice किए। आप reliability perform नहीं करते, आप बस वही हैं, लगातार, उन दिनों में भी जब कोई नहीं देख रहा जितना उन दिनों में जब सब देख रहे हैं।"
     },
     "light": {
       "en": "People feel calmer around you. You lead through conviction, not convenience, and you don't need credit for doing the right thing, which is exactly why people trust you with real things.",
-      "hi": "लोग आपके आस-पास ज़्यादा steady महसूस करते हैं। आप conviction से लीड करते हैं, convenience से नहीं, और आपको सही काम करने का credit नहीं चाहिए, यही वजह है कि लोग आप पर असली चीज़ें भरोसा कर पाते हैं।"
+      "hi": "लोग आपके आस-पास ज़्यादा steady महसूस करते हैं। आप conviction से लीड करते हैं, convenience से नहीं, और आपको सही काम करने का credit नहीं चाहिए, यही कारण है कि लोग ज़रूरी चीज़ों के लिए आप पर भरोसा कर सकते हैं।"
     },
     "shadow": {
       "en": "Being the reliable one can quietly become being the only one who's not allowed to need something. You might find it hard to ask for help, because you've built an identity around being the person who doesn't need it.",
-      "hi": "reliable होना धीरे-धीरे ऐसा बन सकता है कि आप ही अकेले इंसान हों जिसे कुछ चाहिए होने की इजाज़त ना हो। आपको help माँगना मुश्किल लग सकता है, क्योंकि आपने खुद को उस इंसान के तौर पर बना लिया है जिसे कुछ चाहिए ही नहीं।"
+      "hi": "reliable होना धीरे-धीरे ऐसा बन सकता है कि आप ही अकेले इंसान हों जिसे कुछ चाहिए होने की इजाज़त ना हो। आपको help माँगना मुश्किल लग सकता है, क्योंकि आपने खुद को वो बना लिया है जिसे कुछ चाहिए ही नहीं।"
     },
     "growthTrajectory": {
       "en": "Let someone else hold something for you, sometimes. Being needed isn't the same as being okay.",
-      "hi": "कभी-कभी किसी और को भी कुछ थामने दीजिए आपके लिए। ज़रूरत महसूस होना, और ठीक होना, एक बात नहीं है।"
+      "hi": "कभी-कभी किसी और को भी आपके लिए कुछ करने दीजिए। ज़रूरत महसूस होना, और ठीक होना, एक बात नहीं है।"
     },
     "career": {
       "en": "You're the person whose word actually means something, the one leadership trusts with the things that are too important. You take ownership without needing to be asked twice. The risk is in becoming everyone's default fallback, and ending up holding more than your role actually requires.",
-      "hi": "आप वो इंसान हैं जिसकी बात असल में मायने रखती है, वो जिस पर leadership उस काम के लिए trust करती है जिसमें गलती की गुंजाइश नहीं। आप बिना दोबारा पूछे ownership लेते हैं। risk यही है कि आप सबका default fallback बन जाते हैं, और अपने role से ज़्यादा भार उठाने लगते हैं।"
+      "hi": "आप वो इंसान हैं जिसकी बात असल में मायने रखती है, वो जिस पर leadership उस काम के लिए trust करती है जिसमें गलती की गुंजाइश नहीं है। आप बिना दोबारा पूछे ownership लेते हैं। risk यही है कि आप सबका default fallback बन जाते हैं, और अपने role से ज़्यादा भार उठाने लगते हैं।"
     },
     "relationships": {
       "en": "You're the friend people call first when something's actually wrong, not when they just want to vent. That steadiness is rare and people know it. But you may need someone in your corner too, not just be in everyone else's.",
-      "hi": "आप वो friend हैं जिसे लोग सबसे पहले call करते हैं जब कुछ सच में गलत हो, ना कि सिर्फ़ vent करने के लिए। ये steadiness rare है और लोग इसे जानते हैं। लेकिन आपको कभी-कभी सिर्फ़ संभालने वाले के बजाय, संभाले जाने वाले की भूमिका निभाने कि भी practice करनी होगी।"
+      "hi": "आप वो friend हैं जिसे लोग सबसे पहले call करते हैं जब कुछ सच में गलत हो, ना कि सिर्फ़ vent करने के लिए। ये steadiness rare है और लोग इसे जानते हैं। लेकिन कभी-कभी आपको संभालने के बजाय, संभाले जाने की भी practice करनी होगी।"
     },
     "closingLine": {
       "en": "The people who hold everyone together deserve to be held too.",

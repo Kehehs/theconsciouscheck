@@ -44,7 +44,7 @@
     "options": [
       {
         "en": "I watch it. The next one always starts before I've decided anything.",
-        "hi": "देख लेता हूँ। अगला शुरू हो जाता है, इससे पहले कि मैं कुछ तय कर पाऊँ।"
+        "hi": "देख लेता हूँ। अगला episode शुरू हो जाता है, इससे पहले कि मैं कुछ तय कर पाऊँ।"
       },
       {
         "en": "I only realise I've had too much the next morning.",
@@ -81,7 +81,7 @@
       },
       {
         "en": "Whatever's easiest, and I justify it afterwards.",
-        "hi": "जो सबसे आसान हो, और बाद में उसे सही ठहरा लेता हूँ।"
+        "hi": "जो सबसे आसान हो, और बाद में उसे सही ठहराने की कोशिश करता हूँ।"
       },
       {
         "en": "Depends who's watching and what's at stake.",
@@ -105,16 +105,16 @@
     "reverse": false,
     "stem": {
       "en": "After weeks of struggling, you finally cracked the problem you were stuck on. A junior at work is now stuck on exactly the same thing. What do you do?",
-      "hi": "हफ़्तों की मेहनत के बाद आपने आख़िरकार वो problem solve कर ली। अब office में एक junior उसी जगह अटका हुआ है। आप क्या करते हैं?"
+      "hi": "हफ़्तों की मेहनत के बाद आपने आख़िरकार वो problem solve कर ली। अब office में एक junior उसी जगह अटक गया है जहाँ आप पहले अटके थे। आप क्या करते हैं?"
     },
     "options": [
       {
         "en": "Nothing. What I worked out is mine.",
-        "hi": "कुछ नहीं। जो मैंने निकाला है वो मेरा है।"
+        "hi": "कुछ नहीं। जो मैंने निकाला है, वो मेरा है।"
       },
       {
         "en": "It genuinely doesn't occur to me to say anything.",
-        "hi": "दिमाग में आता ही नहीं कि उसे बता दूं मेरे लिए क्या काम आया।"
+        "hi": "दिमाग में आता ही नहीं कि उसे बताऊँ कि मेरे लिए क्या काम आया था।"
       },
       {
         "en": "If they ask me directly, I'll help.",
@@ -138,7 +138,7 @@
     "reverse": false,
     "stem": {
       "en": "Something is genuinely hard and you could quietly avoid it. What do you usually do?",
-      "hi": "कोई काम सच में मुश्किल है और आप चुपचाप उससे बच भी सकते हैं। आप आमतौर पर क्या करते हैं?"
+      "hi": "कोई काम सच में मुश्किल है और आप चाहें तो चुपचाप उससे बच भी सकते हैं। आप आमतौर पर क्या करते हैं?"
     },
     "options": [
       {
@@ -155,7 +155,7 @@
       },
       {
         "en": "I usually push through even when it's uncomfortable.",
-        "hi": "मुश्किल लगे तब भी मैं ज़्यादातर करता रहता हूँ।"
+        "hi": "मुश्किल लगे तब भी मैं ज़्यादातर उसे करता रहता हूँ।"
       },
       {
         "en": "The harder it is, the more I want to do it.",
@@ -184,11 +184,11 @@
       },
       {
         "en": "Some days I feel connected, some days not at all.",
-        "hi": "कुछ दिन जुड़ा लगता हूँ, कुछ दिन बिल्कुल नहीं।"
+        "hi": "कुछ दिन जुड़ा हुआ महसूस करता हूँ, कुछ दिन बिल्कुल नहीं।"
       },
       {
         "en": "Most of the time I feel held by something bigger than me.",
-        "hi": "ज़्यादातर लगता है कि कुछ बड़ा है जो मुझे थामे हुए है।"
+        "hi": "ज़्यादातर लगता है कि कुछ बड़ा मुझे थामे हुए है।"
       },
       {
         "en": "Even on the worst days, I know I'm part of something larger.",
@@ -204,7 +204,7 @@
     "reverse": true,
     "stem": {
       "en": "It's late, and you remember there's something sitting in your Amazon cart that you didn't know existed twenty minutes ago. What usually happens?",
-      "hi": "रात हो चुकी है, और आपको याद आता है कि आपकी Amazon cart में कुछ पड़ा है, जिसके बारे में बीस मिनट पहले तक आपको पता भी नहीं था। आमतौर पर क्या होता है?"
+      "hi": "रात हो चुकी है और आपको याद आता है कि आपकी Amazon cart में कुछ पड़ा है, जिसके बारे में आपको बीस मिनट पहले तक पता भी नहीं था। आमतौर पर क्या होता है?"
     },
     "options": [
       {
@@ -237,12 +237,12 @@
     "reverse": false,
     "stem": {
       "en": "Think about the people you interacted with today. How did they leave the interaction?",
-      "hi": "आज आप जिन लोगों से मिले, उनके बारे में सोचिए। वो आपसे मिलकर कैसे गए?"
+      "hi": "आज आप जिन लोगों से मिले, उनके बारे में सोचिए। आपसे मिलकर वे कैसा महसूस करके गए होंगे?"
     },
     "options": [
       {
         "en": "A bit worse than they arrived, honestly.",
-        "hi": "सच कहूँ तो, आने से थोड़ा बुरा महसूस करके।"
+        "hi": "सच कहूँ तो, मुझसे मिलकर थोड़ा बुरा महसूस करके।"
       },
       {
         "en": "I don't really notice the effect I have on people.",
@@ -275,11 +275,11 @@
     "options": [
       {
         "en": "I felt something for ten seconds, then moved on.",
-        "hi": "दस second कुछ महसूस हुआ, फिर आगे बढ़ गया।"
+        "hi": "दस सेकंड कुछ महसूस हुआ, फिर आगे बढ़ गया।"
       },
       {
         "en": "I saved it to a folder I'll never open again.",
-        "hi": "Save कर लिया, उस folder में जो मैं शायद कभी नहीं खोलूंगा।"
+        "hi": "Save कर लिया, उस folder में जिसे मैं शायद कभी नहीं खोलूँगा।"
       },
       {
         "en": "Now and then one sticks, mostly it was just good content.",
@@ -312,7 +312,7 @@
       },
       {
         "en": "If they're close enough that it costs me nothing, I'll hold it.",
-        "hi": "अगर वो इतने पास है कि मेरा कुछ नहीं जाता, तो रोक लूँगा।"
+        "hi": "अगर वो इतना पास है कि मेरा कुछ नहीं जाएगा, तो रोक लूँगा।"
       },
       {
         "en": "Depends on my mood, and how late I actually am.",
@@ -336,7 +336,7 @@
     "reverse": false,
     "stem": {
       "en": "If someone followed you through an ordinary day, your sleep, your food, your screen time, would they see a person who is trying to achieve the goals he or she has set in life?",
-      "hi": "अगर कोई आपकी नींद, आपका खाना, आपका screen time देखे, तो क्या उसे वो इंसान दिखेगा जो अपनी मर्ज़ी की ज़िंदगी जी रहा है?"
+      "hi": "अगर कोई आपकी नींद, आपका खाना और आपका screen time देखे, तो क्या उसे ऐसा इंसान दिखेगा जो अपनी मर्ज़ी से ज़िंदगी जी रहा है?"
     },
     "options": [
       {
@@ -345,11 +345,11 @@
       },
       {
         "en": "They'd see me trying and failing to fix the same routine again.",
-        "hi": "उसे मैं दिखूँगा, वही routine ठीक करने की कोशिश करते और नाकाम होते हुए, बार-बार।"
+        "hi": "उसे मैं ऐसा दिखूँगा जो बार-बार अपना routine ठीक करने की कोशिश करता है और फिर नाकाम हो जाता है।"
       },
       {
         "en": "Some weeks they'd be impressed, some weeks it's chaos.",
-        "hi": "कुछ हफ़्ते वो impress होगा, कुछ हफ़्ते नहीं।"
+        "hi": "कुछ हफ़्तों में वो impress होगा, कुछ हफ़्तों में नहीं।"
       },
       {
         "en": "Most days they'd see someone roughly living how they mean to.",
@@ -357,7 +357,7 @@
       },
       {
         "en": "My most ordinary day already looks like the life I'm aiming for.",
-        "hi": "मेरा सबसे आम दिन भी वैसा ही दिखता है जैसी ज़िंदगी मैं चाहता हूँ।"
+        "hi": "मेरा सबसे आम दिन भी वैसा ही दिखता है, जैसी ज़िंदगी मैं जीना चाहता हूँ।"
       }
     ],
     "visualAlt": "Illustration of someone going through an ordinary day, sleep, food, and phone in hand, as if being observed."
@@ -378,11 +378,11 @@
       },
       {
         "en": "Mostly it's the quick hit of feeling good about myself.",
-        "hi": "ज़्यादातर तो खुद को अच्छा महसूस कराने वाली बात होती है।"
+        "hi": "ज़्यादातर तो यह खुद को अच्छा महसूस कराने वाली बात होती है।"
       },
       {
         "en": "Sometimes I check where it goes, mostly I don't.",
-        "hi": "कभी देख लेता हूँ कि कहाँ जा रहा है, ज़्यादातर नहीं।"
+        "hi": "कभी देख लेता हूँ कि पैसा असल में कहाँ जा रहा है, ज़्यादातर नहीं।"
       },
       {
         "en": "I want to know it's actually doing something.",
@@ -402,7 +402,7 @@
     "reverse": true,
     "stem": {
       "en": "You're arguing a point you're sure about, and someone puts hard evidence in front of you that you're wrong. What's your first move?",
-      "hi": "आप किसी बात पर बहस कर रहे हैं जिस पर आप पूरी तरह sure हैं, और कोई आपके सामने पक्का सबूत रख देता है कि आप गलत हैं। पहली प्रतिक्रिया क्या होती है?"
+      "hi": "आप किसी बात पर बहस कर रहे हैं जिस पर आप पूरी तरह sure हैं, और कोई आपके सामने ठोस सबूत रख देता है कि आप गलत हैं। पहली प्रतिक्रिया क्या होती है?"
     },
     "options": [
       {
@@ -435,7 +435,7 @@
     "reverse": false,
     "stem": {
       "en": "Think about your strongest skill. Does that skill mostly serve your own goals, or does it end up serving other people as well?",
-      "hi": "कोई एक चीज़ है जिसमें आप सच में अच्छे हैं। वो आमतौर पर किसके लिए है?"
+      "hi": "कोई एक चीज़ है जिसमें आप सच में अच्छे हैं। आप आमतौर पर उसका इस्तेमाल किसके लिए करते हैं?"
     },
     "options": [
       {
@@ -468,7 +468,7 @@
     "reverse": false,
     "stem": {
       "en": "When you're choosing what to buy, do you think about how it was made and what happens to it once you're done with it?",
-      "hi": "जब आप कुछ खरीदने का फैसला कर रहे होते हैं, क्या आप सोचते हैं कि वो चीज़ बनी कैसे है और इस्तेमाल के बाद उसका क्या होगा?"
+      "hi": "जब आप कुछ खरीदने का फैसला कर रहे होते हैं, क्या आप सोचते हैं कि वह चीज़ कैसे बनी है और इस्तेमाल के बाद उसका क्या होगा?"
     },
     "options": [
       {
