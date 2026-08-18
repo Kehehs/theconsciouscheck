@@ -1,4 +1,4 @@
-# CLAUDE.md — The Conscious Check (app)
+# CLAUDE.md - The MyndCheck (app)
 
 This file documents the data schema for this app so copy edits can be made
 by editing JSON, not code, plus the open decisions/TODOs left in this build.

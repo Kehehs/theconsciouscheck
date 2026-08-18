@@ -1,5 +1,5 @@
 /**
- * The Conscious Check, result-page feedback flow, write endpoint.
+ * The MyndCheck, result-page feedback flow, write endpoint.
  *
  * Bound to sheet 1AXKiKO0JqKRyjg3_atKn6SFSbbeIJVSxqUu0QmUM_1s, tab
  * "Form Responses 1". Column order: Timestamp, Q1, Q2, Q3, Q4, Q5, Q6.

@@ -68,7 +68,7 @@ export default function Intro() {
         <div className="relative mx-auto flex min-h-screen max-w-[1240px] flex-col px-[6vw]">
           <div className="font-display flex items-center gap-[9px] pt-10 text-[19px] font-semibold text-white/95">
             <span className="inline-block h-[9px] w-[9px] rounded-full bg-amber-accent" />
-            Conscious Check
+            MyndCheck
           </div>
 
           <div className="grid flex-1 grid-cols-1 items-center gap-4 py-6 pb-10 md:grid-cols-[minmax(300px,500px)_1fr]">
@@ -84,7 +84,7 @@ export default function Intro() {
               </h1>
               <p className="mb-2 max-w-[36ch] font-body text-[clamp(1rem,1.3vw,1.15rem)] font-medium leading-[1.6] text-pale-tint opacity-90">
                 {hasResult
-                  ? `You've already taken the Conscious Check on this device.${
+                  ? `You've already taken the MyndCheck on this device.${
                       storedResult.archetypeName ? ` You came out as ${storedResult.archetypeName}.` : ""
                     }`
                   : "15 questions, 4 to 5 minutes, one honest reading of who you are right now."}

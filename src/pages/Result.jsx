@@ -71,7 +71,7 @@ export default function Result() {
     try {
       const dataUrl = await toPng(cardRef.current, { pixelRatio: 2, cacheBust: true });
       const link = document.createElement("a");
-      link.download = `conscious-check-${archetype.id}.png`;
+      link.download = `myndcheck-${archetype.id}.png`;
       link.href = dataUrl;
       link.click();
     } catch (err) {

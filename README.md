@@ -1,4 +1,4 @@
-# The Conscious Check
+# The MyndCheck
 
 A three-page self-assessment web app: **Intro → Quiz → Result**. Standalone
 sub-brand product for `imalcares.org` — deliberately not dressed in IMAL's

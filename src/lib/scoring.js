@@ -7,7 +7,7 @@
 // imply it. This exact thing has already gone wrong twice: once removed
 // entirely (commit 4a11bf9), then restored as standalone R1/R2/R3
 // objects instead of a `reverse` flag on Q1/Q7/Q13 (see
-// conscious-check/CLAUDE.md for the full history).
+// myndcheck/CLAUDE.md for the full history).
 import questions from "../data/questions.json";
 
 export const PILLARS = [

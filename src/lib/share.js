@@ -10,7 +10,12 @@
 // The live site. There's no per-archetype landing route (only "/",
 // "/quiz", and "/check/r/:token" exist — see App.jsx), so shared links
 // point at the homepage with UTM params, not a per-archetype path.
-const SITE_URL = "https://theconsciouscheck.vercel.app/";
+// Interim domain, not the final destination. imalcares.org is the
+// eventual target but that migration is a separate future phase, this
+// is only the myndcheck.vercel.app stepping stone (see the redirect
+// from theconsciouscheck.vercel.app set up on the Vercel side for
+// pre-migration shared links).
+const SITE_URL = "https://myndcheck.vercel.app/";
 
 export function buildShareUrl(platform) {
   const url = new URL(SITE_URL);
@@ -24,7 +29,7 @@ export function buildShareUrl(platform) {
 // whatsapp case and shareResult's native share.url field) rather than
 // pasting the long UTM-tagged link inline.
 export function buildShareText(archetypeName) {
-  return `I got ${archetypeName} on the Conscious Check. Click here to find out yours.`;
+  return `I got ${archetypeName} on the MyndCheck. Click here to find out yours.`;
 }
 
 export const SHARE_TITLE = "Check Your Consciousness";
@@ -51,7 +56,7 @@ export function isMobileDevice() {
 async function fetchCardImageFile(archetype) {
   const response = await fetch(archetype.cardImage);
   const blob = await response.blob();
-  return new File([blob], `conscious-check-${archetype.id}.webp`, {
+  return new File([blob], `myndcheck-${archetype.id}.webp`, {
     type: blob.type || "image/webp",
   });
 }
@@ -62,7 +67,7 @@ export async function downloadCardImage(archetype) {
   const objectUrl = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = objectUrl;
-  link.download = `conscious-check-${archetype.id}.webp`;
+  link.download = `myndcheck-${archetype.id}.webp`;
   link.click();
   URL.revokeObjectURL(objectUrl);
 }
