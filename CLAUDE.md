@@ -7,20 +7,21 @@ by editing JSON, not code, plus the open decisions/TODOs left in this build.
 
 `src/data/questions.json` is **15 items, no more, no less** — the exact
 wording, order, pillar tags, and type labels of
-`Conscious_Check_Questions_EN_Final.md`. Q1, Q7, and Q13 are
-reverse-scored via `"reverse": true` on those three objects; there are
-no separate R1/R2/R3 items. Do not change the question count, remove
-items, or alter the reverse-scoring logic in `src/lib/scoring.js`
-(`q.reverse ? 6 - value : value`, read from each question's own `reverse`
-flag — never hardcode by id) without explicit confirmation from Kanishk,
-even if a different instruction seems to imply it. This has already gone
-wrong twice: commit `4a11bf9` removed the reverse-scored items entirely
-on 2026-07-10 ("remove reverse-scored items"), then they were restored as
-standalone R1/R2/R3 objects (18 total) instead of a `reverse` flag on
-Q1/Q7/Q13 — both were mistakes, fixed on 2026-07-15 by swapping in the
-final 15-question set with `reverse: true` set directly on the three
-questions it belongs to. Don't repeat either mistake without checking
-first.
+`Conscious_Check_Questions_EN_Final.md`. No question is reverse-scored;
+all 15 score as picked (option 1 = 1 point, option 5 = 5 points), and
+there are no separate R1/R2/R3 items. Do not change the question count or
+remove items without explicit confirmation from Kanishk, even if a
+different instruction seems to imply it. This has already gone wrong
+before: commit `4a11bf9` removed the (then-existing) reverse-scored items
+entirely on 2026-07-10 ("remove reverse-scored items"), then they were
+restored as standalone R1/R2/R3 objects (18 total) instead of a `reverse`
+flag on Q1/Q7/Q13, fixed on 2026-07-15 by swapping in the 15-question set
+with `reverse: true` set on those three. That flag was itself removed on
+2026-09-20: Q1/Q7/Q13's options run the same least-to-most-conscious
+order as every other question, so `6 - value` was silently scoring the
+most conscious answer on those three items as the least conscious one.
+All 15 questions now score identically. Don't repeat any of these
+mistakes without checking first.
 
 ## Architecture rule (do not break)
 
@@ -49,25 +50,23 @@ Array of exactly **15 items**, in display order (Q1–Q15, matching
   "id": "Q1",
   "pillar": "Consciousness",
   "type": "Situational",
-  "reverse": true,
   "stem": "Question text shown to the user.",
   "options": ["option for value 1", "...", "...", "...", "option for value 5"]
 }
 ```
 
 - `options` is always 5 entries. Tapping option index `i` records raw answer
-  `i + 1` (1–5). If `reverse: true`, `scoring.js` inverts it (`6 - value`)
-  before summing into the pillar total, reading the flag off the question
-  object itself — see the LOCKED INSTRUMENT note above.
+  `i + 1` (1–5), summed as-is into the pillar total — no question is
+  reverse-scored (see the LOCKED INSTRUMENT note above).
 - `type` is one of `Situational`, `Direct`, `Values-based` — carried over
   from the source doc's question-format labels. Not currently read by any
   UI or scoring code; it's provenance metadata, kept in case question
   format ever needs to vary by type.
 - `pillar` is one of `Consciousness`, `Action`, `Responsibility`,
   `Engagement`, `Self-Growth`, exactly 3 items each:
-  Consciousness (Q1 reverse, Q6, Q11), Action (Q2, Q7 reverse, Q15),
+  Consciousness (Q1, Q6, Q11), Action (Q2, Q7, Q15),
   Responsibility (Q3, Q8, Q10), Engagement (Q4, Q12, Q14), Self-Growth
-  (Q5, Q9, Q13 reverse). `src/lib/scoring.js` computes
+  (Q5, Q9, Q13). `src/lib/scoring.js` computes
   `minPossible`/`maxPossible` per pillar at runtime from however many
   items are tagged to it — **adding or removing a question from any
   pillar is a data change only**, never touch the scoring formula for

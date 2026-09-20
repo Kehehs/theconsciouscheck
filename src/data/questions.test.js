@@ -3,8 +3,8 @@ import questions from "./questions.json";
 
 // Canonical Q -> pillar mapping, from Conscious_Check_Questions_EN_Final.md
 // (must match CLAUDE.md's data schema section). This file's pillar tags
-// and reverse flags have been silently wrong before — this test exists so
-// a future content edit can't reintroduce that without a test failure.
+// have been silently wrong before — this test exists so a future content
+// edit can't reintroduce that without a test failure.
 const EXPECTED_PILLAR_BY_ID = {
   Q1: "Consciousness",
   Q2: "Action",
@@ -22,8 +22,6 @@ const EXPECTED_PILLAR_BY_ID = {
   Q14: "Engagement",
   Q15: "Action",
 };
-
-const REVERSE_SCORED_IDS = new Set(["Q1", "Q7", "Q13"]);
 
 describe("questions.json pillar mapping", () => {
   it("has exactly 15 questions", () => {
@@ -46,12 +44,10 @@ describe("questions.json pillar mapping", () => {
     }
   });
 
-  it("flags exactly Q1, Q7, and Q13 as reverse-scored", () => {
-    const actualReverseIds = questions
-      .filter((q) => q.reverse === true)
-      .map((q) => q.id)
-      .sort();
-    expect(actualReverseIds).toEqual([...REVERSE_SCORED_IDS].sort());
+  it("has no reverse-scored questions", () => {
+    for (const q of questions) {
+      expect(q.reverse, `${q.id} reverse flag`).toBeUndefined();
+    }
   });
 
   it("has no standalone R1/R2/R3 items", () => {
