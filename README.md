@@ -28,8 +28,8 @@ npm run preview   # serve the production build locally
 
 All quiz and result copy lives in data files, not component code:
 
-- **`src/data/questions.json`** — the 18-item answer sequence (15 scored +
-  3 invisible reverse-scored validation items).
+- **`src/data/questions.json`** — the 15-item answer sequence, all scored
+  as picked (no reverse-scoring).
 - **`src/data/archetypes.json`** — full result-page copy for all six
   archetypes.
 - **`src/data/shared.json`** — composite-band text, the disclaimer, and CTA
