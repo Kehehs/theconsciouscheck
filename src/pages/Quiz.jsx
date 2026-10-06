@@ -6,6 +6,7 @@ import { useQuizStore } from "../store/quizStore";
 import { scoreQuiz } from "../lib/scoring";
 import { encodeResultToken } from "../lib/resultToken";
 import { setStoredToken } from "../lib/resultStorage";
+import { reportResult } from "../lib/liveReport";
 import uiStrings from "../data/uiStrings.json";
 import ProgressBar from "../components/ProgressBar";
 import QuestionScreen from "../components/QuestionScreen";
@@ -42,9 +43,10 @@ export default function Quiz() {
           // answer is somehow missing — same guard scoreQuiz has always
           // had, kept even though the token no longer carries its return
           // value (decodeResultToken re-runs scoreQuiz itself later).
-          scoreQuiz(finalAnswers);
+          const result = scoreQuiz(finalAnswers);
           const token = await encodeResultToken(finalAnswers);
           setStoredToken(token);
+          reportResult(result.archetypeId);
           reset();
           navigate(`/check/r/${token}`);
         } catch (err) {
