@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Pusher from "pusher-js";
+import { useReducedMotion } from "framer-motion";
 
 const ARCHETYPES = [
   { id: "seeker", name: "Seeker", color: "#E8B04A" },
@@ -11,6 +12,9 @@ const ARCHETYPES = [
 ];
 
 const STORAGE_KEY = "mc_live_counts";
+const CHART_VH = 50; // total chart area
+const BAR_VH = 44; // tallest possible bar, leaves room for the count above it
+const MIN_FRAC = 0.012; // thin stub so all six columns show at zero
 const empty = () => Object.fromEntries(ARCHETYPES.map((a) => [a.id, 0]));
 
 function load() {
@@ -30,6 +34,7 @@ function load() {
 export default function LiveDashboard() {
   const [counts, setCounts] = useState(load);
   const [status, setStatus] = useState("connecting");
+  const reduceMotion = useReducedMotion();
 
   // keep this page out of search engines
   useEffect(() => {
@@ -66,7 +71,9 @@ export default function LiveDashboard() {
   }, []);
 
   const total = ARCHETYPES.reduce((sum, a) => sum + (counts[a.id] || 0), 0);
-  const max = Math.max(1, ...ARCHETYPES.map((a) => counts[a.id] || 0));
+  // ceiling of at least 10 so the first few results look small and grow
+  const ceiling = Math.max(10, ...ARCHETYPES.map((a) => counts[a.id] || 0));
+  const move = reduceMotion ? "none" : "transform 600ms cubic-bezier(.2,.9,.3,1.1)";
   const dotColor = status === "connected" ? "#5FA37E" : status === "connecting" ? "#E8B04A" : "#E2673F";
 
   const reset = () => {
@@ -108,29 +115,62 @@ export default function LiveDashboard() {
         </div>
       </div>
 
-      <div style={{ flex: 1, display: "flex", alignItems: "flex-end", gap: "2vw", marginTop: "4vh", minHeight: 300 }}>
-        {ARCHETYPES.map((a) => {
-          const n = counts[a.id] || 0;
-          return (
-            <div key={a.id} style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", height: "100%", justifyContent: "flex-end" }}>
-              <div className="font-display text-white" style={{ fontSize: "4vw", fontWeight: 700, marginBottom: 8 }}>{n}</div>
-              <div style={{ width: "100%", flex: 1, display: "flex", alignItems: "flex-end" }}>
-                <div
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    background: a.color,
-                    borderRadius: "10px 10px 0 0",
-                    transformOrigin: "bottom",
-                    transform: `scaleY(${n / max})`,
-                    transition: "transform 600ms cubic-bezier(.2,.9,.3,1.2)",
-                  }}
-                />
-              </div>
-              <div className="font-display text-white" style={{ marginTop: 12, fontSize: "1.6vw", fontWeight: 700 }}>{a.name}</div>
+      <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", marginTop: "2vh" }}>
+        <div style={{ position: "relative", height: `${CHART_VH}vh` }}>
+          <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: `${BAR_VH}vh` }}>
+            {[0.25, 0.5, 0.75, 1].map((f) => (
+              <div key={f} className="border-t border-white/10" style={{ position: "absolute", left: 0, right: 0, bottom: `${f * 100}%` }} />
+            ))}
+          </div>
+          <div className="bg-white/40" style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 2 }} />
+          <div style={{ position: "absolute", inset: 0, display: "grid", gridTemplateColumns: "repeat(6, 1fr)", columnGap: "2vw" }}>
+            {ARCHETYPES.map((a) => {
+              const n = counts[a.id] || 0;
+              const frac = Math.max(MIN_FRAC, n / ceiling);
+              return (
+                <div key={a.id} style={{ position: "relative", height: "100%" }}>
+                  <div
+                    style={{
+                      position: "absolute",
+                      left: 0,
+                      right: 0,
+                      bottom: 0,
+                      height: `${BAR_VH}vh`,
+                      background: a.color,
+                      transformOrigin: "bottom",
+                      transform: `scaleY(${frac})`,
+                      transition: move,
+                    }}
+                  />
+                  <div
+                    className="font-display text-white"
+                    style={{
+                      position: "absolute",
+                      left: 0,
+                      right: 0,
+                      bottom: "1vh",
+                      textAlign: "center",
+                      fontSize: "4vw",
+                      fontWeight: 700,
+                      lineHeight: 1,
+                      transform: `translateY(calc(${-frac} * ${BAR_VH}vh))`,
+                      transition: move,
+                    }}
+                  >
+                    {n}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(6, 1fr)", columnGap: "2vw", marginTop: "1.5vh" }}>
+          {ARCHETYPES.map((a) => (
+            <div key={a.id} className="font-display text-white" style={{ textAlign: "center", fontSize: "1.6vw", fontWeight: 700 }}>
+              {a.name}
             </div>
-          );
-        })}
+          ))}
+        </div>
       </div>
 
       <button
