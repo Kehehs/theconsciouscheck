@@ -7,18 +7,25 @@ import { motion } from "framer-motion";
  * Forwards ref so callers (e.g. FeedbackModal) can return focus to it on close.
  */
 const CTAButton = forwardRef(function CTAButton(
-  { children, onClick, type = "button", size = "default", className = "" },
+  { children, onClick, type = "button", size = "default", className = "", href },
   ref
 ) {
   const sizing =
     size === "large" ? "px-[54px] py-[19px] text-[19px]" : "px-12 py-[17px] text-lg";
 
+  // With `href` it renders an external link (new tab) in exactly the same style.
+  const Tag = href ? motion.a : motion.button;
+  const tagProps = href
+    ? { href, target: "_blank", rel: "noopener noreferrer" }
+    : { type };
+  const linkClasses = href ? "inline-flex items-center justify-center text-center no-underline" : "";
+
   return (
-    <motion.button
+    <Tag
       ref={ref}
-      type={type}
+      {...tagProps}
       onClick={onClick}
-      className={`font-display font-semibold text-white rounded-full bg-amber-accent min-h-[48px] min-w-[48px] cursor-pointer ${sizing} ${className}`}
+      className={`font-display font-semibold text-white rounded-full bg-amber-accent min-h-[48px] min-w-[48px] cursor-pointer ${linkClasses} ${sizing} ${className}`}
       style={{ boxShadow: "0 12px 28px -8px rgba(233, 127, 63, 0.5)" }}
       whileHover={{
         y: -3,
@@ -30,7 +37,7 @@ const CTAButton = forwardRef(function CTAButton(
       transition={{ type: "spring", stiffness: 400, damping: 15 }}
     >
       {children}
-    </motion.button>
+    </Tag>
   );
 });
 

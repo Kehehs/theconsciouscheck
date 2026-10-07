@@ -31,12 +31,16 @@ looks it up in `src/data/archetypes.json`, and renders the same section
 structure with that archetype's content. Never build six separate result
 pages — add new archetype content as a new key in `archetypes.json`.
 
-The result page layout follows `Results Page/Conscious_Check_Result_Page_Design_Spec.md`
-(v2): no radar chart, enlarged card as the sole hero visual, highlighted
-disclaimer box, two-column Light/Shadow and Career/Relationships, and a
-standout Growth Edge callout. If that spec is revised again, update
-`Result.jsx`'s JSX/Tailwind classes only — content still comes from
-`archetypes.json` unchanged.
+The result page is deliberately short (simplified from the v2 design spec):
+the EN / हिंदी toggle (top right of the content column, above the card),
+card with Save/Share, archetype name and identity line, composite band and
+score, the highlighted disclaimer box, the recognition paragraph, then the
+single "Discover MyndVerse" CTA and the quiet "Retake the check" link.
+The Light, Shadow, Growth Trajectory, Career and Relationships blocks and
+the closing line were removed from the page and from the data on purpose, so
+don't re-add them without checking first. Update `Result.jsx`'s JSX/Tailwind
+classes for layout changes; content comes from `archetypes.json` and
+`shared.json`.
 
 ## Data schema
 
@@ -79,8 +83,7 @@ Array of exactly **15 items**, in display order (Q1–Q15, matching
 
 Object keyed by archetype id (`seeker`, `catalyst`, `anchor`, `builder`,
 `sage`, `confluence`). Each entry has: `pillar`, `name`, `identity`,
-`cardImage` (path under `/public/cards/`), `recognition`, `light`,
-`shadow`, `growthEdge`, `career`, `relationships`, `closingLine`. All text
+`cardImage` (path under `/public/cards/`) and `recognition`. All text
 extracted verbatim from `Conscious_Check_Result_Page_Content.md` — do not
 paraphrase when editing, keep changes intentional and reviewed against that
 source doc if it's ever updated.
@@ -91,7 +94,7 @@ source doc if it's ever updated.
   `integrated`) with `min`/`max` score ranges and shared band text.
 - `disclaimer`: full disclaimer text, shown next to the score on every
   result (not in a footer), in the highlighted amber callout box.
-- `cta`: the single shared CTA (`buttonLabel`, `supportingLine`).
+- `cta`: the single shared result-page CTA (`supportingLine`, `buttonLabel`, `href`). It is an external link to https://myndverse.in/ that opens in a new tab. The Hindi lines are a draft pending human review.
 
 ## Scoring engine (`src/lib/scoring.js`)
 
@@ -121,9 +124,14 @@ Pure, testable, and documented inline. Key exports:
   too dark for the required dark-on-light contrast, so it's a solid fill.
 - `CompositeBand.jsx` — quiet label + short band description, intentionally
   small so it doesn't compete with the recognition paragraph.
-- Light/Shadow and Career/Relationships render as two-column grids
-  (`sm:grid-cols-2`) directly in `Result.jsx`, matching the design spec.
-  No separate component files for these — they're simple enough to inline.
+- `CTAButton.jsx` renders an anchor (new tab, `rel="noopener noreferrer"`)
+  when given an `href`, otherwise a button, with the same look either way.
+- `LanguageToggle.jsx` is fixed top-right by default; `inline` lets a page
+  place it (the result page puts it at the top right, above the card).
+- `FeedbackModal.jsx` (+ `lib/feedback.js`, `feedbackQuestions.json`,
+  `google-apps-script/feedback-submit.gs`, `VITE_FEEDBACK_SCRIPT_URL`) is no
+  longer rendered by the result page. Kept in the repo, unreferenced, until
+  Kanishk decides whether to retire it.
 
 ## Known asset issue — fixed 2026-08-16
 
@@ -143,11 +151,11 @@ assets; no outstanding frame/caption issue.
    15 total. Both `questions.json` and `scoring.js` are built so
    adding/removing an item from any pillar is a data-only change — verify
    this stays true if the scoring step is ever touched.
-3. **WhatsApp/phone-number routing is NOT built.** The "Join your
-   archetype's community" CTA on the result page currently calls
+3. **WhatsApp/phone-number routing is NOT built.** The result page no
+   longer has a community CTA (it links to MyndVerse instead).
    `submitToWhatsAppRouting(answers, archetypeId)`, a stub in
-   `src/lib/scoring.js` that only `console.warn`s — no backend, no phone
-   capture. This is the marked integration point for the future n8n/AiSensy
+   `src/lib/scoring.js` that only `console.warn`s, is now unreferenced — no
+   backend, no phone capture. This is the marked integration point for the future n8n/AiSensy
    webhook POST. **Pending a UX decision from Kanishk on where the phone
    number gets captured** (pre-result vs. on CTA click) before building
    further.

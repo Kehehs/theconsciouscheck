@@ -1,16 +1,17 @@
 import { useQuizStore } from "../store/quizStore";
 
 /**
- * Fixed top-right EN / हिंदी pill toggle. Two-state, not a dropdown.
+ * EN / हिंदी pill toggle. Two-state, not a dropdown. Fixed top-right by
+ * default; `inline` drops the fixed positioning so a page can place it.
  * Display-only — flips `language` in the shared quiz store, never
  * touches `answers`. Used on Quiz and Result only; never on Intro.
  */
-export default function LanguageToggle() {
+export default function LanguageToggle({ inline = false }) {
   const { language, setLanguage } = useQuizStore();
 
   return (
     <div
-      className="fixed right-4 top-4 z-50 flex rounded-full p-1"
+      className={`${inline ? "" : "fixed right-4 top-4 z-50"} flex rounded-full p-1`}
       style={{ background: "rgba(169, 198, 232, 0.12)", backdropFilter: "blur(8px)" }}
       role="group"
       aria-label="Language"

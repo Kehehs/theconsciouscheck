@@ -46,25 +46,14 @@
     "hi": "The MyndCheck एक reflection tool है, कोई diagnosis नहीं। ये इसलिए बना है ताकि आप अपने जीने के तरीके में patterns notice कर सकें, ना कि आपको measure, rank, या clinically assess किया जाए। आपका result एक mirror है, कोई verdict नहीं। जो काम का लगे वो रखिए, जो नहीं, उसे छोड़ दीजिए, और ये जानिए कि आप बदलते वक़्त इसे फिर से ले सकते हैं।"
   },
   "cta": {
-    "_note": "mode controls what the result page's primary CTA does. 'feedback': WhatsApp community isn't live for this distribution, so the CTA opens the in-page feedback flow instead (see FeedbackModal.jsx). 'whatsapp': reverts to the original community routing. Swap 'mode' back to 'whatsapp' when the community goes live, don't delete the feedback block, the flow may move to a secondary position at that point instead of disappearing.",
-    "mode": "feedback",
     "supportingLine": {
-      "en": "Others got this result too. Come meet them.",
-      "hi": "और भी लोगों को ये result मिला है। उनसे मिलिए।"
+      "en": "You have seen how you show up. Now see where it can go.",
+      "hi": "आपने देखा कि आप कैसे नज़र आते हैं। अब देखिए, यह कहाँ तक जा सकता है।"
     },
     "buttonLabel": {
-      "en": "Join your archetype's community",
-      "hi": "अपने archetype की community join कीजिए"
+      "en": "Discover MyndVerse",
+      "hi": "MyndVerse को जानें"
     },
-    "feedback": {
-      "supportingLine": {
-        "en": "The community link isn't live yet, help us get it right first.",
-        "hi": "The community link isn't live yet, help us get it right first."
-      },
-      "buttonLabel": {
-        "en": "Tell us how that felt",
-        "hi": "Tell us how that felt"
-      }
-    }
+    "href": "https://myndverse.in/"
   }
 }

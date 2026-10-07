@@ -13,11 +13,6 @@
   "saveYourCard": { "en": "Save your card", "hi": "Save your card" },
   "retakeTheCheck": { "en": "Retake the check", "hi": "Retake the check" },
   "disclaimerEyebrow": { "en": "A reflection, not a diagnosis", "hi": "A reflection, not a diagnosis" },
-  "sectionLight": { "en": "Light", "hi": "Light" },
-  "sectionShadow": { "en": "Shadow", "hi": "Shadow" },
-  "sectionGrowthTrajectory": { "en": "Your Growth Trajectory", "hi": "Your Growth Trajectory" },
-  "sectionCareer": { "en": "Career", "hi": "Career" },
-  "sectionRelationships": { "en": "Relationships", "hi": "Relationships" },
   "share": { "en": "Share", "hi": "Share" },
   "shareInstagramHint": { "en": "Image downloaded and link copied — Instagram strips captions from shared images, so paste the link yourself as a Story link sticker or in your message.", "hi": "Image downloaded and link copied — Instagram strips captions from shared images, so paste the link yourself as a Story link sticker or in your message." },
   "shareDownloadedImage": { "en": "Image downloaded", "hi": "Image downloaded" }
