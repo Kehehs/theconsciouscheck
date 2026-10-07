@@ -3,7 +3,7 @@
     "id": "seeker",
     "pillar": "Consciousness",
     "name": "The Seeker",
-    "cardImage": "/cards-original/seeker.webp",
+    "cardImage": "/cards-v2/seeker.webp",
     "identity": {
       "en": "Grounded and introspective, still while everything else moves.",
       "hi": "Grounded और introspective, हर चीज़ चलती रहे तब भी अपनी जगह टिका हुआ।"
@@ -17,7 +17,7 @@
     "id": "catalyst",
     "pillar": "Action",
     "name": "The Catalyst",
-    "cardImage": "/cards-original/catalyst.webp",
+    "cardImage": "/cards-v2/catalyst.webp",
     "identity": {
       "en": "Intentional and deliberate, the one who actually checks before they buy in.",
       "hi": "Intentional और deliberate, वो जो खरीदने से पहले, सच में रुककर सोचता है।"
@@ -31,7 +31,7 @@
     "id": "anchor",
     "pillar": "Responsibility",
     "name": "The Anchor",
-    "cardImage": "/cards-original/anchor.webp",
+    "cardImage": "/cards-v2/anchor.webp",
     "identity": {
       "en": "Protective and accountable, the one everyone quietly stands near.",
       "hi": "Protective और accountable, वो जिसके पास सब चुपचाप आकर खड़े हो जाते हैं।"
@@ -45,7 +45,7 @@
     "id": "builder",
     "pillar": "Engagement",
     "name": "The Builder",
-    "cardImage": "/cards-original/builder.webp",
+    "cardImage": "/cards-v2/builder.webp",
     "identity": {
       "en": "Service-oriented and collective, nobody asked, they just built it.",
       "hi": "Service-oriented और collective, किसी ने नहीं कहा, आपने बस बना दिया।"
@@ -59,7 +59,7 @@
     "id": "sage",
     "pillar": "Self-Growth",
     "name": "The Sage",
-    "cardImage": "/cards-original/sage.webp",
+    "cardImage": "/cards-v2/sage.webp",
     "identity": {
       "en": "Curious and evolving, still asking on purpose.",
       "hi": "Curious और evolving, अभी भी जानबूझकर सवाल पूछता हुआ।"
@@ -73,7 +73,7 @@
     "id": "confluence",
     "pillar": "All five, rare by design",
     "name": "The Confluence",
-    "cardImage": "/cards-original/confluence.webp",
+    "cardImage": "/cards-v2/confluence.webp",
     "identity": {
       "en": "Where different currents meet. Not a superior tier, a different kind of person.",
       "hi": "जहाँ अलग-अलग धाराएँ मिलती हैं। कोई superior tier नहीं, बस एक अलग तरह का इंसान।"
