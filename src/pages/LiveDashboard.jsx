@@ -3,6 +3,7 @@ import Pusher from "pusher-js";
 import { useReducedMotion } from "framer-motion";
 import myndverseLogo from "../assets/myndverse-logo.png";
 import awcLogo from "../assets/awc-logo.png";
+import awcQr from "../assets/awc-gate-qr.svg";
 import LiveBubbles from "../components/LiveBubbles";
 import badgeSeeker from "../assets/badge-seeker.jpg";
 import badgeCatalyst from "../assets/badge-catalyst.jpg";
@@ -163,8 +164,12 @@ export default function LiveDashboard() {
             {/* negative right margin cancels the trailing letter-spacing so the caption lines up with the digits */}
             <div className="font-body text-tint-blue" style={{ fontSize: 14, letterSpacing: "0.25em", marginTop: 2, marginRight: "-0.25em" }}>RESULTS IN</div>
           </div>
-          {/* Reserved for a QR code (added later): intentionally empty. */}
-          <div aria-hidden="true" style={{ width: "15vh", height: "15vh", flex: "none" }} />
+          {/* Gate-link QR (https://myndcheck.vercel.app/?event=awc). Black on white with its own quiet zone; keep it unscaled-looking and unobstructed. */}
+          <img
+            src={awcQr}
+            alt="QR code: scan to take the MyndCheck"
+            style={{ width: "15vh", height: "15vh", flex: "none", display: "block", borderRadius: "1vh" }}
+          />
         </div>
       </div>
 
