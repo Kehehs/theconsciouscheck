@@ -94,7 +94,7 @@ source doc if it's ever updated.
   `integrated`) with `min`/`max` score ranges and shared band text.
 - `disclaimer`: full disclaimer text, shown next to the score on every
   result (not in a footer), in the highlighted amber callout box.
-- `cta`: the single shared result-page CTA (`supportingLine`, `buttonLabel`, `href`). It is an external link to https://myndverse.in/ that opens in a new tab. The Hindi lines are a draft pending human review.
+- `cta`: the single shared result-page CTA (`supportingLine`, `buttonLabel`, `href`). It is an external link to https://www.myndverse.in/sign-in that opens in a new tab. The Hindi lines are a draft pending human review.
 
 ## Scoring engine (`src/lib/scoring.js`)
 
